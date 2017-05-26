@@ -1,6 +1,6 @@
-# civ6_x10_mod
+# civ6_x3_mod
 DESCRIPTION:
-This mod scales traits of civilisations by 10. For example Germany can build 10 aditional districs instead of 1 and France gets 10 spies.
+This mod scales traits of civilisations by 3. For example Germany can build 3 aditional districs instead of 1 and France gets 3 spies.
 Similar to the x10 mods for TF2.
 
 INSTALL:
@@ -14,4 +14,4 @@ UNISTALL:
 Delete the folder
 
 On github:
-https://github.com/username4/civ6_x10_mod
+https://github.com/username4/civ6_x3_mod

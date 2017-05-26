@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Mod id="895050b9-b0f7-49e8-a599-67a7b19d2cf8" version="0.6">
+    <Properties>
+        <Name>Civs x3</Name>
+        <Teaser/>
+        <Description>All traits multiplied times 3.</Description>
+        <Authors>username4</Authors>
+    </Properties>
+    <Components>
+        <UpdateDatabase id="civs_x3">
+            <Items>
+                <File>data/Traits.sql</File>
+            </Items>
+        </UpdateDatabase>
+        <LocalizedText id="civs_x3_text">
+            <Items>
+                <File>data/TraitsText.sql</File>
+            </Items>
+        </LocalizedText>        
+    </Components>
+    <Settings>
+        <LocalizedText id="civs_x3_text_menu">
+            <Items>
+                <File>data/TraitsText.sql</File>
+            </Items>
+        </LocalizedText>
+    </Settings>
+    <Files>
+        <File>data/Traits.sql</File>
+        <File>data/TraitsText.sql</File>
+    </Files>
+</Mod>
