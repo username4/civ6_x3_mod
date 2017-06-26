@@ -63,15 +63,15 @@ This is a fork of my [url=https://steamcommunity.com/sharedfiles/filedetails/?id
 -Samurai: 53 STR, 131 cost
 -Divine Wind: +300% Production of holy site, encampment and theater, +15 STR on coast and shallow water
 [u]Kongo[/u]
--10x artist and musician points, +40 Gold +20 Food, +20 Food from great works, 9 slots in palace (more breaks UI)
--Mbanza: +40 Gold, +20 Food, Cost=1
--Nagao: 100 ranged defense
--10 free apostles on mbanza and theater district build
+-3x artist and musician points, +12 Gold +6 Food, +6 Food from great works, 9 slots in palace (more breaks UI)
+-Mbanza: +12 Gold, +6 Food, Cost=8
+-Nagao: 30 ranged defense
+-3 free apostles on mbanza and theater district build
 [u]Norway[/u]
--Stave Church: 10 fait adjecency
--berserker:20 Movement in enimy territory, +70 when attacking, -70 when defending
+-Stave Church: 3 faith adjecency
+-berserker:6 Movement in enimy territory, +21 when attacking, -21 when defending
 -Harald:
--Longship: 75 Combat, 10 coast movement 
+-Longship: 75 Combat, 6 coast movement 
 [u]Rome[/u]
 -Bath: Cost=1, Housing 20, Entertainment 10
 -Legion: 76 Combat, 10 Charges

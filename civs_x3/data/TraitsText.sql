@@ -336,27 +336,27 @@ AND Tag = 'LOC_TRAIT_CIVILIZATION_ADJACENT_DISTRICTS_DESCRIPTION';
 ---------------------------------------------------------
 
 UPDATE LocalizedText
-SET Text = '+20 [ICON_Food] Food, +20 [ICON_Production] Production, and +40 [ICON_Gold] Gold from each [ICON_GreatWork_Relic] Relic, [ICON_GreatWork_Artifact] Artifact, and Sculpture [ICON_GreatWork_Sculpture] Great Work of Art in addition to the usual [ICON_Culture] Culture. Receive 20x [ICON_GreatWriter] Great Writer, [ICON_GreatArtist] Great Artist, [ICON_GreatMusician] Great Musician, and [ICON_GreatMerchant] Great Merchant points. Palace has slots for 5 Great Works.'
+SET Text = '+6 [ICON_Food] Food, +6 [ICON_Production] Production, and +12 [ICON_Gold] Gold from each [ICON_GreatWork_Relic] Relic, [ICON_GreatWork_Artifact] Artifact, and Sculpture [ICON_GreatWork_Sculpture] Great Work of Art in addition to the usual [ICON_Culture] Culture. Receive 20x [ICON_GreatWriter] Great Writer, [ICON_GreatArtist] Great Artist, [ICON_GreatMusician] Great Musician, and [ICON_GreatMerchant] Great Merchant points. Palace has slots for 5 Great Works.'
 WHERE Language = 'en_US'
 AND Tag = 'LOC_TRAIT_CIVILIZATION_NKISI_DESCRIPTION';
 
 UPDATE LocalizedText
-SET Text = 'A district unique to Kongo that can only be constructed in Rainforest or Woods. Replaces the Neighborhood district but is available earlier. Provides +50 [ICON_Housing] Housing , +20 [ICON_Food] Food, and +40 [ICON_Gold] Gold, regardless of Appeal.'
+SET Text = 'A district unique to Kongo that can only be constructed in Rainforest or Woods. Replaces the Neighborhood district but is available earlier. Provides +15 [ICON_Housing] Housing , +6 [ICON_Food] Food, and +12 [ICON_Gold] Gold, regardless of Appeal.'
 WHERE Language = 'en_US'
 AND Tag = 'LOC_DISTRICT_MBANZA_DESCRIPTION';
 
 UPDATE LocalizedText
-SET Text = 'Kongo unique Classical era unit that replaces the Swordsman. +100 [ICON_Strength] Combat Strength when defending against ranged attacks. Can move and see through Woods and Rainforest.'
+SET Text = 'Kongo unique Classical era unit that replaces the Swordsman. +30 [ICON_Strength] Combat Strength when defending against ranged attacks. Can move and see through Woods and Rainforest.'
 WHERE Language = 'en_US'
 AND Tag = 'LOC_UNIT_KONGO_SHIELD_BEARER_DESCRIPTION';
 
 UPDATE LocalizedText
-SET Text = '+100 [ICON_Strength] Combat Strength when defending against ranged units, can see through features, and can move through Woods and Rainforest without [ICON_Movement] Movement penalty.'
+SET Text = '+30 [ICON_Strength] Combat Strength when defending against ranged units, can see through features, and can move through Woods and Rainforest without [ICON_Movement] Movement penalty.'
 WHERE Language = 'en_US'
 AND Tag = 'LOC_ABILITY_NAGAO_DESCRIPTION';
 
 UPDATE LocalizedText
-SET Text = 'May not build Holy Site districts, gain Great Prophets, or found Religions. Gains all Beliefs of any Religion that has established itself in a majority of his cities. Receives ten Apostles each time he finishes a M''banza or Theater Square district (of that city''s majority Religion).'
+SET Text = 'May not build Holy Site districts, gain Great Prophets, or found Religions. Gains all Beliefs of any Religion that has established itself in a majority of his cities. Receives 3 Apostles each time he finishes a M''banza or Theater Square district (of that city''s majority Religion).'
 WHERE Language = 'en_US'
 AND Tag = 'LOC_TRAIT_LEADER_RELIGIOUS_CONVERT_DESCRIPTION';
 
@@ -368,37 +368,32 @@ AND Tag = 'LOC_TRAIT_LEADER_RELIGIOUS_CONVERT_DESCRIPTION';
 ---------------------------------------------------------
 
 UPDATE LocalizedText
-SET Text = 'LOC_ABILITY_NAGAO_DESCRIPTION'
-WHERE Language = 'en_US'
-AND Tag = 'LOC_ABILITY_NAGAO_DESCRIPTION';
-
-UPDATE LocalizedText
 SET Text = 'A building unique to Norway. Required to purchase Apostles and Inquisitors with [ICON_Faith] Faith. Holy Site districts get 10 additional adjacency bonus from Woods.'
 WHERE Language = 'en_US'
 AND Tag = 'LOC_BUILDING_STAVE_CHURCH_DESCRIPTION';
 
 UPDATE LocalizedText
-SET Text = '+70 [ICON_Strength]Combat Strength when attacking, and -70 [ICON_Strength] Combat Strength when defending.'
+SET Text = '+21 [ICON_Strength]Combat Strength when attacking, and -21 [ICON_Strength] Combat Strength when defending.'
 WHERE Language = 'en_US'
 AND Tag = 'LOC_ABILITY_BERSERKER_RAGE_DESCRIPTION';
 
 UPDATE LocalizedText
-SET Text = '+9 [ICON_Movement] Movement if this unit starts in enemy territory.'
+SET Text = '+3 [ICON_Movement] Movement if this unit starts in enemy territory.'
 WHERE Language = 'en_US'
 AND Tag = 'LOC_ABILITY_BERSERKER_MOVEMENT_DESCRIPTION';
 
 UPDATE LocalizedText
-SET Text = 'Norwegian unique Medieval era unit. 10 [ICON_Movement] Movement if this unit starts in enemy territory. +70 [ICON_Strength] Combat Strength when attacking and -70 [ICON_Strength] Combat Strength when defending.'
+SET Text = 'Norwegian unique Medieval era unit. 3 [ICON_Movement] Movement if this unit starts in enemy territory. +21 [ICON_Strength] Combat Strength when attacking and -21 [ICON_Strength] Combat Strength when defending.'
 WHERE Language = 'en_US'
 AND Tag = 'LOC_UNIT_NORWEGIAN_BERSERKER_DESCRIPTION';
 
 UPDATE LocalizedText
-SET Text = 'Norwegian unique Ancient era naval unit that replaces the Galley. Can pillage enemy coastal lands and capture civilians if adjacent using its coastal raiding ability. 10 [ICON_Movement] Movement while in coastal waters.'
+SET Text = 'Norwegian unique Ancient era naval unit that replaces the Galley. Can pillage enemy coastal lands and capture civilians if adjacent using its coastal raiding ability. 3 [ICON_Movement] Movement while in coastal waters.'
 WHERE Language = 'en_US'
 AND Tag = 'LOC_UNIT_NORWEGIAN_LONGSHIP_DESCRIPTION';
 
 UPDATE LocalizedText
-SET Text = '+10 [ICON_Movement] Movement while in coastal waters.'
+SET Text = '+3 [ICON_Movement] Movement while in coastal waters.'
 WHERE Language = 'en_US'
 AND Tag = 'LOC_ABILITY_LONGSHIP_MOVEMENT_DESCRIPTION';
 
