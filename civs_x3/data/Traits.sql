@@ -86,21 +86,21 @@ VALUES ('ABILITY_MAMLUK', 'MEDIC_INCREASE_HEAL_RATE');
 
 --LEADER Saladin
 UPDATE ModifierArguments
-SET Value = 99
+SET Value = 97
 WHERE ModifierId = 'TRAIT_RELIGIOUS_BUILDING_DISCOUNT';
 
 UPDATE ModifierArguments
-SET Value = 100
+SET Value = 30
 WHERE (Name = 'Multiplier'
 AND ModifierId = 'TRAIT_RELIGIOUS_BUILDING_MULTIPLIER_SCIENCE');
 
 UPDATE ModifierArguments
-SET Value = 100
+SET Value = 30
 WHERE (Name = 'Multiplier'
 AND ModifierId = 'TRAIT_RELIGIOUS_BUILDING_MULTIPLIER_FAITH');
 
 UPDATE ModifierArguments
-SET Value = 100
+SET Value = 30
 WHERE (Name = 'Multiplier'
 AND ModifierId = 'TRAIT_RELIGIOUS_BUILDING_MULTIPLIER_CULTURE');
 
@@ -112,59 +112,59 @@ AND ModifierId = 'TRAIT_RELIGIOUS_BUILDING_MULTIPLIER_CULTURE');
 
 --TRAIT_CIVILIZATION_AMAZON
 UPDATE ModifierArguments
-SET Value = 10
+SET Value = 3
 WHERE Name = 'Amount'
 AND ModifierId = 'TRAIT_AMAZON_RAINFOREST_COMMERCIALHUB_ADJACENCY';
 
 UPDATE ModifierArguments
-SET Value = 10
+SET Value = 3
 WHERE Name = 'Amount'
 AND ModifierId = 'TRAIT_AMAZON_RAINFOREST_HOLYSITE_ADJACENCY';
 
 UPDATE ModifierArguments
-SET Value = 10
+SET Value = 3
 WHERE Name = 'Amount'
 AND ModifierId = 'TRAIT_AMAZON_RAINFOREST_THEATER_ADJACENCY';
 
 UPDATE ModifierArguments
-SET Value = 10
+SET Value = 3
 WHERE Name = 'Amount'
 AND ModifierId = 'TRAIT_AMAZON_RAINFOREST_CAMPUS_ADJACENCY';
 
 UPDATE ModifierArguments
-SET Value = 11
+SET Value = 4
 WHERE Name = 'Amount'
 AND ModifierId = 'TRAIT_AMAZON_RAINFOREST_EXTRA_APPEAL';
 
 --MINAS_GERAES
 UPDATE Units
-SET Combat = 160
+SET Combat = 90
 WHERE UnitType = 'UNIT_BRAZILIAN_MINAS_GERAES';
 UPDATE Units
-SET RangedCombat = 170
+SET RangedCombat = 100
 WHERE UnitType = 'UNIT_BRAZILIAN_MINAS_GERAES';
 
 
 --"CIVILIZATION_BRAZIL"	"TRAIT_CIVILIZATION_STREET_CARNIVAL"
 --GPP
 UPDATE Project_GreatPersonPoints
-SET Points = Points * 10
+SET Points = Points * 3
 WHERE ProjectType = 'PROJECT_CARNIVAL';
 
---cost 0.5^10 *60 =~ 0
+--cost 0.5^3 *60 = 7,5
 UPDATE Districts
-SET Cost = 1
+SET Cost = 8
 WHERE DistrictType = 'DISTRICT_STREET_CARNIVAL';
 
 --Bonus
 UPDATE Districts
-SET Entertainment = 11
+SET Entertainment = 4
 WHERE DistrictType = 'DISTRICT_STREET_CARNIVAL';
 
 --LEADER Pedro
---refund
+--refund 1-0,2^3
 UPDATE ModifierArguments
-SET Value = 90
+SET Value = 51
 WHERE ModifierId = 'TRAIT_GREAT_PERSON_REFUND';
 
 ---------------------------------------------------------
@@ -174,46 +174,45 @@ WHERE ModifierId = 'TRAIT_GREAT_PERSON_REFUND';
 ---------------------------------------------------------
 
 --DYNASTIC_CYCLE"
---10% extra eureka -> 150% eureka nonsense, therefore  decrease leftover exponential 1−0,5×0,8^10=~95% , makes a 'bit' of sense, but very OP
+--10% extra eureka -> 150% eureka nonsense, therefore  decrease leftover exponential 1−0,5×0,8^3=~74% 
 UPDATE ModifierArguments
-SET Value = 45
+SET Value = 24
 WHERE ModifierId = 'TRAIT_CIVIC_BOOST';
 
 UPDATE ModifierArguments
-SET Value = 45
+SET Value = 24
 WHERE ModifierId = 'TRAIT_TECHNOLOGY_BOOST';
 
 --TRAIT_CIVILIZATION_IMPROVEMENT_GREAT_WALL
---40 Def
 UPDATE Improvements
-SET DefenseModifier = 40
+SET DefenseModifier = 12
 WHERE ImprovementType = 'IMPROVEMENT_GREAT_WALL';
 
 --adjacent
 UPDATE Adjacency_YieldChanges
-SET YieldChange = 10
+SET YieldChange = 3
 WHERE ID = 'GreatWall_Gold';
 
 UPDATE Adjacency_YieldChanges
-SET YieldChange = 10
+SET YieldChange = 3
 WHERE ID = 'GreatWall_Culture';
 
 --"TRAIT_CIVILIZATION_UNIT_CHINESE_CROUCHING_TIGER
 UPDATE Units
-SET RangedCombat = 140
+SET RangedCombat = 70
 WHERE UnitType = 'UNIT_CHINESE_CROUCHING_TIGER';
---cost reduction (exponential, 160/180^10 *180 = 55 )
+--cost reduction (exponential, 160/180^3 *180 = 126 )
 UPDATE Units
-SET Cost = 55
+SET Cost = 126
 WHERE UnitType = 'UNIT_CHINESE_CROUCHING_TIGER';
 
 --LEADER Qin
---10 Charges 
+--3 Charges 
 UPDATE ModifierArguments
-SET Value = 10
+SET Value = 3
 WHERE ModifierId = 'TRAIT_ADJUST_BUILDER_CHARGES';
 
---Wonder Production, exponential 15% to 1-0.85^10 = 80%
+--Wonder Production, exponential 15% to 1-0.85^3 = 39%
 UPDATE ModifierArguments
 SET Value = 80
 WHERE ModifierId = 'TRAIT_BUILDER_WONDER_PERCENT';
@@ -226,56 +225,56 @@ WHERE ModifierId = 'TRAIT_BUILDER_WONDER_PERCENT';
 
 --Iteru
 UPDATE ModifierArguments
-SET Value = 405
+SET Value = 152
 WHERE ModifierId = 'TRAIT_RIVER_FASTER_BUILDTIME_DISTRICT';
 
 UPDATE ModifierArguments
-SET Value = 405
+SET Value = 152
 WHERE ModifierId = 'TRAIT_RIVER_FASTER_BUILDTIME_WONDER';
 
 --TRAIT_CIVILIZATION_IMPROVEMENT_SPHINX
 UPDATE Improvement_YieldChanges
-SET YieldChange = 10
+SET YieldChange = 3
 WHERE (ImprovementType = 'IMPROVEMENT_SPHINX'
 AND YieldType = 'YIELD_FAITH');
 
 UPDATE Improvement_YieldChanges
-SET YieldChange = 10
+SET YieldChange = 3
 WHERE (ImprovementType = 'IMPROVEMENT_SPHINX'
 
 AND YieldType = 'YIELD_CULTURE');
 UPDATE Improvements
-SET Appeal = 10
+SET Appeal = 3
 WHERE ImprovementType = 'IMPROVEMENT_SPHINX';
 
 UPDATE Improvement_BonusYieldChanges
-SET BonusYieldChange = 10
+SET BonusYieldChange = 3
 WHERE ImprovementType = 'IMPROVEMENT_SPHINX';
 
 UPDATE ModifierArguments
-SET Value = 20
+SET Value = 6
 WHERE (Name = 'Amount'
 AND ModifierId = 'SPHINX_WONDERADJACENCY_FAITH');
 
 --TRAIT_CIVILIZATION_UNIT_EGYPTIAN_CHARIOT_ARCHER, Movement Bonus x10 and 
 UPDATE ModifierArguments
-SET Value = 12
+SET Value = 5
 WHERE (Name = 'Amount'
 AND ModifierId = 'LIGHTCHARIOT_FASTER_CLEAR_TERRAIN');
 
 --TRAIT_LEADER_MEDITERRANEAN
 UPDATE ModifierArguments
-SET Value = 40
+SET Value = 12
 WHERE (Name = 'Amount'
 AND ModifierId = 'TRAIT_INTERNATIONAL_TRADE_GAIN_GOLD');
 
 UPDATE ModifierArguments
-SET Value = 20
+SET Value = 6
 WHERE (Name = 'Amount'
 AND ModifierId = 'TRAIT_INCOMING_TRADE_GAIN_GOLD');
 
 UPDATE ModifierArguments
-SET Value = 20
+SET Value = 6
 WHERE (Name = 'Amount'
 AND ModifierId = 'TRAIT_INCOMING_TRADE_GAIN_FOOD');
 
@@ -299,21 +298,21 @@ AND ModifierId = 'TRAIT_SUPPORT_TWO_ARCHAEOLOGISTS';
 
 --SEADOG, but more moves for now, prize ship chance=100% maybe?
 UPDATE Units
-SET BaseMoves = 10
+SET BaseMoves = 3
 WHERE UnitType = 'UNIT_ENGLISH_SEADOG';
 
 --TRAIT_CIVILIZATION_ROYAL_NAVY_DOCKYARD"
 UPDATE ModifierArguments
-SET Value = 20
+SET Value = 6
 WHERE Name = 'Amount'
 AND ModifierId = 'ROYAL_NAVY_DOCKYARD_GOLD_FROM_FOREIGN_CONTINENT';
 
 UPDATE ModifierArguments
-SET Value = 10
+SET Value = 3
 WHERE ModifierId = 'ROYAL_NAVY_DOCKYARD_GRANT_MOVEMENT_BONUS';
 
 UPDATE Districts
-SET Cost = 1
+SET Cost = 8
 WHERE DistrictType = 'DISTRICT_ROYAL_NAVY_DOCKYARD';
 
 --TRAIT_LEADER_PAX_BRITANNICA"
@@ -321,7 +320,7 @@ WHERE DistrictType = 'DISTRICT_ROYAL_NAVY_DOCKYARD';
 
 --REDCOAT 
 UPDATE ModifierArguments
-SET Value = 100
+SET Value = 30
 WHERE ModifierId = 'REDCOAT_FOREIGN_COMBAT';
 
 

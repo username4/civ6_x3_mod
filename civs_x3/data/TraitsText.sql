@@ -47,12 +47,12 @@ AND Tag = 'LOC_TRAIT_LEADER_ROOSEVELT_COROLLARY_DESCRIPTION';
 
 --Prophet
 UPDATE LocalizedText
-SET Text = 'Automatically receive the final Great Prophet when the next-to-last one is claimed (if you have not earned a Great Prophet already). +10 [ICON_Science] Science for each foreign city following Arabia''s Religion.'
+SET Text = 'Automatically receive the final Great Prophet when the next-to-last one is claimed (if you have not earned a Great Prophet already). +3 [ICON_Science] Science for each foreign city following Arabia''s Religion.'
 WHERE Language = 'en_US'
 AND Tag = 'LOC_TRAIT_CIVILIZATION_LAST_PROPHET_DESCRIPTION';
 
 UPDATE LocalizedText
-SET Text = 'A building unique to Arabia. Bonus [ICON_Faith] Faith equal to the adjacency bonus of the Campus district. Produces 14 [ICON_SCIENCE].'
+SET Text = 'A building unique to Arabia. Bonus [ICON_Faith] Faith equal to the adjacency bonus of the Campus district. Produces 7 [ICON_SCIENCE].'
 WHERE Language = 'en_US'
 AND Tag = 'LOC_BUILDING_MADRASA_DESCRIPTION';
 
@@ -69,7 +69,7 @@ AND Tag = 'LOC_ABILITY_MAMLUK_DESCRIPTION';
 
 --Saladin
 UPDATE LocalizedText
-SET Text = 'The worship building for their Religion can be purchased by any player for just one-hundreth of the usual  [ICON_Faith] Faith cost.  This worship building is enhanced to add 100% to the [ICON_Science] Science, [ICON_Faith] Faith, and [ICON_Culture] Culture output of Arabian cities.'
+SET Text = 'The worship building for their Religion can be purchased by any player for just one-thirtieth of the usual  [ICON_Faith] Faith cost.  This worship building is enhanced to add 30% to the [ICON_Science] Science, [ICON_Faith] Faith, and [ICON_Culture] Culture output of Arabian cities.'
 WHERE Language = 'en_US'
 AND Tag = 'LOC_TRAIT_LEADER_RIGHTEOUSNESS_OF_FAITH_DESCRIPTION';
 
@@ -80,22 +80,22 @@ AND Tag = 'LOC_TRAIT_LEADER_RIGHTEOUSNESS_OF_FAITH_DESCRIPTION';
 ---------------------------------------------------------
 -- 
 UPDATE LocalizedText
-SET Text = 'Rainforest tiles provide +10 adjacency bonus for Campus, Commercial Hub, Holy Site, and Theater Square districts. Rainforest tiles provide +10 [ICON_Housing] Housing for Neighborhoods built adjacent to them.'
+SET Text = 'Rainforest tiles provide +3 adjacency bonus for Campus, Commercial Hub, Holy Site, and Theater Square districts. Rainforest tiles provide +3 [ICON_Housing] Housing for Neighborhoods built adjacent to them.'
 WHERE Language = 'en_US'
 AND Tag = 'LOC_TRAIT_CIVILIZATION_AMAZON_DESCRIPTION';
 
 UPDATE LocalizedText
-SET Text = 'Brazilian unique Modern era unit that replaces the Battleship. Much stronger (+100 [ICON_Strength]) than the Battleship. Unlocked by Nationalism.'
+SET Text = 'Brazilian unique Modern era unit that replaces the Battleship. Much stronger (+30 [ICON_Strength]) than the Battleship. Unlocked by Nationalism.'
 WHERE Language = 'en_US'
 AND Tag = 'LOC_UNIT_BRAZILIAN_MINAS_GERAES_DESCRIPTION';
 
 UPDATE LocalizedText
-SET Text = 'A district unique to Brazil. Replaces the Entertainment Complex district, and provides +11 [ICON_Amenities] Amenities. Also unlocks the Carnival project, which grants an additional +10 [ICON_Amenities] Amenity when underway and a variety of [ICON_GreatPerson] Great People points once completed.'
+SET Text = 'A district unique to Brazil. Replaces the Entertainment Complex district, and provides +4 [ICON_Amenities] Amenities. Also unlocks the Carnival project, which grants an additional +3 [ICON_Amenities] Amenity when underway and a variety of [ICON_GreatPerson] Great People points once completed.'
 WHERE Language = 'en_US'
 AND Tag = 'LOC_DISTRICT_STREET_CARNIVAL_DESCRIPTION';
 
 UPDATE LocalizedText
-SET Text = 'After recruiting or patronizing a [ICON_GreatPerson] Great Person, 90% of its [ICON_GreatPerson] Great Person point cost is refunded.'
+SET Text = 'After recruiting or patronizing a [ICON_GreatPerson] Great Person, 51% of its [ICON_GreatPerson] Great Person point cost is refunded.'
 WHERE Language = 'en_US'
 AND Tag = 'LOC_TRAIT_LEADER_MAGNANIMOUS_DESCRIPTION';
 
@@ -106,22 +106,22 @@ AND Tag = 'LOC_TRAIT_LEADER_MAGNANIMOUS_DESCRIPTION';
 ---------------------------------------------------------
 
 UPDATE LocalizedText
-SET Text = '[ICON_TechBoosted] Eurekas and [ICON_CivicBoosted] Inspirations provide 95% of civics and technologies instead of 50%.'
+SET Text = '[ICON_TechBoosted] Eurekas and [ICON_CivicBoosted] Inspirations provide 74% of civics and technologies instead of 50%.'
 WHERE Language = 'en_US'
 AND Tag = 'LOC_TRAIT_CIVILIZATION_DYNASTIC_CYCLE_DESCRIPTION';
 
 UPDATE LocalizedText
-SET Text = 'When building Ancient and Classical wonders you may spend Builder charges to complete 80% of the original wonder cost. Builders receive ten additional charges.'
+SET Text = 'When building Ancient and Classical wonders you may spend Builder charges to complete 80% of the original wonder cost. Builders receive 3 additional charges.'
 WHERE Language = 'en_US'
 AND Tag = 'LOC_TRAIT_LEADER_FIRST_EMPEROR_DESCRIPTION';
 
 UPDATE LocalizedText
-SET Text = 'Unlocks the Builder ability to construct the Great Wall, unique to China.[NEWLINE][NEWLINE]Provides an +40 increase to [ICON_Strength] Defense. 10 Bonus to [ICON_Gold] Gold if adjacent to other segments. 10 additional [ICON_Culture] Culture and [ICON_Tourism] Tourism as you advance through the Technology Tree for adjacent segments. Must be built in a line along the borders of your empire.'
+SET Text = 'Unlocks the Builder ability to construct the Great Wall, unique to China.[NEWLINE][NEWLINE]Provides an +12 increase to [ICON_Strength] Defense. 3 Bonus to [ICON_Gold] Gold if adjacent to other segments. 3 additional [ICON_Culture] Culture and [ICON_Tourism] Tourism as you advance through the Technology Tree for adjacent segments. Must be built in a line along the borders of your empire.'
 WHERE Language = 'en_US'
 AND Tag = 'LOC_IMPROVEMENT_GREAT_WALL_DESCRIPTION';
 
 UPDATE LocalizedText
-SET Text = 'Chinese unique Medieval era unit. Ranged unit with a [ICON_Range] Range of 1 and 140 [ICON_RANGED].'
+SET Text = 'Chinese unique Medieval era unit. Ranged unit with a [ICON_Range] Range of 1 and 70 [ICON_RANGED].'
 WHERE Language = 'en_US'
 AND Tag = 'LOC_UNIT_CHINESE_CROUCHING_TIGER_DESCRIPTION';
 
@@ -134,22 +134,22 @@ AND Tag = 'LOC_UNIT_CHINESE_CROUCHING_TIGER_DESCRIPTION';
 ---------------------------------------------------------
 
 UPDATE LocalizedText
-SET Text = '+405% [ICON_Production] Production towards districts and wonders if placed next to a River. Floodplains do not block placement of districts and wonders.'
+SET Text = '+152% [ICON_Production] Production towards districts and wonders if placed next to a River. Floodplains do not block placement of districts and wonders.'
 WHERE Language = 'en_US'
 AND Tag = 'LOC_TRAIT_CIVILIZATION_ITERU_DESCRIPTION';
 
 UPDATE LocalizedText
-SET Text = 'Unlocks the Builder ability to construct a Sphinx, unique to Egypt.[NEWLINE][NEWLINE]+10 [ICON_Faith] Faith and +10 [ICON_Culture] Culture. +10 Appeal. +20 [ICON_Faith] Faith if next to a wonder. Cannot be built next to another Sphinx. Can be built on Floodplains.'
+SET Text = 'Unlocks the Builder ability to construct a Sphinx, unique to Egypt.[NEWLINE][NEWLINE]+3 [ICON_Faith] Faith and +3 [ICON_Culture] Culture. +3 Appeal. +6 [ICON_Faith] Faith if next to a wonder. Cannot be built next to another Sphinx. Can be built on Floodplains.'
 WHERE Language = 'en_US'
 AND Tag = 'LOC_IMPROVEMENT_SPHINX_DESCRIPTION';
 
 UPDATE LocalizedText
-SET Text = 'Egyptian unique Ancient era ranged unit that replaces the Heavy Chariot. 12 [ICON_Movement] Movement when starting in open terrain.'
+SET Text = 'Egyptian unique Ancient era ranged unit that replaces the Heavy Chariot. 5 [ICON_Movement] Movement when starting in open terrain.'
 WHERE Language = 'en_US'
 AND Tag = 'LOC_UNIT_EGYPTIAN_CHARIOT_ARCHER_DESCRIPTION';
 
 UPDATE LocalizedText
-SET Text = 'Your [ICON_TradeRoute] Trade Routes to other civilizations provide +40 [ICON_Gold] Gold for Egypt. Other civilizations'' [ICON_TradeRoute] Trade Routes to Egypt provide +20 [ICON_Food] Food for them and +20 [ICON_Gold] Gold for Egypt.'
+SET Text = 'Your [ICON_TradeRoute] Trade Routes to other civilizations provide +12 [ICON_Gold] Gold for Egypt. Other civilizations'' [ICON_TradeRoute] Trade Routes to Egypt provide +6 [ICON_Food] Food for them and +6 [ICON_Gold] Gold for Egypt.'
 WHERE Language = 'en_US'
 AND Tag = 'LOC_TRAIT_LEADER_MEDITERRANEAN_DESCRIPTION';
 
@@ -160,7 +160,7 @@ AND Tag = 'LOC_TRAIT_LEADER_MEDITERRANEAN_DESCRIPTION';
 ---------------------------------------------------------
 
 UPDATE LocalizedText
-SET Text = 'A district unique to England for naval activity in your city. Replaces the Harbor district. Also removes the [ICON_Movement] Movement penalty for embarking and disembarking to and from this tile. Must be built on Coast or Lake Terrain adjacent to land.[NEWLINE][NEWLINE]+10 [ICON_Movement] Movement for all naval units built in Dockyard[NEWLINE]+20 [ICON_Gold] Gold when built on a foreign continent[NEWLINE]+10 [ICON_TradeRoute] Trade Route capacity.'
+SET Text = 'A district unique to England for naval activity in your city. Replaces the Harbor district. Also removes the [ICON_Movement] Movement penalty for embarking and disembarking to and from this tile. Must be built on Coast or Lake Terrain adjacent to land.[NEWLINE][NEWLINE]+3 [ICON_Movement] Movement for all naval units built in Dockyard[NEWLINE]+6 [ICON_Gold] Gold when built on a foreign continent[NEWLINE]+3 [ICON_TradeRoute] Trade Route capacity.'
 WHERE Language = 'en_US'
 AND Tag = 'LOC_DISTRICT_ROYAL_NAVY_DOCKYARD_DESCRIPTION';
 
@@ -175,12 +175,12 @@ WHERE Language = 'en_US'
 AND Tag = 'LOC_UNIT_ENGLISH_SEADOG_DESCRIPTION';
 
 UPDATE LocalizedText
-SET Text = 'English unique Industrial era unit when Victoria is their leader. +100 [ICON_Strength] Combat Strength when fighting on a continent other than that of your capital''s. No disembark cost.'
+SET Text = 'English unique Industrial era unit when Victoria is their leader. +30 [ICON_Strength] Combat Strength when fighting on a continent other than that of your capital''s. No disembark cost.'
 WHERE Language = 'en_US'
 AND Tag = 'LOC_UNIT_ENGLISH_REDCOAT_DESCRIPTION';
 
 UPDATE LocalizedText
-SET Text = '+100 [ICON_Strength] Combat Strength when fighting on a continent other than that of your [ICON_Capital] Capital''s. No disembark cost.'
+SET Text = '+30 [ICON_Strength] Combat Strength when fighting on a continent other than that of your [ICON_Capital] Capital''s. No disembark cost.'
 WHERE Language = 'en_US'
 AND Tag = 'LOC_ABILITY_REDCOAT_DESCRIPTION';
 

@@ -1,0 +1,149 @@
+This mod scales all traits of leaders and civilisations by 3. So every trait is 3 times stronger, bigger, and more powerfull. Guaranteed very balanced.
+
+Because this mod alters almost every trait/unit/building in the game, it is most likely incompatible with most gameplay changing mods, UI mods and such should be fine.
+
+This is a fork of my [url=https://steamcommunity.com/sharedfiles/filedetails/?id=931616985]civ traits x10 mod[/url]
+
+[u]America[/u]
+-legacy bonuses 3 times faster
+-P51: +15 ATK, +6 Range, +100% experience
+-FilmStudio: +300 Tourism
+-Corollary: +15 Str on Home, +3 Appeal for National Park
+-Rough Rider: +100% STR on home continent, +30 on hills
+[u]Arabia[/u]    
+-+3 science for each converted city
+-Madrasa +7 science
+-Saladin: Faith purchase cost 3%, +30% output of worship buildings
+[u]Brazil[/u]
+-3 Adjecency Bonus for rainforests
+-Minas Geraes: 90 Melee, 100 Ranged
+-Carneval: Cost=8, Entertainment 4, 3 Great Person points 
+-Pedro: 51% Refund for Great People
+[u]China[/u]
+-74% Eureka and Inspiration Bunus
+-Wall 12 Defense, +3 Gold and Culture
+-Crouching Tiger: 70 Ranged and Cost=126
+-Qin: Builders +3 charges and complete wonders 39% 
+[u]Egypt[/u]
+-+152% to wonder and district production, if build next to river
+-Sphinx:  +3 culture, +3 faith (+6, if next to wonder), +3 appeal
+-Chariot Archer: +5 movement
+-Cleopatra: trade routes outgoing +12 Gold, incoming +6 gold, +6 food 
+[u]England[/u]
+-9 slots in museum, 3 archeologists (can't do more, withoud bugging UI)
+-Seadog: 3 base moves
+-Dock: +3 movement, 6 gold from trade, cost=8
+-Redcoat: +30 STR in foreign continent
+[u]France[/u]
+-Chateau: +20 Culture, +10 Appeal, +20 Culture, if next to wonder, +10 gold if next to lux 
+-res. wonders 90% complete
+-10 times tourism
+-Imp. Guard +100 STR on home continent
+-Catherine: +10 spies and +10 dipl. vis. 
+[u]Germany[/u]
+-can build +10 districs
+-Hansa: +10 Adjecency to ressource and districs, +20 to commercial hub
+-U-Boot: +100 STR, +10 sight range
+-Babarossa: +70 vs city states, +10 Military slots
+[u]Greece[/u]
++10 Wildcard slots
+-Acropolis: Cost=1, +20 Adjecency for centre
+-Hoplite: +100 STR if near other Hoplite 
+-Gorgo: 500% culture of defeated unit strength
+-Pericles +50% Culture per city state 
+[u]India[/u]
+-Stepwell: 20 Housing, 10 Food, +10 food if farm, +10 faith if holysite 
+-Varu: -50 STR to enemies (stackable!), 1 Move, 85 STR, 12 sight, 480 cost
+-Ghandi: 10 fold War weeariness on enemy
+-50 faith per known civ with religion 
+[u]Japan[/u]
+-10 adjacent district bunus
+-Electronnic Factory: 13 Bunus to cities in 6 radius, 40 cuture
+-Samurai: 126 STR
+-Divine Wind: +1000% Production of holy site, encampment and theater, +50 STR on coast and shallow water
+[u]Kongo[/u]
+-10x artist and musician points, +40 Gold +20 Food, +20 Food from great works, 9 slots in palace (more breaks UI)
+-Mbanza: +40 Gold, +20 Food, Cost=1
+-Nagao: 100 ranged defense
+-10 free apostles on mbanza and theater district build
+[u]Norway[/u]
+-Stave Church: 10 fait adjecency
+-berserker:20 Movement in enimy territory, +70 when attacking, -70 when defending
+-Harald:
+-Longship: 75 Combat, 10 coast movement 
+[u]Rome[/u]
+-Bath: Cost=1, Housing 20, Entertainment 10
+-Legion: 76 Combat, 10 Charges
+-Fort: 40 Def
+-10 Gold on traderoutes
+-Trajan: 10 free Buildings in new City
+[u]Russia[/u]
+-new cities start with 26 tiles
+-+10 faith and production on tundra
+-Lavra: Cost=1, 10 great person production
+-Cossack: Cost=330, 112 STR, +50 STR in own territory
+-Peter: traderoutes give +1 science
+[u]Scythia[/u]
+-10 extra light cavalry
+-Kurgan: +10 Faith. +10 Gold, per pasture +10 Faith
+-Horse Archer: more cost, 10 range, weak melee
+-Tomyris: heal 100 after kill, 50 bonus vs wounded
+[u]Spain[/u]
+-Mission: 20 Faith, +20 if on different continent, +20 if next to campus
+-Conquisitor: +100 STR, if with Missionary
+-+10 gold and production on demestzic, +40 gold on international routes
+-phillip: 10 extra spanish inquisitions and +40 str against other religions
+[u]Sumeria[/u]
+-Ziggurat: 20 science, 
+-Warcart: cost=5, for early Spam
+-Gilgamesh: Levy discout= 100
+-experience for all units within 50 tiles
+[u]Aztecs[/u]
+-Builders complete distict 90%
+-Tlachtli: 10 amenities, 20 faith, 10 Great General points
+-Eagle Warrior: 100 STR, 290 cost
+-Montezuma: +10 STR per luxury, 20 extra amenities per luxury
+[u]Australia[/u]
+-Digger: +100 STR on coast, +50 on abroad
+-Outback Station: +10 food, +10 prod, +10 food for adj pastuire, +10 food abd +10 prod with civs
+-30 housing on coastal cities, districs bonuses +10 on chaming, +30 on breathtaking
+-Curtin: +1000% production on war declared
+[u]Poland[/u]
+-Hussar: Made stronger (118 STR)
+-Sukiennice: +20 prod on in trade, 40 gold on domestic
+-Jadwiga: 20 faith 20 culture and 40 gold for relic
+[u]Macedonia[/u]
+-10 inspirations/ eureka when capturing appropriate city
+-Hypapist: 500% support, 50 STR siege
+-Hetaroy: 50 general GPP, 50 bonus if with genera
+-basilikoi: 250% unit production to science
+[u]Persia[/u]
+-10 gold and 10 culture for internal routes, roads 10 times more advanced
+-Immortal: 165 STR, cost 190
+-Paradaeza: Appeal 20, 20 Gold, 10 Culture, 10 for adj holy and theater, 10 culture with dipolmatic service
+-Cyrus: 20 Movement on surprise war
+[u]MOD CIVS:[/u]
+[u][url=https://steamcommunity.com/sharedfiles/filedetails/?id=945917617]Railgun Misaka[/url][/u]
+-100% science bonus, +10 science, +10 gold
+-institude: +10 gold, production
+-misaka imouto: maintenance 1, cost 210
+-lv 5: +10 movement, +10 sight
+-misaka: +10 range
+[u][url=https://steamcommunity.com/sharedfiles/filedetails/?id=891438514]Konosuba Aqua[/url][/u]
+-Missionary and Apostle +80 religious str, +40/+80 STR to units
+-Arch Priest: +110 STR per era after medieval
+-Kachoufuugetsu: +10 gold, faith, food adjecency
+-20 housing on freshwater 
+[u][url=https://steamcommunity.com/sharedfiles/filedetails/?id=951144129]Konosuba Megumin[/url][/u]
+-+50 ranged STR, +500% XP 
+-Arch Wizard: +100 STR per Era
+-Crimson Magic Village: Cost 1 
+-Explosion Magic: 10 Nukes
+-Magic Stuff: 10x more science and Gold
+-Megumin: 10 nukes per Era
+
+Please tell, if something is wrong or was not implemented correctly.
+
+Can also be found on [url=https://github.com/username4/civ6_x10_mod]github[/url] and on [url=http://www.nexusmods.com/civilisationvi/mods/66/?]Nexus[/url].
+
+Inspired by [url=https://steamcommunity.com/sharedfiles/filedetails/?id=363117420]JFD's BalanceGoldPrime++[/url]  and the x10 mods for TF2.
