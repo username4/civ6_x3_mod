@@ -160,6 +160,11 @@ AND Tag = 'LOC_TRAIT_LEADER_MEDITERRANEAN_DESCRIPTION';
 ---------------------------------------------------------
 
 UPDATE LocalizedText
+SET Text = 'All found or conquered cities on a continent other than your home continent receive 3 free melee units. Gain the Redcoat unique unit when the Military Science technology is researched.'
+WHERE Language = 'en_US'
+AND Tag = 'LOC_TRAIT_LEADER_PAX_BRITANNICA_DESCRIPTION';
+
+UPDATE LocalizedText
 SET Text = 'A district unique to England for naval activity in your city. Replaces the Harbor district. Also removes the [ICON_Movement] Movement penalty for embarking and disembarking to and from this tile. Must be built on Coast or Lake Terrain adjacent to land.[NEWLINE][NEWLINE]+3 [ICON_Movement] Movement for all naval units built in Dockyard[NEWLINE]+6 [ICON_Gold] Gold when built on a foreign continent[NEWLINE]+3 [ICON_TradeRoute] Trade Route capacity.'
 WHERE Language = 'en_US'
 AND Tag = 'LOC_DISTRICT_ROYAL_NAVY_DOCKYARD_DESCRIPTION';
@@ -191,27 +196,27 @@ AND Tag = 'LOC_ABILITY_REDCOAT_DESCRIPTION';
 ---------------------------------------------------------
 
 UPDATE LocalizedText
-SET Text = 'Unlocks the Builder ability to construct a Chateau, unique to France.[NEWLINE][NEWLINE]+20 [ICON_Culture] Culture. +10 Appeal. +20 [ICON_Culture] Culture if next to a wonder. +10 [ICON_Gold] Gold if next to a Luxury resource. Can only be built adjacent to Rivers.'
+SET Text = 'Unlocks the Builder ability to construct a Chateau, unique to France.[NEWLINE][NEWLINE]+6 [ICON_Culture] Culture. +3 Appeal. +6 [ICON_Culture] Culture if next to a wonder. +3 [ICON_Gold] Gold if next to a Luxury resource. Can only be built adjacent to Rivers.'
 WHERE Language = 'en_US'
 AND Tag = 'LOC_IMPROVEMENT_CHATEAU_DESCRIPTION';
 
 UPDATE LocalizedText
-SET Text = 'French unique Industrial era melee unit. +100  [ICON_Strength] Combat Strength when fighting on your capital''s continent. [ICON_GreatGeneral] Great General points for killing units.'
+SET Text = 'French unique Industrial era melee unit. +30  [ICON_Strength] Combat Strength when fighting on your capital''s continent. [ICON_GreatGeneral] Great General points for killing units.'
 WHERE Language = 'en_US'
 AND Tag = 'LOC_UNIT_FRENCH_GARDE_IMPERIALE_DESCRIPTION';
 
 UPDATE LocalizedText
-SET Text = '+100 [ICON_Strength] Combat Strength when on the same continent as the [ICON_Capital] Capital. +10 Great General points for kills.'
+SET Text = '+30 [ICON_Strength] Combat Strength when on the same continent as the [ICON_Capital] Capital. +3 Great General points for kills.'
 WHERE Language = 'en_US'
 AND Tag = 'LOC_ABILITY_GARDE_DESCRIPTION';
 
 UPDATE LocalizedText
-SET Text = '+90% [ICON_Production] Production toward Medieval, Renaissance, and Industrial era wonders. [ICON_Tourism] Tourism from wonders of any era is tenfolded.'
+SET Text = '+49% [ICON_Production] Production toward Medieval, Renaissance, and Industrial era wonders. [ICON_Tourism] Tourism from wonders of any era is tenfolded.'
 WHERE Language = 'en_US'
 AND Tag = 'LOC_TRAIT_CIVILIZATION_WONDER_TOURISM_DESCRIPTION';
 
 UPDATE LocalizedText
-SET Text = 'Has 10 level of [ICON_VisLimited] Diplomatic Visibility greater than normal with every civilization that she''s met. Receives capacity to build 10 extra Spies with the Castles technology.'
+SET Text = 'Has 3 level of [ICON_VisLimited] Diplomatic Visibility greater than normal with every civilization that she''s met. Receives capacity to build 3 extra Spies with the Castles technology.'
 WHERE Language = 'en_US'
 AND Tag = 'LOC_TRAIT_LEADER_FLYING_SQUADRON_DESCRIPTION';
 
@@ -222,27 +227,27 @@ AND Tag = 'LOC_TRAIT_LEADER_FLYING_SQUADRON_DESCRIPTION';
 ---------------------------------------------------------
 
 UPDATE LocalizedText
-SET Text = 'Each city can build 10 districts more than usual (exceeding the normal limit based on [ICON_Citizen] Population).'
+SET Text = 'Each city can build 3 districts more than usual (exceeding the normal limit based on [ICON_Citizen] Population).'
 WHERE Language = 'en_US'
 AND Tag = 'LOC_TRAIT_CIVILIZATION_IMPERIAL_FREE_CITIES_DESCRIPTION';
 
 UPDATE LocalizedText
-SET Text = 'Adjacency: +20 [ICON_Production] Production bonus if adjacent to a Commercial Hub district. +10 [ICON_Production] Production bonus for each adjacent resource. +10 [ICON_Production] Production bonus for adjacent district tiles.'
+SET Text = 'Adjacency: +6 [ICON_Production] Production bonus if adjacent to a Commercial Hub district. +3 [ICON_Production] Production bonus for each adjacent resource. +3 [ICON_Production] Production bonus for adjacent district tiles.'
 WHERE Language = 'en_US'
 AND Tag = 'LOC_DISTRICT_HANSA_DESCRIPTION_ADJACENCY';
 
 UPDATE LocalizedText
-SET Text = '+100 [ICON_Strength] Combat Strength in Ocean combat.'
+SET Text = '+30 [ICON_Strength] Combat Strength in Ocean combat.'
 WHERE Language = 'en_US'
 AND Tag = 'LOC_ABILITY_UBOAT_DESCRIPTION';
 
 UPDATE LocalizedText
-SET Text = 'German unique Modern era naval unit that replaces the Submarine. Cheaper to produce, +10 Sight, and +100 [ICON_Strength] Combat Strength when fighting on Ocean tiles. Able to reveal other stealthed units.'
+SET Text = 'German unique Modern era naval unit that replaces the Submarine. Cheaper to produce, +3 Sight, and +30 [ICON_Strength] Combat Strength when fighting on Ocean tiles. Able to reveal other stealthed units.'
 WHERE Language = 'en_US'
 AND Tag = 'LOC_UNIT_GERMAN_UBOAT_DESCRIPTION';
 
 UPDATE LocalizedText
-SET Text = '10 additional Military policy slots. +70 [ICON_Strength] Combat Strength when attacking city-states.'
+SET Text = '3 additional Military policy slots. +21 [ICON_Strength] Combat Strength when attacking city-states.'
 WHERE Language = 'en_US'
 AND Tag = 'LOC_TRAIT_LEADER_HOLY_ROMAN_EMPEROR_DESCRIPTION';
 
@@ -253,27 +258,27 @@ AND Tag = 'LOC_TRAIT_LEADER_HOLY_ROMAN_EMPEROR_DESCRIPTION';
 ---------------------------------------------------------
 
 UPDATE LocalizedText
-SET Text = '10 extra Wildcard policy slots in any government.'
+SET Text = '3 extra Wildcard policy slots in any government.'
 WHERE Language = 'en_US'
 AND Tag = 'LOC_TRAIT_CIVILIZATION_PLATOS_REPUBLIC_DESCRIPTION';
 
 UPDATE LocalizedText
-SET Text = 'Adjacency: +10 [ICON_Culture] Culture bonus for adjacent City Center. +10 [ICON_Culture] Culture bonus for each adjacent wonder and district. Can only be built on Hills.'
+SET Text = 'Adjacency: +3 [ICON_Culture] Culture bonus for adjacent City Center. +3 [ICON_Culture] Culture bonus for each adjacent wonder and district. Can only be built on Hills.'
 WHERE Language = 'en_US'
 AND Tag = 'LOC_DISTRICT_ACROPOLIS_DESCRIPTION_ADJACENCY';
 
 UPDATE LocalizedText
-SET Text = '+100 [ICON_Strength] Combat Strength if there is at least one Hoplite adjacent.'
+SET Text = '+30 [ICON_Strength] Combat Strength if there is at least one Hoplite adjacent.'
 WHERE Language = 'en_US'
 AND Tag = 'LOC_ABILITY_HOPLITE_DESCRIPTION';
 
 UPDATE LocalizedText
-SET Text = 'Greek unique Ancient era unit that replaces the Spearman. +100 [ICON_Strength] Combat Strength if there is at least one adjacent Hoplite unit..'
+SET Text = 'Greek unique Ancient era unit that replaces the Spearman. +30 [ICON_Strength] Combat Strength if there is at least one adjacent Hoplite unit..'
 WHERE Language = 'en_US'
 AND Tag = 'LOC_UNIT_GREEK_HOPLITE_DESCRIPTION';
 
 UPDATE LocalizedText
-SET Text = '+50% [ICON_Culture] Culture per city-state you are the Suzerain of.'
+SET Text = '+15% [ICON_Culture] Culture per city-state you are the Suzerain of.'
 WHERE Language = 'en_US'
 AND Tag = 'LOC_TRAIT_LEADER_SURROUNDED_BY_GLORY_DESCRIPTION';
 
@@ -310,17 +315,17 @@ AND Tag = 'LOC_TRAIT_LEADER_SATYAGRAHA_DESCRIPTION';
 ---------------------------------------------------------
 
 UPDATE LocalizedText
-SET Text = 'A building unique to Japan. +13 [ICON_Production] Production to all cities within 6 tiles. After researching the Electricity technology this building provides an additional +40 [ICON_Culture] Culture to its city.'
+SET Text = 'A building unique to Japan. +6 [ICON_Production] Production to all cities within 6 tiles. After researching the Electricity technology this building provides an additional +12 [ICON_Culture] Culture to its city.'
 WHERE Language = 'en_US'
 AND Tag = 'LOC_BUILDING_ELECTRONICS_FACTORY_DESCRIPTION';
 
 UPDATE LocalizedText
-SET Text = 'Land units receive +50 [ICON_Strength] Combat Strength in land tiles adjacent to Coast; naval units receive +50 [ICON_Strength] Combat Strength in shallow water tiles. Builds Encampment, Holy Site and Theater Square districts 10 time faster.'
+SET Text = 'Land units receive +15 [ICON_Strength] Combat Strength in land tiles adjacent to Coast; naval units receive +15 [ICON_Strength] Combat Strength in shallow water tiles. Builds Encampment, Holy Site and Theater Square districts 3 time faster.'
 WHERE Language = 'en_US'
 AND Tag = 'LOC_TRAIT_LEADER_DIVINE_WIND_DESCRIPTION';
 
 UPDATE LocalizedText
-SET Text = 'All districts receive an additional +10 adjacency bonus for being adjacent to another district.'
+SET Text = 'All districts receive an additional +3 adjacency bonus for being adjacent to another district.'
 WHERE Language = 'en_US'
 AND Tag = 'LOC_TRAIT_CIVILIZATION_ADJACENT_DISTRICTS_DESCRIPTION';
 

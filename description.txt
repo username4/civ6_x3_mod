@@ -30,37 +30,38 @@ This is a fork of my [url=https://steamcommunity.com/sharedfiles/filedetails/?id
 -Chariot Archer: +5 movement
 -Cleopatra: trade routes outgoing +12 Gold, incoming +6 gold, +6 food 
 [u]England[/u]
+-3 free melle units on other continent
 -9 slots in museum, 3 archeologists (can't do more, withoud bugging UI)
 -Seadog: 3 base moves
 -Dock: +3 movement, 6 gold from trade, cost=8
 -Redcoat: +30 STR in foreign continent
 [u]France[/u]
--Chateau: +20 Culture, +10 Appeal, +20 Culture, if next to wonder, +10 gold if next to lux 
--res. wonders 90% complete
--10 times tourism
--Imp. Guard +100 STR on home continent
--Catherine: +10 spies and +10 dipl. vis. 
+-Chateau: +6 Culture, +3 Appeal, +6 Culture, if next to wonder, +3 gold if next to lux 
+-res. wonders 49% complete
+-3 times tourism
+-Imp. Guard +30 STR on home continent
+-Catherine: +3 spies and +3 dipl. vis. 
 [u]Germany[/u]
--can build +10 districs
--Hansa: +10 Adjecency to ressource and districs, +20 to commercial hub
--U-Boot: +100 STR, +10 sight range
--Babarossa: +70 vs city states, +10 Military slots
+-can build +3 districs
+-Hansa: +3 Adjecency to ressource and districs, +6 to commercial hub
+-U-Boot: +30 STR, +3 sight range
+-Babarossa: +21 vs city states, +3 Military slots
 [u]Greece[/u]
-+10 Wildcard slots
--Acropolis: Cost=1, +20 Adjecency for centre
--Hoplite: +100 STR if near other Hoplite 
--Gorgo: 500% culture of defeated unit strength
--Pericles +50% Culture per city state 
+-+3 Wildcard slots
+-Acropolis: Cost=8, +6 Adjecency for centre
+-Hoplite: +30 STR if near other Hoplite 
+-Gorgo: 150% culture of defeated unit strength
+-Pericles +15% Culture per city state 
 [u]India[/u]
--Stepwell: 20 Housing, 10 Food, +10 food if farm, +10 faith if holysite 
--Varu: -50 STR to enemies (stackable!), 1 Move, 85 STR, 12 sight, 480 cost
--Ghandi: 10 fold War weeariness on enemy
--50 faith per known civ with religion 
+-Stepwell: 6 Housing, 3 Food, +3 food if farm, +3 faith if holysite 
+-Varu: -15 STR to enemies (stackable!), 1 Move, 60 STR, 5 sight, 200 cost
+-Ghandi: 3 fold War weeariness on enemy
+-15 faith per known civ with religion 
 [u]Japan[/u]
--10 adjacent district bunus
--Electronnic Factory: 13 Bunus to cities in 6 radius, 40 cuture
--Samurai: 126 STR
--Divine Wind: +1000% Production of holy site, encampment and theater, +50 STR on coast and shallow water
+-3 adjacent district bunus
+-Electronnic Factory: 6 Bunus to cities in 6 radius, 12 cuture
+-Samurai: 53 STR, 131 cost
+-Divine Wind: +300% Production of holy site, encampment and theater, +15 STR on coast and shallow water
 [u]Kongo[/u]
 -10x artist and musician points, +40 Gold +20 Food, +20 Food from great works, 9 slots in palace (more breaks UI)
 -Mbanza: +40 Gold, +20 Food, Cost=1
