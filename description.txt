@@ -114,15 +114,15 @@ This is a fork of my [url=https://steamcommunity.com/sharedfiles/filedetails/?id
 -Sukiennice: +6 prod on in trade, 12 gold on domestic
 -Jadwiga: 6 faith 6 culture and 12 gold for relic
 [u]Macedonia[/u]
--10 inspirations/ eureka when capturing appropriate city
--Hypapist: 500% support, 50 STR siege
--Hetaroy: 50 general GPP, 50 bonus if with genera
--basilikoi: 250% unit production to science
+-3 inspirations/ eureka when capturing appropriate city
+-Hypapist: 150% support, 15 STR siege
+-Hetaroy: 15 general GPP, 15 bonus if with genera
+-basilikoi: 75% unit production to science
 [u]Persia[/u]
--10 gold and 10 culture for internal routes, roads 10 times more advanced
--Immortal: 165 STR, cost 190
--Paradaeza: Appeal 20, 20 Gold, 10 Culture, 10 for adj holy and theater, 10 culture with dipolmatic service
--Cyrus: 20 Movement on surprise war
+-3 gold and 3 culture for internal routes, roads 3 times more advanced
+-Immortal: 50 STR, cost 120
+-Paradaeza: Appeal 6, 6 Gold, 3 Culture, 3 for adj holy and theater, 3 culture with dipolmatic service
+-Cyrus: 6 Movement on surprise war
 [u]MOD CIVS:[/u]
 [u][url=https://steamcommunity.com/sharedfiles/filedetails/?id=945917617]Railgun Misaka[/url][/u]
 -100% science bonus, +10 science, +10 gold

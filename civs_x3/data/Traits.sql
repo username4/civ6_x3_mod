@@ -1488,50 +1488,50 @@ AND ModifierId = 'TRAIT_LITHUANIANUNION_GOLD_RELIC';
 
 --Hellinistic Fusion
 UPDATE ModifierArguments
-SET Value = 10
+SET Value = 3
 WHERE Name = 'Amount'
 AND ModifierId = 'TRAIT_HELLENISTIC_FUSION_ENCAMPMENT_EUREKA_MODIFIER';
 
 UPDATE ModifierArguments
-SET Value = 10
+SET Value = 3
 WHERE Name = 'Amount'
 AND ModifierId = 'TRAIT_HELLENISTIC_FUSION_CAMPUS_EUREKA_MODIFIER';
 
 UPDATE ModifierArguments
-SET Value = 10
+SET Value = 3
 WHERE Name = 'Amount'
 AND ModifierId = 'TRAIT_HELLENISTIC_FUSION_HOLY_SITE_INSPIRATION_MODIFIER';
 
 UPDATE ModifierArguments
-SET Value = 10
+SET Value = 3
 WHERE Name = 'Amount'
 AND ModifierId = 'TRAIT_HELLENISTIC_FUSION_THEATER_INSPIRATION_MODIFIER';
 
 --Hypapist siege bunus and support bonus 
 UPDATE ModifierArguments
-SET Value = 500
+SET Value = 150
 WHERE Name = 'Percent'
 AND ModifierId = 'HYPASPIST_SUPPORT_BONUS';
 
 UPDATE ModifierArguments
-SET Value = 50
+SET Value = 15
 WHERE Name = 'Amount'
 AND ModifierId = 'HYPASPIST_SIEGE_BONUS';
 
 --Hetaroy 50 bnus with gerneral, 50 general points
 UPDATE ModifierArguments
-SET Value = 50
+SET Value = 15
 WHERE Name = 'Amount'
 AND ModifierId = 'HETAIROI_GREAT_GENERAL_POINTS';
 
 UPDATE ModifierArguments
-SET Value = 50
+SET Value = 15
 WHERE Name = 'Amount'
 AND ModifierId = 'HETAIROI_GREAT_GENERAL_COMBAT_BONUS';
 
 --Basilikoi, 250% science
 UPDATE ModifierArguments
-SET Value = 250
+SET Value = 75
 WHERE Name = 'UnitProductionPercent'
 AND ModifierId = 'BASILIKOI_PAIDES_SCIENCE_TRAINED_UNIT';
 
@@ -1545,73 +1545,73 @@ AND ModifierId = 'BASILIKOI_PAIDES_SCIENCE_TRAINED_UNIT';
 
 --Satrapies
 UPDATE ModifierArguments
-SET Value = 20
+SET Value = 6
 WHERE Name = 'Amount'
 AND ModifierId = 'TRAIT_SATRAPIES_INTERNAL_TRADE_GOLD';
 
 UPDATE ModifierArguments
-SET Value = 10
+SET Value = 3
 WHERE Name = 'Amount'
 AND ModifierId = 'TRAIT_SATRAPIES_INTERNAL_TRADE_CULTURE';
 
 UPDATE ModifierArguments
-SET Value = 10
+SET Value = 3
 WHERE Name = 'Amount'
 AND ModifierId = 'TRAIT_SATRAPIES_POLITICAL_PHILOSOPHY_TRADE_ROUTE';
 
 UPDATE ModifierArguments
-SET Value = 10
+SET Value = 3
 WHERE Name = 'ImprovedRouteLevel'
 AND ModifierId = 'TRAIT_SATRAPIES_IMPROVED_ROUTE_LEVEL';
 
 --Immortal essentially an archer with stromnger melee, so 10 times stronger melee
 UPDATE Units 
-SET Cost = 190
+SET Cost = 120
 WHERE UnitType = 'UNIT_PERSIAN_IMMORTAL';
 
 UPDATE Units 
-SET Combat = 165
+SET Combat = 50
 WHERE UnitType = 'UNIT_PERSIAN_IMMORTAL';
 
 --Paridaeza
 UPDATE Adjacency_YieldChanges
-SET YieldChange = 10 
+SET YieldChange = 3 
 WHERE ID = 'Pairidaeza_CityCenterAdjacency';
 
 UPDATE Adjacency_YieldChanges
-SET YieldChange = 10 
+SET YieldChange = 3 
 WHERE ID = 'Pairidaeza_CommercialHubAdjacency';
 
 UPDATE Adjacency_YieldChanges
-SET YieldChange = 10 
+SET YieldChange = 3 
 WHERE ID = 'Pairidaeza_HolySiteAdjacency';
 
 UPDATE Adjacency_YieldChanges
-SET YieldChange = 10 
+SET YieldChange = 3 
 WHERE ID = 'Pairidaeza_TheaterAdjacency';
 
 UPDATE Improvement_BonusYieldChanges
-SET BonusYieldChange = 10
+SET BonusYieldChange = 3
 WHERE ImprovementType = 'IMPROVEMENT_PAIRIDAEZA';
 
 UPDATE Improvements 
-SET Appeal = 20 
+SET Appeal = 6 
 WHERE ImprovementType = 'IMPROVEMENT_PAIRIDAEZA';
 
 UPDATE Improvement_YieldChanges 
-SET YieldChange = 20 
+SET YieldChange = 6 
 WHERE YieldType = 'YIELD_GOLD'
 AND ImprovementType= 'IMPROVEMENT_PAIRIDAEZA';
 
 UPDATE Improvement_YieldChanges 
-SET YieldChange = 10 
+SET YieldChange = 3 
 WHERE YieldType = 'YIELD_CULTURE'
 AND ImprovementType= 'IMPROVEMENT_PAIRIDAEZA';
 
 --Cyrus
 
 UPDATE ModifierArguments
-SET Value = 20
+SET Value = 6
 WHERE Name = 'Amount'
 AND ModifierId = 'TRAIT_FALLBABYLON_SURPRISE_MOVEMENT';
 
@@ -1621,31 +1621,18 @@ AND ModifierId = 'TRAIT_FALLBABYLON_SURPRISE_MOVEMENT';
 ---------------------------------------------------------
 ---------------------------------------------------------
 
---10 blank civics for germany and greece
+--3 blank civics for germany and greece
 INSERT INTO Policies (PolicyType, Name, Description, PrereqCivic, GovernmentSlotType)
 VALUES
     ('POLICY_BLANK_1', 'LOC_POLICY_BLANK_NAME', 'LOC_POLICY_BLANK_DESCRIPTION', 'CIVIC_CODE_OF_LAWS', 'SLOT_MILITARY' ),
     ('POLICY_BLANK_2', 'LOC_POLICY_BLANK_NAME', 'LOC_POLICY_BLANK_DESCRIPTION', 'CIVIC_CODE_OF_LAWS', 'SLOT_MILITARY' ),
-    ('POLICY_BLANK_3', 'LOC_POLICY_BLANK_NAME', 'LOC_POLICY_BLANK_DESCRIPTION', 'CIVIC_CODE_OF_LAWS', 'SLOT_MILITARY' ),
-    ('POLICY_BLANK_4', 'LOC_POLICY_BLANK_NAME', 'LOC_POLICY_BLANK_DESCRIPTION', 'CIVIC_CODE_OF_LAWS', 'SLOT_MILITARY' ),
-    ('POLICY_BLANK_5', 'LOC_POLICY_BLANK_NAME', 'LOC_POLICY_BLANK_DESCRIPTION', 'CIVIC_CODE_OF_LAWS', 'SLOT_MILITARY' ),
-    ('POLICY_BLANK_6', 'LOC_POLICY_BLANK_NAME', 'LOC_POLICY_BLANK_DESCRIPTION', 'CIVIC_CODE_OF_LAWS', 'SLOT_MILITARY' ),
-    ('POLICY_BLANK_7', 'LOC_POLICY_BLANK_NAME', 'LOC_POLICY_BLANK_DESCRIPTION', 'CIVIC_CODE_OF_LAWS', 'SLOT_MILITARY' ),
-    ('POLICY_BLANK_8', 'LOC_POLICY_BLANK_NAME', 'LOC_POLICY_BLANK_DESCRIPTION', 'CIVIC_CODE_OF_LAWS', 'SLOT_MILITARY' ),
-    ('POLICY_BLANK_9', 'LOC_POLICY_BLANK_NAME', 'LOC_POLICY_BLANK_DESCRIPTION', 'CIVIC_CODE_OF_LAWS', 'SLOT_MILITARY' );
+    ('POLICY_BLANK_3', 'LOC_POLICY_BLANK_NAME', 'LOC_POLICY_BLANK_DESCRIPTION', 'CIVIC_CODE_OF_LAWS', 'SLOT_MILITARY' );
     
 INSERT INTO Types (Type, Kind)
 VALUES
     ('POLICY_BLANK_1', 'KIND_POLICY'),
     ('POLICY_BLANK_2', 'KIND_POLICY'),
-    ('POLICY_BLANK_3', 'KIND_POLICY'),
-    ('POLICY_BLANK_4', 'KIND_POLICY'),
-    ('POLICY_BLANK_5', 'KIND_POLICY'),
-    ('POLICY_BLANK_6', 'KIND_POLICY'),
-    ('POLICY_BLANK_7', 'KIND_POLICY'),
-    ('POLICY_BLANK_8', 'KIND_POLICY'),
-    ('POLICY_BLANK_9', 'KIND_POLICY');
-
+    ('POLICY_BLANK_3', 'KIND_POLICY');
 
 ---------------------------------------------------------
 ---------------------------------------------------------
