@@ -110,9 +110,9 @@ This is a fork of my [url=https://steamcommunity.com/sharedfiles/filedetails/?id
 -9 housing on coastal cities, districs bonuses +3 on chaming, +9 on breathtaking
 -Curtin: +300% production on war declared
 [u]Poland[/u]
--Hussar: Made stronger (118 STR)
--Sukiennice: +20 prod on in trade, 40 gold on domestic
--Jadwiga: 20 faith 20 culture and 40 gold for relic
+-Hussar: Made stronger (69 STR)
+-Sukiennice: +6 prod on in trade, 12 gold on domestic
+-Jadwiga: 6 faith 6 culture and 12 gold for relic
 [u]Macedonia[/u]
 -10 inspirations/ eureka when capturing appropriate city
 -Hypapist: 500% support, 50 STR siege

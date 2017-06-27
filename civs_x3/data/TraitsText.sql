@@ -616,26 +616,26 @@ AND Tag = 'LOC_TRAIT_LEADER_CITADEL_CIVILIZATION_DESCRIPTION';
 
 --Hussar
 UPDATE LocalizedText
-SET Text = 'Polish unique Medieval era unit, 118 [ICON_STRENGTH]. Pushes defending enemy units back from their hex in any battle where they score more damage. Defenders that cannot retreat suffer additional damage.'
+SET Text = 'Polish unique Medieval era unit, 69 [ICON_STRENGTH]. Pushes defending enemy units back from their hex in any battle where they score more damage. Defenders that cannot retreat suffer additional damage.'
 WHERE Language = 'en_US'
 AND Tag = 'LOC_UNIT_POLISH_HUSSAR_DESCRIPTION';
 
 --Golden Liberty
 UPDATE LocalizedText
-SET Text = 'Culture Bomb adjacent tiles when completing an Encampment or Fort inside friendly territory. One Military policy slot in the current government is converted to Wildcard slot.'
+SET Text = 'Culture Bomb adjacent tiles when completing an Encampment or Fort inside friendly territory. 3 Military policy slots in the current government are converted to Wildcard slots.'
 WHERE Language = 'en_US'
 AND Tag = 'LOC_TRAIT_CIVILIZATION_GOLDEN_LIBERTY_DESCRIPTION';
 
 --Sukiennice
 UPDATE LocalizedText
-SET Text = 'A building unique to Poland. International [ICON_TradeRoute] Trade Routes from this city gain +20 [ICON_Production] Production; domestic [ICON_TradeRoute] Trade Routes gain +40 [ICON_Gold] Gold.'
+SET Text = 'A building unique to Poland. International [ICON_TradeRoute] Trade Routes from this city gain +6 [ICON_Production] Production; domestic [ICON_TradeRoute] Trade Routes gain +12 [ICON_Gold] Gold.'
 WHERE Language = 'en_US'
 AND Tag = 'LOC_BUILDING_SUKIENNICE_DESCRIPTION';
 
 
 --Jadwigna
 UPDATE LocalizedText
-SET Text = 'The religion founded by Poland becomes the majority in an adjacent city that loses a tile to a Polish Culture Bomb. Holy Sites gain 10 Faith adjacency bonus from adjacent districts. All Relics provide bonus Faith (+20), Culture (+20) and Gold (+40).'
+SET Text = 'The religion founded by Poland becomes the majority in an adjacent city that loses a tile to a Polish Culture Bomb. Holy Sites gain 3 Faith adjacency bonus from adjacent districts. All Relics provide bonus Faith (+6), Culture (+6) and Gold (+12).'
 WHERE Language = 'en_US'
 AND Tag = 'LOC_TRAIT_LEADER_LITHUANIAN_UNION_DESCRIPTION';
 
