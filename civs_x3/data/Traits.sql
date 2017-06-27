@@ -681,7 +681,7 @@ AND ModifierId = 'ELECTRONICSFACTORY_CULTURE');
 
 --SAMURAI
 UPDATE Units
-SET (Cost = 131 , Combat = 53)
+SET Cost = 131 , Combat = 53
 WHERE UnitType = 'UNIT_JAPANESE_SAMURAI';
 
 --DIVINE_WIND
@@ -1648,33 +1648,33 @@ VALUES
 
 --science and gold bonus
 UPDATE ModifierArguments
-SET Value = 100
+SET Value = 30
 WHERE Name = 'Amount'
 AND ModifierId = 'TRAIT_CIVILIZATION_GAKUINTOSHI_SCIENCE_BONUS';
 
 UPDATE ModifierArguments
-SET Value = 10
+SET Value = 3
 WHERE Name = 'Amount'
 AND ModifierId = 'TRAIT_CIVILIZATION_GAKUINTOSHI_CITY_GOLD';
 
 UPDATE ModifierArguments
-SET Value = 10
+SET Value = 3
 WHERE Name = 'Amount'
 AND ModifierId = 'TRAIT_CIVILIZATION_GAKUINTOSHI_CITY_SCIENCE';
 
 --KENKYUJO
 UPDATE Districts
-SET Cost = 1
+SET Cost = 8
 WHERE DistrictType = 'DISTRICT_KENKYUJO';
 
 INSERT INTO AdJacency_YieldChanges (ID, Description, YieldType, YieldChange, TilesRequired, AdjacentFeature)
-SELECT 'KENKYUJO_JUNGLE_GOLD' , 'LOC_DISTRICT_JUNGLE_GOLD' , 'YIELD_GOLD' , 9 , 2 , 'FEATURE_JUNGLE'
+SELECT 'KENKYUJO_JUNGLE_GOLD' , 'LOC_DISTRICT_JUNGLE_GOLD' , 'YIELD_GOLD' , 2 , 2 , 'FEATURE_JUNGLE'
 WHERE EXISTS  (SELECT * FROM Civilizations WHERE CivilizationType = 'CIVILIZATION_GAKUINTOSHI');
 INSERT INTO AdJacency_YieldChanges (ID, Description, YieldType, YieldChange, TilesRequired, AdjacentFeature)
-SELECT 'KENKYUJO_JUNGLE_PRODUCTION' , 'LOC_DISTRICT_JUNGLE_PRODUCTION' , 'YIELD_PRODUCTION' , 9 , 2 , 'FEATURE_JUNGLE'
+SELECT 'KENKYUJO_JUNGLE_PRODUCTION' , 'LOC_DISTRICT_JUNGLE_PRODUCTION' , 'YIELD_PRODUCTION' , 2 , 2 , 'FEATURE_JUNGLE'
 WHERE EXISTS  (SELECT * FROM Civilizations WHERE CivilizationType = 'CIVILIZATION_GAKUINTOSHI');
 INSERT INTO AdJacency_YieldChanges (ID, Description, YieldType, YieldChange, TilesRequired, OtherDistrictAdjacent)
-SELECT 'KENKYUJO_DISTRICT_PRODUCTION' , 'LOC_DISTRICT_JUNGLE_PRODUCTION' , 'YIELD_PRODUCTION' , 9 , 2 , 1
+SELECT 'KENKYUJO_DISTRICT_PRODUCTION' , 'LOC_DISTRICT_JUNGLE_PRODUCTION' , 'YIELD_PRODUCTION' , 2 , 2 , 1
 WHERE EXISTS  (SELECT * FROM Civilizations WHERE CivilizationType = 'CIVILIZATION_GAKUINTOSHI');
 
 INSERT INTO District_Adjacencies (DistrictType, YieldChangeId)
@@ -1688,7 +1688,7 @@ SELECT 'DISTRICT_KENKYUJO', 'KENKYUJO_DISTRICT_PRODUCTION'
 WHERE EXISTS  (SELECT * FROM Civilizations WHERE CivilizationType = 'CIVILIZATION_GAKUINTOSHI');	
 
 UPDATE AdJacency_YieldChanges
-SET YieldChange = 10
+SET YieldChange = 3
 WHERE ID = 'Mountains_Production1'
 OR ID = 'Mountains_Production2'
 OR ID = 'Mountains_Production3'
@@ -1696,7 +1696,7 @@ OR ID = 'Mountains_Production4'
 OR ID = 'Mountains_Production5';
 
 UPDATE AdJacency_YieldChanges
-SET YieldChange = 10
+SET YieldChange = 3
 WHERE ID = 'Mountains_Gold1'
 OR ID = 'Mountains_Gold2'
 OR ID = 'Mountains_Gold3'
@@ -1712,24 +1712,24 @@ OR ID = 'Mountains_Science4'
 OR ID = 'Mountains_Science5';
 */
 UPDATE District_CitizenYieldChanges
-SET YieldChange = 10
+SET YieldChange = 3
 WHERE YieldType = 'YIELD_PRODUCTION'
 AND DistrictType = 'DISTRICT_KENKYUJO'; 
 
 --Lv 5 Judgement
 UPDATE Units 
-SET BaseSightRange = 12 , BaseMoves = 13
+SET BaseSightRange = 5 , BaseMoves = 6
 WHERE UnitType = 'UNIT_LV5_JUDGEMENT';
 
 --Imouto
 UPDATE Units 
-SET Maintenance = 1 , Cost = 210
+SET Maintenance = 3 , Cost = 370
 WHERE UnitType = 'UNIT_MIKASA_SISTERS';
 
 
 --Misaka
 UPDATE ModifierArguments
-SET Value = 10
+SET Value = 3
 WHERE Name = 'Amount'
 AND ModifierId = 'MIKASA_LONG_RANGE';
 
@@ -1741,43 +1741,43 @@ AND ModifierId = 'MIKASA_LONG_RANGE';
 
 --combat buffs
 UPDATE ModifierArguments
-SET Value = 80
+SET Value = 24
 WHERE ModifierId = 'CONS_AXIS_CULT_RELIGIOUS_COMBAT_BUFF';
 
 UPDATE ModifierArguments
-SET Value = 80
+SET Value = 24
 WHERE ModifierId = 'CONS_AXIS_CULT_APOSTLE_UNIT_COMBAT';
 
 UPDATE ModifierArguments
-SET Value = 40
+SET Value = 12
 WHERE ModifierId = 'CONS_AXIS_CULT_MISSIONARY_UNIT_COMBAT';
 
 --Arch Priest
 UPDATE ModifierArguments
-SET Value = 110
+SET Value = 33
 WHERE Name = 'Amount'
 AND ModifierId LIKE 'CONS_AXIS_CULT_PRIEST_STRENGTH_%';
 
 --Kachoufuugetsu
 UPDATE Improvements
-SET Appeal = 10 
+SET Appeal = 3 
 WHERE ImprovementType = 'IMPROVEMENT_CONS_KACHOUFUUGETSU';
 
 UPDATE Improvement_YieldChanges
-SET YieldChange = 10
+SET YieldChange = 3
 WHERE ImprovementType = 'IMPROVEMENT_CONS_KACHOUFUUGETSU';
 
 UPDATE AdJacency_YieldChanges
-SET YieldChange = 10
+SET YieldChange = 3
 WHERE ID = 'Farms_Cons_Kachoufuugetsu1Adjacency';
 
 UPDATE AdJacency_YieldChanges
-SET YieldChange = 20
+SET YieldChange = 6
 WHERE ID = 'Farms_Cons_Kachoufuugetsu2Adjacency';
 
 --Aqua
 UPDATE ModifierArguments
-SET Value = 20
+SET Value = 6
 WHERE ModifierId = 'TRAIT_LEADER_CONS_AQUA_ADJACENT_RIVER_HOUSING_BONUS_MODIFIER';
 
 ---------------------------------------------------------
@@ -1788,45 +1788,45 @@ WHERE ModifierId = 'TRAIT_LEADER_CONS_AQUA_ADJACENT_RIVER_HOUSING_BONUS_MODIFIER
 
 --Crimson Magic Clan's Magic Talent
 UPDATE ModifierArguments
-SET Value = 500
+SET Value = 150
 WHERE ModifierId = 'TRAIT_CIVILIZATION_CONS_CRIMSON_MAGIC_CLAN_RANGED_UNIT_XP_BONUS_MOD';
 
 UPDATE ModifierArguments
-SET Value = 50
+SET Value = 15
 WHERE ModifierId = 'TRAIT_CIVILIZATION_CONS_CRIMSON_MAGIC_CLAN_RANGED_UNIT_INCREASE_STRENGTH_MOD';
 
 --Arch Wizard
 UPDATE ModifierArguments
-SET Value = 100
+SET Value = 30
 WHERE Name = 'Amount'
 AND ModifierId LIKE 'CONS_CMC_WIZARD_STRENGTH_%';
 
 --Crimson Magic Village
 UPDATE Districts
-SET Cost = 1
+SET Cost = 8
 WHERE DistrictType = 'DISTRICT_CONS_CMC_VILLAGE';
 
 UPDATE ModifierArguments
-SET Value = 250
+SET Value = 75
 WHERE ModifierId = 'TRAIT_DISTRICT_CONS_CMC_VILLAGE_UNIT_XP_BONUS';
 
 UPDATE Adjacency_YieldChanges
-SET YieldChange = 10
+SET YieldChange = 3
 WHERE ID = 'Cons_CMC_Village_District_Gold';
 
 --Make Magic Stuff
 UPDATE Project_YieldConversions
-SET PercentOfProductionRate = 300
+SET PercentOfProductionRate = 90
 WHERE ProjectType = 'PROJECT_ENHANCE_DISTRICT_CONS_CMC_VILLAGE';
 
 --Cast Explosion Magic
 UPDATE ModifierArguments
-SET Value = 10
+SET Value = 3
 WHERE Name = 'Amount'
 AND ModifierId = 'PROJECT_COMPLETION_MODIFIER_CREATE_CONS_EXPLOSION_MAGIC';
 
 --Megumin
 UPDATE ModifierArguments
-SET Value = 10
+SET Value = 3
 WHERE Name = 'Amount'
 AND ModifierId LIKE 'TRAIT_LEADER_CONS_MEGUMIN_CREATE_EXPLOSION_MAGIC_AT_%';

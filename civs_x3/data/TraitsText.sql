@@ -731,12 +731,12 @@ VALUES ('en_US', 'LOC_POLICY_BLANK_DESCRIPTION', 'Policy without effect, so the 
 ---------------------------------------------------------
 
 UPDATE LocalizedText
-SET Text = 'Replaces campus. Gain 10 [ICON_Gold] gold and 10 [ICON_Production] production adjacenry bonus equal to 10 times [ICON_Science] science bonus. Each working citizen provides 10 extra [ICON_Production] production.'
+SET Text = 'Replaces campus. Gain 3 [ICON_Gold] gold and 3 [ICON_Production] production adjacenry bonus equal to 3 times [ICON_Science] science bonus. Each working citizen provides 3 extra [ICON_Production] production.'
 WHERE Language = 'en_US'
 AND Tag = 'LOC_TRAIT_CIVILIZATION_GAKUINTOSHI_DISTRICT_KENKYUJO_DESCRIPTION';
 
 UPDATE LocalizedText
-SET Text = 'Replaces campus. Gain 10 [ICON_Gold] gold and 10 [ICON_Production] production adjacenry bonus equal to 10 times [ICON_Science] science bonus. Each working citizen provides 10 extra [ICON_Production] production.'
+SET Text = 'Replaces campus. Gain 3 [ICON_Gold] gold and 3 [ICON_Production] production adjacenry bonus equal to 3 times [ICON_Science] science bonus. Each working citizen provides 3 extra [ICON_Production] production.'
 WHERE Language = 'en_US'
 AND Tag = 'LOC_DISTRICT_KENKYUJO_DESCRIPTION';
 
@@ -751,12 +751,12 @@ WHERE Language = 'en_US'
 AND Tag = 'LOC_TRAIT_LEADER_MIKASA_UNIT_MIKASA_SISTERS_DESCRIPTION';
 
 UPDATE LocalizedText
-SET Text = 'Cities earn 100% more [ICON_Science] science. Each city earn +10 [ICON_Science] science and +10 [ICON_Gold] gold.'
+SET Text = 'Cities earn 30% more [ICON_Science] science. Each city earn +3 [ICON_Science] science and +3 [ICON_Gold] gold.'
 WHERE Language = 'en_US'
 AND Tag = 'LOC_TRAIT_CIVILIZATION_GAKUINTOSHI_CHONOURYOKU_KAIHATSU_DESCRIPTION';
 
 UPDATE LocalizedText
-SET Text = 'Range units earn +10 [ICON_Range] range bonus.'
+SET Text = 'Range units earn +3 [ICON_Range] range bonus.'
 WHERE Language = 'en_US'
 AND Tag = 'LOC_TRAIT_LEADER_MIKASA_RANGE_DESCRIPTION';
 
@@ -767,42 +767,42 @@ AND Tag = 'LOC_TRAIT_LEADER_MIKASA_RANGE_DESCRIPTION';
 ---------------------------------------------------------
 
 UPDATE LocalizedText
-SET Text = 'Missionary and Apostles are +80 [ICON_Religion] Religious Strength in Theological Combat. Missionaries and Apostles grant +40 and +80 [ICON_Strength] Combat Strength respectively to units that shares the tile with them.'
+SET Text = 'Missionary and Apostles are +24 [ICON_Religion] Religious Strength in Theological Combat. Missionaries and Apostles grant +12 and +24 [ICON_Strength] Combat Strength respectively to units that shares the tile with them.'
 WHERE Language = 'en_US'
 AND Tag = 'LOC_TRAIT_CIVILIZATION_CONS_AXIS_CULT_DESCRIPTION';
 
 UPDATE LocalizedText
-SET Text = '+8 [ICON_Religion] Religious Strength from the Axis Cult''s Fanatics ability.'
+SET Text = '+24 [ICON_Religion] Religious Strength from the Axis Cult''s Fanatics ability.'
 WHERE Language = 'en_US'
 AND Tag = 'LOC_ABILITY_CONS_AXIS_CULT_RELIGIOUS_COMBAT_BUFF_MODIFIER_DESCRIPTION';
 
 UPDATE LocalizedText
-SET Text = '+40 [ICON_Strength] Combat Strength when there is an Missionary in the same hex'
+SET Text = '+12 [ICON_Strength] Combat Strength when there is an Missionary in the same hex'
 WHERE Language = 'en_US'
 AND Tag = 'LOC_ABILITY_CONS_AXIS_CULT_MISSIONARY_UNIT_COMBAT_DESCRIPTION';
 
 UPDATE LocalizedText
-SET Text = '+80 [ICON_Strength] Combat Strength when there is an Apostle in the same hex.'
+SET Text = '+24 [ICON_Strength] Combat Strength when there is an Apostle in the same hex.'
 WHERE Language = 'en_US'
 AND Tag = 'LOC_ABILITY_CONS_AXIS_CULT_APOSTLE_UNIT_COMBAT_DESCRIPTION';
 
 UPDATE LocalizedText
-SET Text = '+80 [ICON_Religion] Religious Strength from the Axis Cult''s Fanatics ability'
+SET Text = '+24 [ICON_Religion] Religious Strength from the Axis Cult''s Fanatics ability'
 WHERE Language = 'en_US'
 AND Tag = 'LOC_ABILITY_CONS_AXIS_CULT_RELIGIOUS_COMBAT_BUFF_DESCRIPTION';
 
 UPDATE LocalizedText
-SET Text = 'Unlocks the Builder ability to construct a Kachoufuugetsu, unique to Axis Cult.[NEWLINE][NEWLINE]+10 [ICON_Gold] Gold, [ICON_Faith] Faith and Appeal. +10 [ICON_Food] Food to adjacent farm. Additional +10 [ICON_Food] Food to adjacent farm when researched Sanitation. Cannot be built adjacent to another Kachoufuugetsu.'
+SET Text = 'Unlocks the Builder ability to construct a Kachoufuugetsu, unique to Axis Cult.[NEWLINE][NEWLINE]+3 [ICON_Gold] Gold, [ICON_Faith] Faith and Appeal. +3 [ICON_Food] Food to adjacent farm. Additional +3 [ICON_Food] Food to adjacent farm when researched Sanitation. Cannot be built adjacent to another Kachoufuugetsu.'
 WHERE Language = 'en_US'
 AND Tag = 'LOC_IMPROVEMENT_CONS_KACHOUFUUGETSU_DESCRIPTION';
 
 UPDATE LocalizedText
-SET Text = 'Arch Priests are special units that must be unlocked with the Launch Inquisition action on an Apostle. Can use Remove Heresy. If this unit adjacent to a city when it''s captured, the city will automatically convert to the player''s majority Religion. +110 [ICON_Strength] Combat Strength each era from medieval era. Only purchase in the capital city.'
+SET Text = 'Arch Priests are special units that must be unlocked with the Launch Inquisition action on an Apostle. Can use Remove Heresy. If this unit adjacent to a city when it''s captured, the city will automatically convert to the player''s majority Religion. +33 [ICON_Strength] Combat Strength each era from medieval era. Only purchase in the capital city.'
 WHERE Language = 'en_US'
 AND Tag = 'LOC_UNIT_CONS_AXIS_CULT_PRIEST_DESCRIPTION';
 
 UPDATE LocalizedText
-SET Text = 'Cities have full [ICON_Housing] Housing from water, as if they were all next to a River. +20 [ICON_Housing] Housing to cities if they adjacent to a River, Lake, Oasis.'
+SET Text = 'Cities have full [ICON_Housing] Housing from water, as if they were all next to a River. +6 [ICON_Housing] Housing to cities if they adjacent to a River, Lake, Oasis.'
 WHERE Language = 'en_US'
 AND Tag = 'LOC_TRAIT_LEADER_CONS_AQUA_DESCRIPTION';
 
@@ -813,27 +813,27 @@ AND Tag = 'LOC_TRAIT_LEADER_CONS_AQUA_DESCRIPTION';
 ---------------------------------------------------------
 
 UPDATE LocalizedText
-SET Text = '+50 [ICON_Strength] Combat Strength for ranged unit. +500% combat experience for all ranged land units trained in city.'
+SET Text = '+15 [ICON_Strength] Combat Strength for ranged unit. +150% combat experience for all ranged land units trained in city.'
 WHERE Language = 'en_US'
 AND Tag = 'LOC_TRAIT_CIVILIZATION_CONS_CRIMSON_MAGIC_CLAN_DESCRIPTION';
 
 UPDATE LocalizedText
-SET Text = '+100 [ICON_Strength] Combat Strength each era from medieval era'
+SET Text = '+30 [ICON_Strength] Combat Strength each era from medieval era'
 WHERE Language = 'en_US'
 AND Tag = 'LOC_ABILITY_UNIT_CONS_CMC_WIZARD_DESCRIPTION';
 
 UPDATE LocalizedText
-SET Text = '+100 [ICON_Strength] Combat Strength each era from medieval era'
+SET Text = '+30 [ICON_Strength] Combat Strength each era from medieval era'
 WHERE Language = 'en_US'
 AND Tag = 'LOC_ABILITY_UNIT_CONS_CMC_WIZARD_STRENGTH_PER_ERA_DESCRIPTION';
 
 UPDATE LocalizedText
-SET Text = 'Crimson Magic Clan unique district that replace Neighborhood. Can be built from the beginning of the game. However, but provides +3 [ICON_Housing] Housing regardless of Appeal. +250% combat experience for all units trained in this city. Unlocks the Cast Explosion Magic and Make Magic Item project.'
+SET Text = 'Crimson Magic Clan unique district that replace Neighborhood. Can be built from the beginning of the game. However, but provides +3 [ICON_Housing] Housing regardless of Appeal. +75% combat experience for all units trained in this city. Unlocks the Cast Explosion Magic and Make Magic Item project.'
 WHERE Language = 'en_US'
 AND Tag = 'LOC_DISTRICT_CONS_CMC_VILLAGE_DESCRIPTION';
 
 UPDATE LocalizedText
-SET Text = '+{10_num} [ICON_Gold] Gold from the adjacent {1_Num : plural 1?district; other?districts;}.'
+SET Text = '+{3_num} [ICON_Gold] Gold from the adjacent {1_Num : plural 1?district; other?districts;}.'
 WHERE Language = 'en_US'
 AND Tag = 'LOC_DISTRICT_CONS_CMC_VILLAGE_GOLD';
 

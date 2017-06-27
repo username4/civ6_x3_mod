@@ -125,23 +125,23 @@ This is a fork of my [url=https://steamcommunity.com/sharedfiles/filedetails/?id
 -Cyrus: 6 Movement on surprise war
 [u]MOD CIVS:[/u]
 [u][url=https://steamcommunity.com/sharedfiles/filedetails/?id=945917617]Railgun Misaka[/url][/u]
--100% science bonus, +10 science, +10 gold
+-30% science bonus, +3 science, +3 gold
 -institude: +10 gold, production
--misaka imouto: maintenance 1, cost 210
--lv 5: +10 movement, +10 sight
--misaka: +10 range
+-misaka imouto: maintenance 3, cost 370
+-lv 5: +3 movement, +3 sight
+-misaka: +3 range
 [u][url=https://steamcommunity.com/sharedfiles/filedetails/?id=891438514]Konosuba Aqua[/url][/u]
--Missionary and Apostle +80 religious str, +40/+80 STR to units
--Arch Priest: +110 STR per era after medieval
--Kachoufuugetsu: +10 gold, faith, food adjecency
--20 housing on freshwater 
+-Missionary and Apostle +24 religious str, +12/+24 STR to units
+-Arch Priest: +33 STR per era after medieval
+-Kachoufuugetsu: +3 gold, faith, food adjecency
+-6 housing on freshwater 
 [u][url=https://steamcommunity.com/sharedfiles/filedetails/?id=951144129]Konosuba Megumin[/url][/u]
--+50 ranged STR, +500% XP 
--Arch Wizard: +100 STR per Era
--Crimson Magic Village: Cost 1 
--Explosion Magic: 10 Nukes
--Magic Stuff: 10x more science and Gold
--Megumin: 10 nukes per Era
+-+15 ranged STR, +150% XP 
+-Arch Wizard: +30 STR per Era
+-Crimson Magic Village: Cost 8 
+-Explosion Magic: 3 Nukes
+-Magic Stuff: 3x more science and Gold
+-Megumin: 3 nukes per Era
 
 Please tell, if something is wrong or was not implemented correctly.
 
