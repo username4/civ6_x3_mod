@@ -85,20 +85,20 @@ This is a fork of my [url=https://steamcommunity.com/sharedfiles/filedetails/?id
 -Cossack: Cost=360, 77 STR, +15 STR in own territory
 -Peter: traderoutes give +1 science
 [u]Scythia[/u]
--10 extra light cavalry
--Kurgan: +10 Faith. +10 Gold, per pasture +10 Faith
--Horse Archer: more cost, 10 range, weak melee
--Tomyris: heal 100 after kill, 50 bonus vs wounded
+-3 extra light cavalry
+-Kurgan: +3 Faith. +3 Gold, per pasture +3 Faith
+-Horse Archer: more cost, 3 range, weak melee
+-Tomyris: heal 87 after kill, 15 bonus vs wounded
 [u]Spain[/u]
--Mission: 20 Faith, +20 if on different continent, +20 if next to campus
--Conquisitor: +100 STR, if with Missionary
--+10 gold and production on demestzic, +40 gold on international routes
--phillip: 10 extra spanish inquisitions and +40 str against other religions
+-Mission: 6 Faith, +6 if on different continent, +6 if next to campus
+-Conquisitor: +30 STR, if with Missionary
+-+10 gold and production on demestzic, +12 gold on international routes
+-phillip: 3 extra spanish inquisitions and +12 str against other religions
 [u]Sumeria[/u]
--Ziggurat: 20 science, 
--Warcart: cost=5, for early Spam
--Gilgamesh: Levy discout= 100
--experience for all units within 50 tiles
+-Ziggurat: 6 science, 
+-Warcart: cost=40, for early Spam
+-Gilgamesh: Levy discout= 87%
+-experience for all units within 15 tiles
 [u]Aztecs[/u]
 -Builders complete distict 90%
 -Tlachtli: 10 amenities, 20 faith, 10 Great General points

@@ -463,27 +463,27 @@ AND Tag = 'LOC_TRAIT_LEADER_GRAND_EMBASSY_DESCRIPTION';
 ---------------------------------------------------------
 
 UPDATE LocalizedText
-SET Text = 'Unlocks the Builder ability to construct a Kurgan, unique to Scythia.[NEWLINE][NEWLINE]+10 [ICON_Faith] Faith. +10 [ICON_Gold] Gold. +10 [ICON_Faith] Faith for each adjacent Pasture. Cannot be built on Hills.'
+SET Text = 'Unlocks the Builder ability to construct a Kurgan, unique to Scythia.[NEWLINE][NEWLINE]+3 [ICON_Faith] Faith. +3 [ICON_Gold] Gold. +3 [ICON_Faith] Faith for each adjacent Pasture. Cannot be built on Hills.'
 WHERE Language = 'en_US'
 AND Tag = 'LOC_IMPROVEMENT_KURGAN_DESCRIPTION';
 
 UPDATE LocalizedText
-SET Text = 'Receive 10 cavalry units or Saka Horse Archers each time you train a light cavalry unit or Saka Horse Archer.'
+SET Text = 'Receive 3 cavalry units or Saka Horse Archers each time you train a light cavalry unit or Saka Horse Archer.'
 WHERE Language = 'en_US'
 AND Tag = 'LOC_TRAIT_CIVILIZATION_EXTRA_LIGHT_CAVALRY_DESCRIPTION';
 
 UPDATE LocalizedText
-SET Text = 'Expensive Scythian unique Classical era unit. Ranged unit with 4 [ICON_Movement] Movement with a [ICON_Range] Range of 10.'
+SET Text = 'Expensive Scythian unique Classical era unit. Ranged unit with 4 [ICON_Movement] Movement with a [ICON_Range] Range of 3.'
 WHERE Language = 'en_US'
 AND Tag = 'LOC_UNIT_SCYTHIAN_HORSE_ARCHER_DESCRIPTION';
 
 UPDATE LocalizedText
-SET Text = 'All units receive +50  [ICON_Strength] Combat Strength when attacking wounded units. When they eliminate a unit, they heal up to 100 hit points.'
+SET Text = 'All units receive +15  [ICON_Strength] Combat Strength when attacking wounded units. When they eliminate a unit, they heal up to 87 hit points.'
 WHERE Language = 'en_US'
 AND Tag = 'LOC_TRAIT_LEADER_KILLER_OF_CYRUS_DESCRIPTION';
 
 UPDATE LocalizedText
-SET Text = 'Combat victories provide [ICON_Culture] Culture equal to 50% of the [ICON_Strength] Combat Strength of the defeated unit.'
+SET Text = 'Combat victories provide [ICON_Culture] Culture equal to 15% of the [ICON_Strength] Combat Strength of the defeated unit.'
 WHERE Language = 'en_US'
 AND Tag = 'LOC_TRAIT_LEADER_THERMOPYLAE_DESCRIPTION';
 
@@ -494,17 +494,17 @@ AND Tag = 'LOC_TRAIT_LEADER_THERMOPYLAE_DESCRIPTION';
 ---------------------------------------------------------
 
 UPDATE LocalizedText
-SET Text = 'Unlocks the Builder ability to construct a Mission, unique to Spain.[NEWLINE][NEWLINE]+20 [ICON_Faith] Faith. 20 [ICON_Faith] Faith if on a different continent than your [ICON_Capital] Capital. +10 [ICON_Science] Science if built next to a Campus district.'
+SET Text = 'Unlocks the Builder ability to construct a Mission, unique to Spain.[NEWLINE][NEWLINE]+20 [ICON_Faith] Faith. 6 [ICON_Faith] Faith if on a different continent than your [ICON_Capital] Capital. +3 [ICON_Science] Science if built next to a Campus district.'
 WHERE Language = 'en_US'
 AND Tag = 'LOC_IMPROVEMENT_MISSION_DESCRIPTION';
 
 UPDATE LocalizedText
-SET Text = 'Spanish unique Renaissance era unit that replaces the Musketman. +100 [ICON_Strength] Combat Strength when there is a Missionary, Inquisitor, or Apostle in the same hex. If this unit captures a city or is adjacent to a city when it is captured, the city will automatically adopt the Conquistador player''s Religion as the dominant Religion.'
+SET Text = 'Spanish unique Renaissance era unit that replaces the Musketman. +30 [ICON_Strength] Combat Strength when there is a Missionary, Inquisitor, or Apostle in the same hex. If this unit captures a city or is adjacent to a city when it is captured, the city will automatically adopt the Conquistador player''s Religion as the dominant Religion.'
 WHERE Language = 'en_US'
 AND Tag = 'LOC_UNIT_SPANISH_CONQUISTADOR_DESCRIPTION';
 
 UPDATE LocalizedText
-SET Text = '+100 [ICON_Strength] Combat Strength when there is an Apostle, Inquisitor, or Missionary in the same hex. If this unit captures a city or is adjacent to a city when it''s captured, the city will automatically convert to the Conquistador player''s majority Religion.'
+SET Text = '+30 [ICON_Strength] Combat Strength when there is an Apostle, Inquisitor, or Missionary in the same hex. If this unit captures a city or is adjacent to a city when it''s captured, the city will automatically convert to the Conquistador player''s majority Religion.'
 WHERE Language = 'en_US'
 AND Tag = 'LOC_ABILITY_CONQUISTADOR_DESCRIPTION';
 
@@ -514,7 +514,7 @@ WHERE Language = 'en_US'
 AND Tag = 'LOC_TRAIT_CIVILIZATION_TREASURE_FLEET_DESCRIPTION';
 
 UPDATE LocalizedText
-SET Text = 'Inquisitors can Remove Heresy 10 extra time. Combat units have a bonus of +40 [ICON_Strength] Combat Strength against players following other Religions.'
+SET Text = 'Inquisitors can Remove Heresy 10 extra time. Combat units have a bonus of +12 [ICON_Strength] Combat Strength against players following other Religions.'
 WHERE Language = 'en_US'
 AND Tag = 'LOC_TRAIT_LEADER_EL_ESCORIAL_DESCRIPTION';
 
@@ -526,19 +526,19 @@ AND Tag = 'LOC_TRAIT_LEADER_EL_ESCORIAL_DESCRIPTION';
 
 --First Civilization
 UPDATE LocalizedText
-SET Text = 'When you capture a Barbarian Outpost, receive a Tribal Village reward in addition to the usual [ICON_Gold] Gold. Pay 1% the usual cost to levy city-state units.'
+SET Text = 'When you capture a Barbarian Outpost, receive a Tribal Village reward in addition to the usual [ICON_Gold] Gold. Pay 1/8 the usual cost to levy city-state units.'
 WHERE Language = 'en_US'
 AND Tag = 'LOC_TRAIT_CIVILIZATION_FIRST_CIVILIZATION_DESCRIPTION';
 
 --Ziggurat
 UPDATE LocalizedText
-SET Text = 'Unlocks the Builder ability to construct a Ziggurat, unique to Sumeria.[NEWLINE][NEWLINE]+20 [ICON_Science] Science. +10 [ICON_Culture] Culture if next to River. Cannot be built on Hills.'
+SET Text = 'Unlocks the Builder ability to construct a Ziggurat, unique to Sumeria.[NEWLINE][NEWLINE]+6 [ICON_Science] Science. +3 [ICON_Culture] Culture if next to River. Cannot be built on Hills.'
 WHERE Language = 'en_US'
 AND Tag = 'LOC_IMPROVEMENT_ZIGGURAT_DESCRIPTION';
 
 --Gilgamesh
 UPDATE LocalizedText
-SET Text = 'May declare war on anyone at war with their allies without warmonger penalties. When at war with a common foe, they and their allies share pillage rewards and share combat experience gains if within 50 tiles.'
+SET Text = 'May declare war on anyone at war with their allies without warmonger penalties. When at war with a common foe, they and their allies share pillage rewards and share combat experience gains if within 15 tiles.'
 WHERE Language = 'en_US'
 AND Tag = 'LOC_TRAIT_LEADER_ADVENTURES_ENKIDU_DESCRIPTION';
 

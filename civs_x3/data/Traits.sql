@@ -1080,48 +1080,48 @@ VALUES
 
 --Extra Cavalry 
 UPDATE ModifierArguments
-SET Value = 10
+SET Value = 3
 WHERE (Name = 'Amount'
 AND ModifierId = 'TRAIT_EXTRALIGHTCAVALRY');
 
 UPDATE ModifierArguments
-SET Value = 10
+SET Value = 3
 WHERE (Name = 'Amount'
 AND ModifierId = 'TRAIT_EXTRASAKAHORSEARCHER');
 
 --Kurgan
 UPDATE Improvement_YieldChanges
-SET YieldChange = 10
+SET YieldChange = 3
 WHERE ImprovementType = 'IMPROVEMENT_KURGAN';
 
 UPDATE Improvement_BonusYieldChanges
-SET BonusYieldChange = 10
+SET BonusYieldChange = 3
 WHERE ImprovementType = 'IMPROVEMENT_KURGAN';
 
 UPDATE Adjacency_YieldChanges
-SET YieldChange = 10
+SET YieldChange = 3
 WHERE ID = 'Kurgan_Faith';
 
 --Saka Horse Archer, more reach, more expensive
 UPDATE Units
-SET Cost = 280
+SET Cost = 140
 WHERE UnitType = 'UNIT_SCYTHIAN_HORSE_ARCHER';
 
 UPDATE Units
-SET Combat = 1
+SET Combat = 3
 WHERE UnitType = 'UNIT_SCYTHIAN_HORSE_ARCHER';
 
 UPDATE Units
-SET Range = 10
+SET Range = 3
 WHERE UnitType = 'UNIT_SCYTHIAN_HORSE_ARCHER';
 
 --Killer of Cyros
 UPDATE ModifierArguments
-SET Value = 50
+SET Value = 15
 WHERE ModifierId = 'BONUS_VS_WOUNDED_UNITS';
 
 UPDATE ModifierArguments
-SET Value = 100
+SET Value = 87
 WHERE ModifierId = 'HEAL_AFTER_DEFEATING_UNIT';
 
 ---------------------------------------------------------
@@ -1131,51 +1131,51 @@ WHERE ModifierId = 'HEAL_AFTER_DEFEATING_UNIT';
 ---------------------------------------------------------
 --MISSION
 UPDATE Improvement_YieldChanges
-SET YieldChange = 20
+SET YieldChange = 6
 WHERE ImprovementType = 'IMPROVEMENT_MISSION';
 
 UPDATE Improvement_BonusYieldChanges
-SET BonusYieldChange = 20
+SET BonusYieldChange = 6
 WHERE ImprovementType = 'IMPROVEMENT_MISSION';
 
 UPDATE ModifierArguments
-SET Value = 20
+SET Value = 6
 WHERE (Name = 'Amount'
 AND ModifierId = 'MISSION_NEWCONTINENT_FAITH');
 
 UPDATE ModifierArguments
-SET Value = 10
+SET Value = 3
 WHERE (Name = 'Amount'
 AND ModifierId = 'MISSION_CAMPUSADJACENCY_SCIENCE');
 
 --CONQUISTADOR
 UPDATE ModifierArguments
-SET Value = 100
+SET Value = 30
 WHERE ModifierId = 'CONQUISTADOR_SPECIFIC_UNIT_COMBAT';
 
 --TRAIT_CIVILIZATION_TREASURE_FLEET"
 UPDATE ModifierArguments
-SET Value = 10
+SET Value = 3
 WHERE (Name = 'Amount'
 AND ModifierId = 'TRAIT_INTERCONTINENTAL_DOMESTIC_FOOD');
 
 UPDATE ModifierArguments
-SET Value = 40
+SET Value = 12
 WHERE (Name = 'Amount'
 AND ModifierId = 'TRAIT_INTERCONTINENTAL_INTERNATIONAL_GOLD');
 
 UPDATE ModifierArguments
-SET Value = 10
+SET Value = 3
 WHERE (Name = 'Amount'
 AND ModifierId = 'TRAIT_INTERCONTINENTAL_DOMESTIC_PRODUCTION');
 
 --Nobody expects 
 UPDATE ModifierArguments
-SET Value = 10
+SET Value = 3
 WHERE ModifierId = 'TRAIT_ADJUST_INQUISITOR_CHARGES';
 
 UPDATE ModifierArguments
-SET Value = 40
+SET Value = 12
 WHERE ModifierId = 'COMBAT_BONUS_OTHER_RELIGION_MODIFIER';
 
 ---------------------------------------------------------
@@ -1186,7 +1186,7 @@ WHERE ModifierId = 'COMBAT_BONUS_OTHER_RELIGION_MODIFIER';
 
 --First Civilization
 UPDATE ModifierArguments
-SET Value = 99
+SET Value = 87
 WHERE Name = 'Amount'
 AND ModifierId = 'TRAIT_LEVY_DISCOUNT';
 
@@ -1264,27 +1264,27 @@ VALUES
 
 --ZIGGURAT
 UPDATE Improvement_YieldChanges
-SET YieldChange = 20
+SET YieldChange = 6
 WHERE (YieldType = 'YIELD_SCIENCE'
 AND ImprovementType = 'IMPROVEMENT_ZIGGURAT');
 
 UPDATE Improvement_BonusYieldChanges
-SET BonusYieldChange = 10
+SET BonusYieldChange = 3
 WHERE ImprovementType = 'IMPROVEMENT_ZIGGURAT';
 
 UPDATE ModifierArguments
-SET Value = 10
+SET Value = 3
 WHERE Name = 'Amount'
 AND ModifierId = 'ZIGGURAT_RIVERADJACENCY_CULTURE';
 
 --TRAIT_CIVILIZATION_UNIT_SUMERIAN_WAR_CART Rush early, so reduced cost for 10x the early rush
 UPDATE Units
-SET Cost = 5
+SET Cost = 40
 WHERE UnitType = 'UNIT_SUMERIAN_WAR_CART';
 
 --LEADER Gilgamesh
 UPDATE ModifierArguments
-SET Value = 50
+SET Value = 15
 WHERE Name = 'Amount'
 AND ModifierId = 'TRAIT_ADJUST_JOINTWAR_EXPERIENCE';
 
