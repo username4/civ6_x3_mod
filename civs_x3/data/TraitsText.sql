@@ -404,29 +404,29 @@ AND Tag = 'LOC_ABILITY_LONGSHIP_MOVEMENT_DESCRIPTION';
 ---------------------------------------------------------
 
 UPDATE LocalizedText
-SET Text = 'A district unique to Rome for city growth. Replaces the Aqueduct district.[NEWLINE][NEWLINE]It provides this city with a source of fresh water from an adjacent River, Lake, Oasis, or Mountain. Cities that do not yet have existing fresh water receive up to 6 [ICON_Housing] Housing. Cities that already have existing fresh water will instead get +2 [ICON_Housing] Housing. Must be built adjacent to the City Center. In either case, the Bath provides an additional bonus of +20 [ICON_Housing] Housing and +10 [ICON_Amenities] Amenity. Must be built adjacent to the City Center.'
+SET Text = 'A district unique to Rome for city growth. Replaces the Aqueduct district.[NEWLINE][NEWLINE]It provides this city with a source of fresh water from an adjacent River, Lake, Oasis, or Mountain. Cities that do not yet have existing fresh water receive up to 6 [ICON_Housing] Housing. Cities that already have existing fresh water will instead get +2 [ICON_Housing] Housing. Must be built adjacent to the City Center. In either case, the Bath provides an additional bonus of +6 [ICON_Housing] Housing and +3 [ICON_Amenities] Amenity. Must be built adjacent to the City Center.'
 WHERE Language = 'en_US'
 AND Tag = 'LOC_DISTRICT_BATH_DESCRIPTION';
 
 --Legion
 UPDATE LocalizedText
-SET Text = 'Roman unique Classical era melee unit that replaces the Swordsman. Can build 10 Roman Forts.'
+SET Text = 'Roman unique Classical era melee unit that replaces the Swordsman. Can build 3 Roman Forts.'
 WHERE Language = 'en_US'
 AND Tag = 'LOC_UNIT_ROMAN_LEGION_DESCRIPTION';
 
 UPDATE LocalizedText
-SET Text = 'Unlocks the Roman Legion ability to construct a Roman Fort, unique to Rome.[NEWLINE][NEWLINE]Occupying unit receives +40 [ICON_Strength] Defense Strength, and automatically gains 2 turns of fortification.'
+SET Text = 'Unlocks the Roman Legion ability to construct a Roman Fort, unique to Rome.[NEWLINE][NEWLINE]Occupying unit receives +12 [ICON_Strength] Defense Strength, and automatically gains 2 turns of fortification.'
 WHERE Language = 'en_US'
 AND Tag = 'LOC_IMPROVEMENT_ROMAN_FORT_DESCRIPTION';
 
 UPDATE LocalizedText
-SET Text = 'All cities you found or conquer start with a Trading Post. If in [ICON_TradeRoute] Trade Route range of your [ICON_Capital] Capital, they also start with a road to it. Your [ICON_TradeRoute] Trade Routes earn +10 [ICON_Gold] Gold for passing through Trading Posts in your own cities.'
+SET Text = 'All cities you found or conquer start with a Trading Post. If in [ICON_TradeRoute] Trade Route range of your [ICON_Capital] Capital, they also start with a road to it. Your [ICON_TradeRoute] Trade Routes earn +3 [ICON_Gold] Gold for passing through Trading Posts in your own cities.'
 WHERE Language = 'en_US'
 AND Tag = 'LOC_TRAIT_CIVILIZATION_ALL_ROADS_TO_ROME_DESCRIPTION';
 
 
 UPDATE LocalizedText
-SET Text = 'All cities start with up to 10 additional City Center buildings. (Starts with a Monument building in the Ancient era).'
+SET Text = 'All cities start with up to 3 additional City Center buildings. (Starts with a Monument building in the Ancient era).'
 WHERE Language = 'en_US'
 AND Tag = 'LOC_TRAIT_LEADER_TRAJANS_COLUMN_DESCRIPTION';
 
@@ -437,17 +437,17 @@ AND Tag = 'LOC_TRAIT_LEADER_TRAJANS_COLUMN_DESCRIPTION';
 ---------------------------------------------------------
 
 UPDATE LocalizedText
-SET Text = 'Extra territory upon founding cities. +10 [ICON_Faith] Faith and +10 [ICON_Production] Production from Tundra.'
+SET Text = 'Extra territory upon founding cities. +3 [ICON_Faith] Faith and +3 [ICON_Production] Production from Tundra.'
 WHERE Language = 'en_US'
 AND Tag = 'LOC_TRAIT_CIVILIZATION_MOTHER_RUSSIA_DESCRIPTION';
 
 UPDATE LocalizedText
-SET Text = 'Can move after attacking. +50 [ICON_Strength] Combat Strength in your territory or adjacent to your territory.'
+SET Text = 'Can move after attacking. +15 [ICON_Strength] Combat Strength in your territory or adjacent to your territory.'
 WHERE Language = 'en_US'
 AND Tag = 'LOC_ABILITY_COSSACK_DESCRIPTION';
 
 UPDATE LocalizedText
-SET Text = 'Russian unique Industrial era unit that replaces Cavalry. Stronger than Cavalry, and gains +50 [ICON_Strength] Combat Strength when fighting in or adjacent to its home territory. Can move after attacking if [ICON_Movement] Movement points remain.'
+SET Text = 'Russian unique Industrial era unit that replaces Cavalry. Stronger than Cavalry, and gains +15 [ICON_Strength] Combat Strength when fighting in or adjacent to its home territory. Can move after attacking if [ICON_Movement] Movement points remain.'
 WHERE Language = 'en_US'
 AND Tag = 'LOC_UNIT_RUSSIAN_COSSACK_DESCRIPTION';
 

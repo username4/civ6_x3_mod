@@ -896,42 +896,46 @@ WHERE ModifierId = 'LONGSHIP_FASTER_COAST';
 
 --Bath
 UPDATE Districts
-SET Cost = 1
+SET Cost = 8
 WHERE DistrictType = 'DISTRICT_BATH';
 
 UPDATE Districts
-SET Housing = 20
+SET Housing = 6
 WHERE DistrictType = 'DISTRICT_BATH';
 
 UPDATE Districts
-SET Entertainment = 10
+SET Entertainment = 3
 WHERE DistrictType = 'DISTRICT_BATH';
 
 --Legion
 UPDATE Units
-SET Combat = 76
+SET Combat = 48
 WHERE UnitType = 'UNIT_ROMAN_LEGION';
 
 UPDATE Units
-SET BuildCharges = 10
+SET BuildCharges = 3
+WHERE UnitType = 'UNIT_ROMAN_LEGION';
+
+UPDATE Units
+SET Cost = 150
 WHERE UnitType = 'UNIT_ROMAN_LEGION';
 
 --Fort
 UPDATE Improvements
-SET DefenseModifier = 40
+SET DefenseModifier = 12
 WHERE ImprovementType = 'IMPROVEMENT_ROMAN_FORT';
 
 --TRAIT_FREE_ROADS_TO_CAPITAL BOOL
 --TRAIT_FREE_TRADING_POSTS BOOL
 UPDATE ModifierArguments
-SET Value = 10
+SET Value = 3
 WHERE (Name = 'Amount'
 AND ModifierId = 'TRAIT_GOLD_FROM_DOMESTIC_TRADING_POSTS');
 
 --TRAIT_ADJUST_NON_CAPITAL_FREE_CHEAPEST_BUILDING
 
 UPDATE ModifierArguments
-SET Value = 10
+SET Value = 3
 WHERE ModifierId = 'TRAIT_ADJUST_NON_CAPITAL_FREE_CHEAPEST_BUILDING';
 
 ---------------------------------------------------------
@@ -942,67 +946,67 @@ WHERE ModifierId = 'TRAIT_ADJUST_NON_CAPITAL_FREE_CHEAPEST_BUILDING';
 
 --Rodina
 UPDATE ModifierArguments
-SET Value = 10
+SET Value = 3
 WHERE (Name = 'Amount'
 AND ModifierId = 'TRAIT_INCREASED_TUNDRA_FAITH');
 
 UPDATE ModifierArguments
-SET Value = 10
+SET Value = 3
 WHERE (Name = 'Amount'
 AND ModifierId = 'TRAIT_INCREASED_TUNDRA_PRODUCTION');
 
 UPDATE ModifierArguments
-SET Value = 10
+SET Value = 3
 WHERE (Name = 'Amount'
 AND ModifierId = 'TRAIT_INCREASED_TUNDRA_HILLS_FAITH');
 
 UPDATE ModifierArguments
-SET Value = 10
+SET Value = 3
 WHERE (Name = 'Amount'
 AND ModifierId = 'TRAIT_INCREASED_TUNDRA_HILLS_PRODUCTION');
 
 UPDATE ModifierArguments
-SET Value = 26
+SET Value = 12
 WHERE (Name = 'Amount'
 AND ModifierId = 'TRAIT_INCREASED_TILES');
 
 --TRAIT_CIVILIZATION_DISTRICT_LAVRA
 UPDATE Districts
-SET Cost = 1
+SET Cost = 8
 WHERE DistrictType = 'DISTRICT_LAVRA';
 
 UPDATE District_GreatPersonPoints
-SET PointsPerTurn = 11
+SET PointsPerTurn = 4
 WHERE (DistrictType = 'DISTRICT_LAVRA'
 AND GreatPersonClassType = 'GREAT_PERSON_CLASS_PROPHET');
 
 UPDATE District_GreatPersonPoints
-SET PointsPerTurn = 10
+SET PointsPerTurn = 3
 WHERE (DistrictType = 'DISTRICT_LAVRA'
 AND GreatPersonClassType = 'GREAT_PERSON_CLASS_WRITER');
 
 UPDATE District_GreatPersonPoints
-SET PointsPerTurn = 10
+SET PointsPerTurn = 3
 WHERE (DistrictType = 'DISTRICT_LAVRA'
 AND GreatPersonClassType = 'GREAT_PERSON_CLASS_ARTIST');
 
 UPDATE District_GreatPersonPoints
-SET PointsPerTurn = 10
+SET PointsPerTurn = 3
 WHERE (DistrictType = 'DISTRICT_LAVRA'
 AND GreatPersonClassType = 'GREAT_PERSON_CLASS_WRITER');
 
 
 --COSSACK"
 UPDATE Units
-SET Combat = 112
+SET Combat = 77
 WHERE UnitType = 'UNIT_RUSSIAN_COSSACK';
 
 UPDATE Units
-SET Cost = 330
+SET Cost = 360
 WHERE UnitType = 'UNIT_RUSSIAN_COSSACK';
 
 UPDATE ModifierArguments
-SET Value = 50
+SET Value = 15
 WHERE ModifierId = 'COSSACK_LOCAL_COMBAT';
 
 --peter 

@@ -71,18 +71,18 @@ This is a fork of my [url=https://steamcommunity.com/sharedfiles/filedetails/?id
 -Stave Church: 3 faith adjecency
 -berserker:6 Movement in enimy territory, +21 when attacking, -21 when defending
 -Harald:
--Longship: 75 Combat, 6 coast movement 
+-Longship: 40 Combat, 6 coast movement 
 [u]Rome[/u]
--Bath: Cost=1, Housing 20, Entertainment 10
--Legion: 76 Combat, 10 Charges
--Fort: 40 Def
--10 Gold on traderoutes
--Trajan: 10 free Buildings in new City
+-Bath: Cost=8, Housing 6, Entertainment 3
+-Legion: 48 Combat, 3 Charges, cost 150
+-Fort: 12 Def
+-3 Gold on traderoutes
+-Trajan: 3 free Buildings in new City
 [u]Russia[/u]
 -new cities start with 26 tiles
--+10 faith and production on tundra
--Lavra: Cost=1, 10 great person production
--Cossack: Cost=330, 112 STR, +50 STR in own territory
+-+3 faith and production on tundra
+-Lavra: Cost=8, +3 great person production
+-Cossack: Cost=360, 77 STR, +15 STR in own territory
 -Peter: traderoutes give +1 science
 [u]Scythia[/u]
 -10 extra light cavalry
