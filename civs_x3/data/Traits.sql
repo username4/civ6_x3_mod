@@ -1297,34 +1297,34 @@ AND ModifierId = 'TRAIT_ADJUST_JOINTWAR_EXPERIENCE';
 
 --five suns
 UPDATE ModifierArguments
-SET Value = 90
+SET Value = 49
 WHERE ModifierId = 'TRAIT_BUILDER_DISTRICT_PERCENT';
 
 --Tlachtli
 UPDATE Building_YieldChanges 
-SET YieldChange = 20
+SET YieldChange = 6
 WHERE BuildingType='BUILDING_TLACHTLI';
 
 UPDATE Building_GreatPersonPoints
-SET PointsPerTurn = 10
+SET PointsPerTurn = 3
 WHERE BuildingType='BUILDING_TLACHTLI';
 
 --Eagle Warrior
 UPDATE Units 
-SET Combat = 100
+SET Combat = 52
 WHERE UnitType='UNIT_AZTEC_EAGLE_WARRIOR';
 
 UPDATE Units 
-SET Cost = 290
+SET Cost = 110
 WHERE UnitType='UNIT_AZTEC_EAGLE_WARRIOR';
 
 --Montezuma
 UPDATE ModifierArguments
-SET Value = 20
+SET Value = 6
 WHERE ModifierId = 'TRAIT_OWNED_LUXURY_EXTRA_AMENITIES';
 
 UPDATE ModifierArguments
-SET Value = 10
+SET Value = 3
 WHERE ModifierId = 'TRAIT_COMBAT_BONUS_PER_LUXURY';
 
 ---------------------------------------------------------

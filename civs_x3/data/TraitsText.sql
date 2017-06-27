@@ -551,25 +551,25 @@ AND Tag = 'LOC_TRAIT_LEADER_ADVENTURES_ENKIDU_DESCRIPTION';
 
 --five suns
 UPDATE LocalizedText
-SET Text = 'Spend Builder charges to complete 90% of the original district cost.'
+SET Text = 'Spend Builder charges to complete 49% of the original district cost.'
 WHERE Language = 'en_US'
 AND Tag = 'LOC_TRAIT_CIVILIZATION_LEGEND_FIVE_SUNS_DESCRIPTION';
 
 --Eagle Warrior
 UPDATE LocalizedText
-SET Text = 'Expensive Aztec unique Ancient era unit that replaces the Warrior, with 100 [ICON_STRENGTH].  Has a chance to capture other civilization''s military units by turning them into Builders.'
+SET Text = 'Expensive Aztec unique Ancient era unit that replaces the Warrior, with 52 [ICON_STRENGTH].  Has a chance to capture other civilization''s military units by turning them into Builders.'
 WHERE Language = 'en_US'
 AND Tag = 'LOC_UNIT_AZTEC_EAGLE_WARRIOR_DESCRIPTION';
 
 --Tlachtli
 UPDATE LocalizedText
-SET Text = 'A building unique to the Aztecs. Provides 1 [ICON_Amenities] Amenity, +20 [ICON_Faith] Faith, and 10 [ICON_GreatGeneral] Great General Point.'
+SET Text = 'A building unique to the Aztecs. Provides 1 [ICON_Amenities] Amenity, +6 [ICON_Faith] Faith, and 3 [ICON_GreatGeneral] Great General Point.'
 WHERE Language = 'en_US'
 AND Tag = 'LOC_BUILDING_TLACHTLI_DESCRIPTION';
 
 --Montezuma
 UPDATE LocalizedText
-SET Text = 'Luxury resources in his territory provide 10 [ICON_Amenities] Amenity to 2 extra cities. Military units receive +10 [ICON_Strength] Combat Strength for each different Luxury resource improved in Aztec lands.'
+SET Text = 'Luxury resources in his territory provide 3 [ICON_Amenities] Amenity to 2 extra cities. Military units receive +3 [ICON_Strength] Combat Strength for each different Luxury resource improved in Aztec lands.'
 WHERE Language = 'en_US'
 AND Tag = 'LOC_TRAIT_LEADER_GIFTS_FOR_TLATOANI_DESCRIPTION';
 
@@ -581,30 +581,30 @@ AND Tag = 'LOC_TRAIT_LEADER_GIFTS_FOR_TLATOANI_DESCRIPTION';
 
 --Digger
 UPDATE LocalizedText
-SET Text = 'Australian unique Modern era unit that replaces Infantry. +100 [ICON_Strength] Combat Strength when fighting on Coastal tiles. +50 [ICON_Strength] Combat Strength when fighting on Neutral or Foreign Territory.'
+SET Text = 'Australian unique Modern era unit that replaces Infantry. +30 [ICON_Strength] Combat Strength when fighting on Coastal tiles. +15 [ICON_Strength] Combat Strength when fighting on Neutral or Foreign Territory.'
 WHERE Language = 'en_US'
 AND Tag = 'LOC_UNIT_DIGGER_DESCRIPTION';
 
 UPDATE LocalizedText
-SET Text = '+100 [ICON_Strength] Combat Strength when fighting on Coastal tiles. +50 [ICON_Strength] Combat Strength when fighting on Neutral or Foreign Territory.'
+SET Text = '+30 [ICON_Strength] Combat Strength when fighting on Coastal tiles. +15 [ICON_Strength] Combat Strength when fighting on Neutral or Foreign Territory.'
 WHERE Language = 'en_US'
 AND Tag = 'LOC_ABILITY_DIGGER_DESCRIPTION';
 
 --Outback Station
 UPDATE LocalizedText
-SET Text = 'Unlocks the Builder ability to construct an Outback Station, unique to Australia.[NEWLINE][NEWLINE]+10 [ICON_FOOD] Food and +10 [ICON_PRODUCTION] Production. +10 [ICON_Food] Food for each adjacent Pasture. Additional [ICON_FOOD] Food and [ICON_PRODUCTION] Production as you advance through the Technology and Civic Tree for adjacent Outback Stations and Pastures. Can only be built in Desert, Desert Hills, Grassland, and Plains tiles.'
+SET Text = 'Unlocks the Builder ability to construct an Outback Station, unique to Australia.[NEWLINE][NEWLINE]+3 [ICON_FOOD] Food and +3 [ICON_PRODUCTION] Production. +3 [ICON_Food] Food for each adjacent Pasture. Additional [ICON_FOOD] Food and [ICON_PRODUCTION] Production as you advance through the Technology and Civic Tree for adjacent Outback Stations and Pastures. Can only be built in Desert, Desert Hills, Grassland, and Plains tiles.'
 WHERE Language = 'en_US'
 AND Tag = 'LOC_IMPROVEMENT_OUTBACK_STATION_DESCRIPTION';
 
 --Down Under
 UPDATE LocalizedText
-SET Text = '+30 [ICON_Housing] Housing in coastal cities. Pastures trigger a Culture Bomb. Yields from Campuses, Commercial Hubs, Holy Sites and Theater Squares are +10 in tiles with Charming Appeal, +30 in Breathtaking.'
+SET Text = '+9 [ICON_Housing] Housing in coastal cities. Pastures trigger a Culture Bomb. Yields from Campuses, Commercial Hubs, Holy Sites and Theater Squares are +3 in tiles with Charming Appeal, +9 in Breathtaking.'
 WHERE Language = 'en_US'
 AND Tag = 'LOC_TRAIT_CIVILIZATION_LAND_DOWN_UNDER_DESCRIPTION';
 
 --John Curtin
 UPDATE LocalizedText
-SET Text = '+1000% [ICON_Production] Production if either they have received a declaration of war in the past 10 turns or if they have liberated a city in the past 20 turns.'
+SET Text = '+300% [ICON_Production] Production if either they have received a declaration of war in the past 10 turns or if they have liberated a city in the past 20 turns.'
 WHERE Language = 'en_US'
 AND Tag = 'LOC_TRAIT_LEADER_CITADEL_CIVILIZATION_DESCRIPTION';
 

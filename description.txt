@@ -100,15 +100,15 @@ This is a fork of my [url=https://steamcommunity.com/sharedfiles/filedetails/?id
 -Gilgamesh: Levy discout= 87%
 -experience for all units within 15 tiles
 [u]Aztecs[/u]
--Builders complete distict 90%
--Tlachtli: 10 amenities, 20 faith, 10 Great General points
--Eagle Warrior: 100 STR, 290 cost
--Montezuma: +10 STR per luxury, 20 extra amenities per luxury
+-Builders complete distict 49%
+-Tlachtli: 6 faith, 3 Great General points
+-Eagle Warrior: 52 STR, 110 cost
+-Montezuma: +3 STR per luxury, 6 extra amenities per luxury
 [u]Australia[/u]
--Digger: +100 STR on coast, +50 on abroad
--Outback Station: +10 food, +10 prod, +10 food for adj pastuire, +10 food abd +10 prod with civs
--30 housing on coastal cities, districs bonuses +10 on chaming, +30 on breathtaking
--Curtin: +1000% production on war declared
+-Digger: +30 STR on coast, +15 on abroad
+-Outback Station: +3 food, +3 prod, +3 food for adj pastuire, +3 food abd +3 prod with civs
+-9 housing on coastal cities, districs bonuses +3 on chaming, +9 on breathtaking
+-Curtin: +300% production on war declared
 [u]Poland[/u]
 -Hussar: Made stronger (118 STR)
 -Sukiennice: +20 prod on in trade, 40 gold on domestic
