@@ -79,7 +79,7 @@ This is a fork of my [url=https://steamcommunity.com/sharedfiles/filedetails/?id
 -3 Gold on traderoutes
 -Trajan: 3 free Buildings in new City
 [u]Russia[/u]
--new cities start with 26 tiles
+-new cities start with 12 tiles
 -+3 faith and production on tundra
 -Lavra: Cost=8, +3 great person production
 -Cossack: Cost=360, 77 STR, +15 STR in own territory
@@ -145,6 +145,6 @@ This is a fork of my [url=https://steamcommunity.com/sharedfiles/filedetails/?id
 
 Please tell, if something is wrong or was not implemented correctly.
 
-Can also be found on [url=https://github.com/username4/civ6_x10_mod]github[/url] and on [url=http://www.nexusmods.com/civilisationvi/mods/66/?]Nexus[/url].
+Can also be found on [url=https://github.com/username4/civ6_x3_mod]github[/url].
 
 Inspired by [url=https://steamcommunity.com/sharedfiles/filedetails/?id=363117420]JFD's BalanceGoldPrime++[/url]  and the x10 mods for TF2.
