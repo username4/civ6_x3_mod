@@ -842,6 +842,41 @@ SET Text = 'Crimson Magic Clan unique project which provides a large amount of [
 WHERE Language = 'en_US'
 AND Tag = 'LOC_PROJECT_ENHANCE_DISTRICT_CONS_CMC_VILLAGE_DESCRIPTION';
 
+---------------------------------------------------------
+---------------------------------------------------------
+--No Game No Live Imanity
+---------------------------------------------------------
+---------------------------------------------------------
+
+UPDATE LocalizedText
+SET Text = '+150% [ICON_Production] Production toward Settlers and Recon units. Settler and Recon unit gain Sentry and Camouflage promotion effect.'
+WHERE Language = 'en_US'
+AND Tag = 'LOC_TRAIT_CIVILIZATION_CONS_IMANITY_DESCRIPTION';
+
+UPDATE LocalizedText
+SET Text = 'Imanity unique building that replace Library. Triggers the [ICON_TechBoosted] Eureka moment for 3 random technologies from the Ancient to Renaissance era.'
+WHERE Language = 'en_US'
+AND Tag = 'LOC_BUILDING_CONS_ELCHEA_LIBRARY_DESCRIPTION';
+
+UPDATE LocalizedText
+SET Text = 'Imanity unique Ancient era unit that replace Scout. 6 Movement. +3 sight range. Even without Open Borders, this unit can enter foreign territory.'
+WHERE Language = 'en_US'
+AND Tag = 'LOC_UNIT_CONS_IMANITY_SCOUT_DESCRIPTION';
+
+UPDATE LocalizedText
+SET Text = 'Each of 3 Military policy and Diplomatic policy slots in the current government are converted to  Wildcard slots. Opposing civilizations receive +75% the war weariness for fighting against Sora. Accumulate 48% less war weariness than usual.'
+WHERE Language = 'en_US'
+AND Tag = 'LOC_TRAIT_LEADER_CONS_SORA_DESCRIPTION';
+
+UPDATE LocalizedText
+SET Text = 'Receive 4.5 [ICON_GreatScientist] Great Scientist points. [ICON_TechBoosted] Eurekas provide 74% of technologies instead of 50%.'
+WHERE Language = 'en_US'
+AND Tag = 'LOC_TRAIT_LEADER_CONS_SHIRO_DESCRIPTION';
+
+UPDATE LocalizedText
+SET Text = '3 extra Diplomatic policy and +3 Influence points per turn toward earning city-state [ICON_Envoy] Envoys with Political Philosophy and +3 [ICON_Envoy] with Diplomatic Service civic'
+WHERE Language = 'en_US'
+AND Tag = 'LOC_TRAIT_LEADER_CONS_STEPHANIE_DESCRIPTION';
 
 /*
 UPDATE LocalizedText

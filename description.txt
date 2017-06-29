@@ -142,6 +142,13 @@ This is a fork of my [url=https://steamcommunity.com/sharedfiles/filedetails/?id
 -Explosion Magic: 3 Nukes
 -Magic Stuff: 3x more science and Gold
 -Megumin: 3 nukes per Era
+[u][url=https://steamcommunity.com/sharedfiles/filedetails/?id=910099024]No Game No Life - Imanity Civilization[/url][/u]
+-+150% scout, ranger and settler production
+-Ghost: +6 movement, +3 sight
+-Elchea Library: eureka for 3 tech 
+-Sora: 3 military and 3 diplomacy slots to wildcard, +75% war weariness for enemies and -52% for self
+-Shiro: 4.5 great scientist, 74% on eureka
+-Stephanie: +3 diplomacy slot, +3 envoys points
 
 Please tell, if something is wrong or was not implemented correctly.
 
