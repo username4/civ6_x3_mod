@@ -147,7 +147,7 @@ This is a fork of my [url=https://steamcommunity.com/sharedfiles/filedetails/?id
 -Ghost: +6 movement, +3 sight
 -Elchea Library: eureka for 3 tech 
 -Sora: 3 military and 3 diplomacy slots to wildcard, +75% war weariness for enemies and -52% for self
--Shiro: 4.5 great scientist, 74% on eureka
+-Shiro: 4.5 great scientist pts, 74% on eureka
 -Stephanie: +3 diplomacy slot, +3 envoys points
 
 Please tell, if something is wrong or was not implemented correctly.
