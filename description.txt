@@ -4,6 +4,7 @@ Because this mod alters almost every trait/unit/building in the game, it is most
 
 This is a fork of my [url=https://steamcommunity.com/sharedfiles/filedetails/?id=931616985]civ traits x10 mod[/url]
 
+[quote]
 [u]America[/u]
 -legacy bonuses 3 times faster
 -P51: +15 ATK, +6 Range, +100% experience
@@ -149,6 +150,47 @@ This is a fork of my [url=https://steamcommunity.com/sharedfiles/filedetails/?id
 -Sora: 3 military and 3 diplomacy slots to wildcard, +75% war weariness for enemies and -52% for self
 -Shiro: 4.5 great scientist pts, 74% on eureka
 -Stephanie: +3 diplomacy slot, +3 envoys points
+[u][url=https://steamcommunity.com/sharedfiles/filedetails/?id=894221062]Civ of the Rings[/url][/u]
+[u]Gondor[/u]
+-+75% district build speed, +3 housing for walls
+-Citatel guards: +15 Def, -15 Atk, +24 bonus for districts
+-Stonework: +3 cultere per era, defense=80
+-Aragorn: 3 dipl policies, scout 25 STR
+[u]Rohan[/u]
+-farms +3 adjecencies,  +3 movement for cavalry
+-Rider: 60 STR, 105 cost, 6 charges 
+-Stable: 3 horse, +3 gold per pasture
+-Théoden: food and prod increased by 150% after liberation
+[u]Silvan[/u]
+-+3 culture on charming, +6 on breathtaking, +3 faith from Forest
+-Galadrian Archer: +15 in friendy, +9 STR
+-Treehouse: +3 food, +3 culture, +6 faith , more food and culture later
+-Galadriel: forests +3 appeal, all cities start with op walls
+-Thranduil: +15 for ranged
+[u]Isengard[/u]
+-build Industrial Zone, Encampement, Siege, Support 150% faster, corp and, armies very early
+-Ballista: +9 bombard, +15 melee
+-Uruk Pits: +6 Prod
+-Saruman: Spy 3 increase, a lot of faith by babarians
+[u]Mordor[/u]
+-Units no maintenance
+-Mamak: +9STR
+-Nazgul: heals 49 hp on kill
+-Wasteland: Cost=1
+-Sauron: 3 envoys per capture, 3 nazgul per era
+[u]Goblins[/u]
+-3 units when producing infantry
+-marauder: 15 STR, 300% gold on kill
+-Warg: 45 STR, +15 anticav
+-Goblin Caves: +3 Prod, 0 housing, 165% unit production to faith and culture
+-Azog: +15 STR near conquered city
+[u]Dwarves[/u]
+-Guardian: +12 STR in hill or mountain, +6
+-Forge: 3x adjecency gold bonuses, 3 merchant GPP, +5 Prod
+-Durin: 3 free builders, +3 charges
+-Dain: +300% support, Axe thrower 45 STR 40 ranged
+-Thror: mountains +60% gold, +6 gold form int trade, 3 slots in moountain cities (more breaks UI)
+[/quote]
 
 Please tell, if something is wrong or was not implemented correctly.
 

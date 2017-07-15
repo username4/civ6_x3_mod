@@ -878,6 +878,252 @@ SET Text = '3 extra Diplomatic policy and +3 Influence points per turn toward ea
 WHERE Language = 'en_US'
 AND Tag = 'LOC_TRAIT_LEADER_CONS_STEPHANIE_DESCRIPTION';
 
+---------------------------------------------------------
+---------------------------------------------------------
+--CotR
+---------------------------------------------------------
+---------------------------------------------------------
+
+---------------------------------------------------------
+---------------------------------------------------------
+--Gondor
+---------------------------------------------------------
+---------------------------------------------------------
+
+UPDATE LocalizedText
+SET Text = 'A streong Unique Scout replacement that has a ranged attack and heals at the start of every turn.'
+WHERE Language = 'en_US'
+AND Tag = 'LOC_TRAIT_LEADER_UNIT_ARAGORN_DUNEDAIN_RANGER_DESCRIPTION';
+
+UPDATE LocalizedText
+SET Text = 'Build all Districts 75% faster.[NEWLINE]+3[ICON_HOUSING]Housing for Ancient, Medieval and Renaissance Walls'
+WHERE Language = 'en_US'
+AND Tag = 'LOC_TRAIT_GONDOR_LEGACY_OF_NUMENOR_DESCRIPTION';
+
+UPDATE LocalizedText
+SET Text = 'Unique gondorian replacement for Ancient Walls. Costs no Maintenance and provides +3[ICON_CULTURE]Culture per era passed.'
+WHERE Language = 'en_US'
+AND Tag = 'LOC_BUILDING_NUMENORIAN_STONEWORK_DESCRIPTION';
+
+UPDATE LocalizedText
+SET Text = 'Unique gondorian replacement for the Pikeman.[NEWLINE]Weak when attacking, strong when defending. [NEWLINE]24 Bonus combat strength when fighting in Districts.'
+WHERE Language = 'en_US'
+AND Tag = 'LOC_UNIT_CITADEL_GUARD_DESCRIPTION';
+
+UPDATE LocalizedText
+SET Text = '-15[ICON_STRENGTH] from being weak when attacking'
+WHERE Language = 'en_US'
+AND Tag = 'LOC_ABILITY_CITADEL_GUARD_WEAK_WHEN_ATTACKING';
+
+UPDATE LocalizedText
+SET Text = '+15[ICON_STRENGTH] from being strong when defending'
+WHERE Language = 'en_US'
+AND Tag = 'LOC_ABILITY_CITADEL_GUARD_STRONG_WHEN_DEFENDING';
+
+UPDATE LocalizedText
+SET Text = '+24[ICON_STRENGTH] from fighting in or next to a District'
+WHERE Language = 'en_US'
+AND Tag = 'LOC_ABILITY_CITADEL_GUARD_DISTRICT_COMBAT';
+
+---------------------------------------------------------
+---------------------------------------------------------
+--Rohan
+---------------------------------------------------------
+---------------------------------------------------------
+
+UPDATE LocalizedText
+SET Text = 'All Cavalry Units push enemies back if they are victorious in combat. Defenders that cannot retreat suffer additional damage.[NEWLINE][ICON_FOOD]Food and [ICON_PRODUCTION]Production Yields increased by 150% for 15 Turns after liberating a City.'
+WHERE Language = 'en_US'
+AND Tag = 'LOC_TRAIT_LEADER_GLORIOUS_CHARGE_DESCRIPTION';
+
+UPDATE LocalizedText
+SET Text = 'Farms provide +3[ICON_PRODUCTION]Production if next to a Pasture and +3[ICON_FOOD]Food if next to a Camp. Pastures trigger a Culture Bomb.[NEWLINE]+3[ICON_MOVEMENT]Movement for Cavalry Units.'
+WHERE Language = 'en_US'
+AND Tag = 'LOC_TRAIT_ROHAN_HORSE_LORDS_DESCRIPTION';
+
+UPDATE LocalizedText
+SET Text = 'Unique rohirric replacement for the Stable. It is build in the City Center instead of the Encampment and provides 3 Copy of [ICON_RESOURCE_HORSES]Horses as well as +3[ICON_GOLD]Gold to all Pastures in this City in addition to the usual benefits of a Stable'
+WHERE Language = 'en_US'
+AND Tag = 'LOC_BUILDING_ROYAL_STABLE_DESCRIPTION';
+
+UPDATE LocalizedText
+SET Text = 'Unique rohirric replacement for the Knight. Light Cavalry Unit that can build certain improvements and is much stronger than the Knight.'
+WHERE Language = 'en_US'
+AND Tag = 'LOC_UNIT_ROHIRRIM_DESCRIPTION';
+
+---------------------------------------------------------
+---------------------------------------------------------
+--CIVILIZATION_SILVAN
+---------------------------------------------------------
+---------------------------------------------------------
+
+UPDATE LocalizedText
+SET Text = 'Forests provide an additional +3 Appeal to all adjacent Tiles.[NEWLINE]All Cities start with a large amount of Outer Defence'
+WHERE Language = 'en_US'
+AND Tag = 'LOC_TRAIT_LEADER_LADY_OF_THE_GOLDEN_FOREST_DESCRIPTION';
+
+UPDATE LocalizedText
+SET Text = '+15[ICON_STRENGTH]for all Ranged Units. Units in Forests and Jungle heal faster[NEWLINE]Elven Treehouses trigger a Culture Bomb'
+WHERE Language = 'en_US'
+AND Tag = 'LOC_TRAIT_LEADER_LORD_OF_MIRKWOOD_DESCRIPTION';
+
+UPDATE LocalizedText
+SET Text = '+15[ICON_STRENGTH] for beeing lead by Thranduil<'
+WHERE Language = 'en_US'
+AND Tag = 'LOC_THRADUIL_RANGED_DESCRIPTION';
+
+UPDATE LocalizedText
+SET Text = 'All Units can see and move through forests and jungle.[NEWLINE]Cities on tiles with charming appeal provide +3[ICON_CULTURE]Culture(+6[ICON_CULTURE] on breathtaking).[NEWLINE]+3[ICON_FAITH]from forests.'
+WHERE Language = 'en_US'
+AND Tag = 'LOC_TRAIT_CIVILIZATION_WOODELVEN_SANCTUARIES_DESCRIPTION';
+
+UPDATE LocalizedText
+SET Text = 'Unlocks the Builder ability to construct an Elven Treehouse, unique to the Silvan Elves.[NEWLINE][NEWLINE]+3[ICON_FOOD]Food and +3[ICON_CULTURE]Culture.[NEWLINE]+6[ICON_FAITH]if next to a River and additional Food and Culture as you advance through the Tech and Civiv Tree.[NEWLINE]Can only be build on forests with at least charming Appeal and can''t be adjacent to each other.[NEWLINE]Also acts as a Fort.'
+WHERE Language = 'en_US'
+AND Tag = 'LOC_IMPROVEMENT_TREEHOUSE_DESCRIPTION';
+
+UPDATE LocalizedText
+SET Text = 'Significantly stronger silvan replacement for the Crossbowman. +15[ICON_STRENGTH]in friendly territory'
+WHERE Language = 'en_US'
+AND Tag = 'LOC_UNIT_GALADHRIM_DESCRIPTION';
+
+UPDATE LocalizedText
+SET Text = '+15[ICON_STRENGTH] from being in friendly territory'
+WHERE Language = 'en_US'
+AND Tag = 'LOC_ABILITY_GALADHRIM_MODIFIER_DESCRIPTION';
+---------------------------------------------------------
+---------------------------------------------------------
+--CIVILIZATION_ISENGARD
+---------------------------------------------------------
+---------------------------------------------------------
+
+UPDATE LocalizedText
+SET Text = 'All Apostles gain the ''Heathen Conversion'' Ability. [NEWLINE]Receive 3 Faith for clearing a Barbarian Camp (scaling with Era).[NEWLINE]Spy level increased by 3 for offensive operations.'
+WHERE Language = 'en_US'
+AND Tag = 'LOC_TRAIT_LEADER_VOICE_OF_CURUNIR_DESCRIPTION';
+
+UPDATE LocalizedText
+SET Text = 'Units may form Corps and Armies very early.[NEWLINE] Build Industrial Zones and Encampments as well as Siege and Support Units 150% faster.[NEWLINE]+1[ICON_SCIENCE]Science from Strategic Resources.'
+WHERE Language = 'en_US'
+AND Tag = 'LOC_TRAIT_ISENGARD_MACHINE_OF_WAR_DESCRIPTION';
+
+UPDATE LocalizedText
+SET Text = 'Unique isengard replacement for the Catapult. Stronger on defence and  stronger at bombarding.'
+WHERE Language = 'en_US'
+AND Tag = 'LOC_UNIT_BALLISTA_DESCRIPTION';
+
+UPDATE LocalizedText
+SET Text = 'Unique isengard replacement for the Barracks.[NEWLINE]All units trained in this City don''t lose strength when damaged. More Production.'
+WHERE Language = 'en_US'
+AND Tag = 'LOC_BUILDING_URUKPITS_DESCRIPTION';
+
+---------------------------------------------------------
+---------------------------------------------------------
+--CIVILIZATION_MORDOR
+---------------------------------------------------------
+---------------------------------------------------------
+
+UPDATE LocalizedText
+SET Text = 'Can''t recruit Great Generals, but receives the Nazgûl unique Unit. Number of Nazgûl increases when you advance through Eras.[NEWLINE] Capturing a City grants 3 [ICON_ENVOY]Envoys.'
+WHERE Language = 'en_US'
+AND Tag = 'LOC_TRAIT_LEADER_SLAVES_TO_HIS_WILL_DESCRIPTION';
+
+UPDATE LocalizedText
+SET Text = 'Units cost no maintenance'
+WHERE Language = 'en_US'
+AND Tag = 'LOC_TRAIT_MORDOR_WHERE_THE_SHADOWS_LIE_DESCRIPTION';
+
+UPDATE LocalizedText
+SET Text = 'Unique mordor replacement for the Encampment District. [NEWLINE]Does not require Population to be build.'
+WHERE Language = 'en_US'
+AND Tag = 'LOC_DISTRICT_WASTELAND_DESCRIPTION';
+
+UPDATE LocalizedText
+SET Text = 'Unique mordor heavy cavalry unit, unlocked with Siege Tactics. Acts as a Battering Ram, allowing melee units to deal full damage to city walls. +9 [ICON_STRENGTH]'
+WHERE Language = 'en_US'
+AND Tag = 'LOC_UNIT_OLOG_HAI_DESCRIPTION';
+
+UPDATE LocalizedText
+SET Text = 'A powerful unit to lead and support your armies. Heals 49hp on kills.'
+WHERE Language = 'en_US'
+AND Tag = 'LOC_UNIT_NAZGUL_DESCRIPTION';
+
+---------------------------------------------------------
+---------------------------------------------------------
+--CIVILIZATION_GOBLINS
+---------------------------------------------------------
+---------------------------------------------------------
+
+UPDATE LocalizedText
+SET Text = 'Units in range of 3 tiles of a City you captured get +15[ICON_STRENGTH]Combat Strength.[NEWLINE]All Units only use one movement point to pillage.[NEWLINE]Gain the Warg Pack unique Unit after researching Horseback riding.'
+WHERE Language = 'en_US'
+AND Tag = 'LOC_TRAIT_LEADER_THE_DEFILER_DESCRIPTION';
+
+UPDATE LocalizedText
+SET Text = '+15[ICON_STRENGTH] from being near a captured City'
+WHERE Language = 'en_US'
+AND Tag = 'LOC_AZOG_CITY_AOE_DESCRIPTION';
+
+UPDATE LocalizedText
+SET Text = 'Receive 3 Units whenever you train a regular infantry unit (melee or anti-cavalry) or one of your unique Units.'
+WHERE Language = 'en_US'
+AND Tag = 'LOC_TRAIT_GOBLINS_ENDLESS_HORDES_DESCRIPTION';
+
+UPDATE LocalizedText
+SET Text = 'Unique goblin replacement for the Granary that is unlocked with Mining.[NEWLINE]Grants a small amount of [ICON_CULTURE]Culture and [ICON_FAITH]Faith whenever a Unit is trained in the City.'
+WHERE Language = 'en_US'
+AND Tag = 'LOC_BUILDING_GOBLIN_CAVES_DESCRIPTION';
+
+UPDATE LocalizedText
+SET Text = 'A Unique Horseman replacement that has a large bonus against other cavalry units and is much cheaper to produce.'
+WHERE Language = 'en_US'
+AND Tag = 'LOC_UNIT_WARG_PACK_DESCRIPTION';
+
+UPDATE LocalizedText
+SET Text = 'Unique goblin replacement for the Warrior.[NEWLINE]Yields a lot of [ICON_GOLD]Gold from defeated enemy Units.'
+WHERE Language = 'en_US'
+AND Tag = 'LOC_UNIT_MARAUDER_DESCRIPTION';
+
+---------------------------------------------------------
+---------------------------------------------------------
+--CIVILIZATION_DWARVES
+---------------------------------------------------------
+---------------------------------------------------------
+
+UPDATE LocalizedText
+SET Text = 'All units receive 300% support Bonus. May declare war on anyone at war with their allies without warmonger penalties. [NEWLINE]1 copy of a Strategic resource allows you to produce and purchase units requiring it in any city. Receives the Axe Thrower unique Unit.'
+WHERE Language = 'en_US'
+AND Tag = 'LOC_TRAIT_LEADER_LORD_OF_THE_IRON_HILLS_DESCRIPTION';
+
+UPDATE LocalizedText
+SET Text = 'Cities founded on Mountains yield +60%[ICON_GOLD]Gold and recieve an additional Great Work Slot.[NEWLINE]+20[ICON_GOLD]Gold from international Trade Routes.'
+WHERE Language = 'en_US'
+AND Tag = 'LOC_TRAIT_LEADER_KING_UNDER_THE_MOUNTAIN_DESCRIPTION';
+
+UPDATE LocalizedText
+SET Text = 'Founding a city claims all surrounding Mountain Tiles for that city. Gets 3 free Builders after researching Mining. Builders receive 10 additional charges.'
+WHERE Language = 'en_US'
+AND Tag = 'LOC_TRAIT_LEADER_HALLS_OF_MORIA_DESCRIPTION';
+
+UPDATE LocalizedText
+SET Text = 'Unique dwarven replacement for the Workshop.[NEWLINE]Cheaper to produce and provides bonus [ICON_GOLD] Gold equal to the adjacency bonus of the Industrial district, 10 [ICON_GreatMerchant] and 5 [ICON_PRODUCTION].'
+WHERE Language = 'en_US'
+AND Tag = 'LOC_BUILDING_DWARVEN_FORGE_DESCRIPTION';
+
+UPDATE LocalizedText
+SET Text = 'Unique dwarven replacement for the Swordsman.  +12[ICON_STRENGTH] when fighting on Hills or Mountain Tiles.'
+WHERE Language = 'en_US'
+AND Tag = 'LOC_UNIT_GUARDIAN_DESCRIPTION';
+
+UPDATE LocalizedText
+SET Text = '+12[ICON_STRENGTH] from fighting on Hills or Mountain Tiles.'
+WHERE Language = 'en_US'
+AND Tag = 'LOC_ABILITY_GUARDIAN_MODIFIER_DESCRIPTION';
+
+UPDATE LocalizedText
+SET Text = 'Unique replacement for the Archer. More expensive and with only a one tile range, but with higher ranged and melee strength.'
+WHERE Language = 'en_US'
+AND Tag = 'LOC_UNIT_AXETHROWER_DESCRIPTION';
 /*
 UPDATE LocalizedText
 SET Text = ''

@@ -1917,7 +1917,456 @@ VALUES
 	('TRAIT_LEADER_CONS_STEPHANIE_GRANT_DIPLOMATIC_SLOT_AT_POLITICAL_PHILOSOPHY_2' , 'GovernmentSlotType' , 'SLOT_DIPLOMATIC' ),
 	('TRAIT_LEADER_CONS_STEPHANIE_GRANT_DIPLOMATIC_SLOT_AT_DIPLOMATIC_SERVICE_1' , 'GovernmentSlotType' , 'SLOT_DIPLOMATIC' ),
 	('TRAIT_LEADER_CONS_STEPHANIE_GRANT_DIPLOMATIC_SLOT_AT_DIPLOMATIC_SERVICE_2' , 'GovernmentSlotType' , 'SLOT_DIPLOMATIC' );
-	
+
+---------------------------------------------------------
+---------------------------------------------------------
+--CotR
+---------------------------------------------------------
+---------------------------------------------------------
+
+---------------------------------------------------------
+---------------------------------------------------------
+--Gondor
+---------------------------------------------------------
+---------------------------------------------------------
+
+--stoneworks 50 + 10*3 = 80 defense, +3 culture per era
+UPDATE Buildings
+SET OuterDefenseHitPoints = 80
+WHERE  BuildingType = 'BUILDING_NUMENORIAN_STONEWORK';
+
+UPDATE ModifierArguments 
+SET Value = 3
+WHERE Name = 'Amount'
+AND ModifierId LIKE 'NUMENORIANSTONEWORK_%_CULTURE';
+
+--Guard: 10x def bonus, atk lower, cost = 200 + 50*10=750, STR= 41+4*10, garrison bonus
+UPDATE Units 
+SET Cost = 350 , Combat = 53
+WHERE UnitType =  'UNIT_CITADEL_GUARD';
+
+UPDATE ModifierArguments 
+SET Value = 15
+WHERE Name = 'Amount'
+AND ModifierId = 'COTR_UNIT_STRONG_WHEN_DEFENDING';
+
+UPDATE ModifierArguments 
+SET Value = -15
+WHERE Name = 'Amount'
+AND ModifierId = 'COTR_UNIT_WEAK_WHEN_ATTACKING';
+
+UPDATE ModifierArguments 
+SET Value = 24
+WHERE Name = 'Amount'
+AND ModifierId = 'GARRISON_BONUS_DISTRICTS';
+
+
+--legacy o N: 10 housing for walls, districts 250% faster 
+UPDATE ModifierArguments 
+SET Value = 75
+WHERE Name = 'Amount'
+AND ModifierId LIKE 'NUMENORLEGACY_BOOST_%_PRODUCTION';
+
+
+UPDATE ModifierArguments 
+SET Value = 3
+WHERE Name = 'Amount'
+AND ModifierId LIKE 'NUMENORLEGACY_%_HOUSING';
+
+--aragorn II: 3 dipl slot, dunedain ranger, STR = 10+5*10
+UPDATE Units 
+SET Combat = 25
+WHERE UnitType =  'UNIT_DUNEDAIN_RANGER';
+
+--For some Reasoin the mod author seems to add military slot and then converts it to diplomatic
+INSERT INTO TraitModifiers (TraitType, ModifierId)
+SELECT 'TRAIT_LEADER_REUNITED_KINGDOM' , 'ARAGORN_MILITARY_GOVERNMENT_SLOT_1'
+WHERE EXISTS  (SELECT * FROM Traits WHERE TraitType = 'TRAIT_LEADER_REUNITED_KINGDOM');
+INSERT INTO TraitModifiers (TraitType, ModifierId)
+SELECT 'TRAIT_LEADER_REUNITED_KINGDOM' , 'ARAGORN_MILITARY_GOVERNMENT_SLOT_2'
+WHERE EXISTS  (SELECT * FROM Traits WHERE TraitType = 'TRAIT_LEADER_REUNITED_KINGDOM');
+
+INSERT INTO Modifiers (ModifierId, ModifierType)
+VALUES
+	('ARAGORN_MILITARY_GOVERNMENT_SLOT_1' , 'MODIFIER_PLAYER_CULTURE_ADJUST_GOVERNMENT_SLOTS_MODIFIER'),
+	('ARAGORN_MILITARY_GOVERNMENT_SLOT_2' , 'MODIFIER_PLAYER_CULTURE_ADJUST_GOVERNMENT_SLOTS_MODIFIER');
+
+INSERT INTO ModifierArguments (ModifierId, Name, Value)
+VALUES
+	('ARAGORN_MILITARY_GOVERNMENT_SLOT_1' , 'GovernmentSlotType' , 'SLOT_DIPLOMATIC' ),
+	('ARAGORN_MILITARY_GOVERNMENT_SLOT_2' , 'GovernmentSlotType' , 'SLOT_DIPLOMATIC' );
+
+---------------------------------------------------------
+---------------------------------------------------------
+--Rohan
+---------------------------------------------------------
+---------------------------------------------------------
+
+--Stables
+UPDATE ModifierArguments 
+SET Value = 3
+WHERE Name = 'Amount'
+AND (ModifierId = 'ROYAL_STABLE_PROVIDE_HORSES'
+OR ModifierId = 'ROYAL_STABLE_PASTURE_GOLD');
+
+--HouseLords
+UPDATE ModifierArguments 
+SET Value = 3
+WHERE Name = 'Amount'
+AND (ModifierId = 'HORSELORD_FARM_PRODUCTION'
+OR ModifierId = 'HORSELORD_FARM_FOOD'
+OR ModifierId = 'THEODEN_CAVALRY_MOVEMENT');
+
+--Rohirrim Rider Cost=180*(150/180)^3, Combat= 48+4*3
+UPDATE Units
+SET Cost = 104 , Combat = 60 , BuildCharges = 6
+WHERE UnitType = 'UNIT_ROHIRRIM';
+
+
+---------------------------------------------------------
+---------------------------------------------------------
+--CIVILIZATION_SILVAN
+---------------------------------------------------------
+---------------------------------------------------------
+
+--Sanctuaries
+UPDATE ModifierArguments 
+SET Value = 6
+WHERE Name = 'Amount'
+AND ModifierId = 'SILVAN_BREATHTAKING_CITY_CULTURE';
+
+UPDATE ModifierArguments 
+SET Value = 3
+WHERE Name = 'YieldChange'
+AND ModifierId = 'SILVAN_CHARMING_CITY_CULTURE';
+
+UPDATE ModifierArguments 
+SET Value = 3
+WHERE Name = 'Amount'
+AND ModifierId = 'SILVAN_FOREST_FAITH';
+
+--Treehouse
+UPDATE ModifierArguments 
+SET Value = 6
+WHERE Name = 'Amount'
+AND ModifierId = 'TREEHOUSE_RIVERADJACENCY_FAITH';
+
+UPDATE Improvements
+SET DefenseModifier = 12
+WHERE ImprovementType = 'IMPROVEMENT_TREEHOUSE';
+
+UPDATE Improvement_YieldChanges
+SET YieldChange = 3
+WHERE ImprovementType = 'IMPROVEMENT_TREEHOUSE';
+
+UPDATE Improvement_BonusYieldChanges
+SET BonusYieldChange = 3
+WHERE ImprovementType = 'IMPROVEMENT_TREEHOUSE';
+
+UPDATE Adjacency_YieldChanges
+SET YieldChange = 3
+WHERE ID = 'Treehouse_DistrictCulture_early'
+OR ID = 'Treehouse_DistrictCulture_late';
+
+--Galadhrim +30 ranged and melee
+UPDATE Units
+SET RangedCombat = 49 , Combat = 39
+WHERE UnitType = 'UNIT_GALADHRIM';
+
+UPDATE Units
+SET RangedCombat = 49 , Combat = 39
+WHERE UnitType = 'UNIT_SENTINEL';
+
+UPDATE ModifierArguments 
+SET Value = 15
+WHERE Name = 'Amount'
+AND ModifierId = 'GALADHRIM_DOMESTIC_BONUS';
+
+--Galadriel
+UPDATE ModifierArguments 
+SET Value = 3
+WHERE Name = 'Amount'
+AND ModifierId = 'GOLDENLADY_FOREST_APPEAL';
+
+UPDATE Buildings
+SET OuterDefenseStrength = 15 , OuterDefenseHitPoints = 45
+WHERE BuildingType = 'BUILDING_LORIENDEFENSE';
+
+--Thranduil
+UPDATE ModifierArguments 
+SET Value = 30
+WHERE Name = 'Amount'
+AND ModifierId = 'MIRKWOOD_UNIT_FOREST_HEAL_MODIFIER';
+
+UPDATE ModifierArguments 
+SET Value = 15
+WHERE Name = 'Amount'
+AND ModifierId = 'MIRKWOOD_RANGED_UNITS_BONUS';
+
+---------------------------------------------------------
+---------------------------------------------------------
+--CIVILIZATION_ISENGARD
+---------------------------------------------------------
+---------------------------------------------------------
+
+--Machine of War
+UPDATE ModifierArguments 
+SET Value = 150
+WHERE Name = 'Amount'
+AND ModifierId = 'TRAIT_SIEGE_UNIT_PRODUCTION'
+OR ModifierId = 'TRAIT_SUPPORT_UNIT_PRODUCTION'
+OR ModifierId = 'MACHINE_OF_WAR_BOOST_INDUSTRIAL_ZONE_PRODUCTION';
+
+UPDATE ModifierArguments 
+SET Value = 3
+WHERE Name = 'Amount'
+AND ModifierId = 'MACHINE_OF_WAR_STRATEGIC_RESOURCE_SCIENCE';
+
+UPDATE ModifierArguments 
+SET Value = 'CIVIC_MILITARY_TRADITION'
+WHERE Name = 'CivicType'
+AND ModifierId = 'TRAIT_LAND_ARMIES_EARLY';
+
+UPDATE ModifierArguments 
+SET Value = 'CIVIC_MILITARY_TRAINING'
+WHERE Name = 'CivicType'
+AND ModifierId = 'TRAIT_LAND_CORPS_EARLY';
+
+--Ballista +15 STR, +9 Bombard
+UPDATE Units
+SET Combat = 38, Bombard = 44
+WHERE UnitType = 'UNIT_BALLISTA';
+
+--Pits
+UPDATE Building_YieldChanges
+SET YieldChange = 6
+WHERE BuildingType = 'BUILDING_URUKPITS';
+
+--Saruman
+UPDATE ModifierArguments 
+SET Value = 75
+WHERE Name = 'Amount'
+AND ModifierId = 'TRAIT_BARBARIAN_FAITH_DISPERSAL';
+
+UPDATE ModifierArguments 
+SET Value = 30
+WHERE Name = 'Amount'
+AND ModifierId = 'TRAIT_BARBARIAN_FAITH_DISPERSAL_CLASSICAL_SCALING';
+
+UPDATE ModifierArguments 
+SET Value = 60
+WHERE Name = 'Amount'
+AND ModifierId = 'TRAIT_BARBARIAN_FAITH_DISPERSAL_MEDIEVAL_SCALING';
+
+UPDATE ModifierArguments 
+SET Value = 75
+WHERE Name = 'Amount'
+AND ModifierId = 'TRAIT_BARBARIAN_FAITH_DISPERSAL_CLASSICAL_SCALING';
+
+UPDATE ModifierArguments 
+SET Value = 90
+WHERE Name = 'Amount'
+AND ModifierId = 'TRAIT_BARBARIAN_FAITH_DISPERSAL_RENAISSANCE_SCALING';
+
+UPDATE ModifierArguments 
+SET Value = 90
+WHERE Name = 'Amount'
+AND ModifierId = 'TRAIT_BARBARIAN_FAITH_DISPERSAL_INDUSTRIAL_SCALING';
+
+UPDATE ModifierArguments 
+SET Value = 3
+WHERE Name = 'Amount'
+AND ModifierId = 'TRAIT_SPY_OFFENSE_LEVEL';
+
+---------------------------------------------------------
+---------------------------------------------------------
+--CIVILIZATION_MORDOR
+---------------------------------------------------------
+---------------------------------------------------------
+
+--Where Shadows lie
+/*
+UPDATE ModifierArguments 
+SET Value = 100
+WHERE Name = 'Amount'
+AND ModifierId = 'WHERE_THE_SHADOWS_LIE_UNIT_MAINTENANCE_DISCOUNT';
+
+UPDATE ModifierArguments 
+SET Value = 250
+WHERE Name = 'Amount'
+AND ModifierId = 'WHERE_THE_SHADOWS_LIE_UNIT_PRODUCTION';
+*/
+--Mumak 
+UPDATE Units 
+SET Combat = 64
+WHERE UnitType = 'UNIT_OLOG_HAI';
+--Wasteland
+UPDATE District_CitizenYieldChanges
+SET YieldChange = 3
+WHERE DistrictType = 'DISTRICT_WASTELAND';
+
+--nazgul (1-0,8^10 heal)
+UPDATE ModifierArguments 
+SET Value = Value*3
+WHERE Name = 'Amount'
+AND (ModifierId = 'WHERE_THE_SHADOWS_LIE_UNIT_PRODUCTION'
+OR ModifierId = 'MORGULBLADE_BONUS_VS_DAMAGED'
+OR ModifierId = 'DARK_LIEUTENANT_AOE_BUFF_MODIFIER'
+OR ModifierId = 'NAZGUL_BLACK_BREATH_AOE_NO_HEAL_1'
+OR ModifierId = 'NAZGUL_BLACK_BREATH_AOE_NO_HEAL_2'
+OR ModifierId = 'NAZGUL_BLACK_BREATH_AOE_NO_HEAL_3'
+OR ModifierId = 'NAZGUL_SCALING_CLASSICAL'
+OR ModifierId = 'NAZGUL_SCALING_MEDIEVAL'
+OR ModifierId = 'NAZGUL_SCALING_RENAISSANCE'
+OR ModifierId = 'NAZGUL_SCALING_INDUSTRIAL'
+OR ModifierId = 'NAZGUL_SCALING_ATOMIC'
+OR ModifierId = 'NAZGUL_SCALING_MODERN'
+OR ModifierId = 'NAZGUL_SCALING_INFORMATION');
+
+UPDATE ModifierArguments 
+SET Value = 49
+WHERE Name = 'Amount'
+AND ModifierId = 'NAZGUL_HEAL_ON_KILL';
+
+UPDATE ModifierArguments 
+SET Value = 24
+WHERE Name = 'Amount'
+AND ModifierId = 'MORGUL_SORCERY_AOE_HEAL_ON_KILL_MODIFIER';
+
+--Slaves to his will
+UPDATE ModifierArguments 
+SET Value = 3
+WHERE Name = 'Amount'
+AND ModifierId = 'SAURON_CAPTURED_CITY_GRANT_ENVOY_MODIFIER';
+
+---------------------------------------------------------
+---------------------------------------------------------
+--CIVILIZATION_GOBLINS
+---------------------------------------------------------
+---------------------------------------------------------
+
+--Hordes
+UPDATE ModifierArguments 
+SET Value = 3
+WHERE Name = 'Amount'
+AND (ModifierId = 'COTR_GOBLINS_EXTRA_MEELE_UNIT'
+OR ModifierId = 'COTR_GOBLINS_EXTRA_ANTICAV_UNIT'
+OR ModifierId = 'COTR_GOBLINS_EXTRA_WARG_PACK');
+
+--Marauder 20+3*10
+UPDATE Units 
+SET Combat = 15
+WHERE UnitType = 'UNIT_MARAUDER';
+
+UPDATE ModifierArguments 
+SET Value = 300
+WHERE Name = 'PercentDefeatedStrength'
+AND ModifierId = 'COTR_MARAUDER_GOLD_KILLS_MODIFIER';
+
+--Warg 35+1*10
+UPDATE Units 
+SET Combat = 38
+WHERE UnitType = 'UNIT_WARG_PACK';
+
+UPDATE ModifierArguments 
+SET Value = 15
+WHERE Name = 'Amount'
+AND ModifierId = 'COTR_WARG_ANTI_CAVALRY_BONUS';
+
+--Goblin Caves
+UPDATE Buildings
+SET Housing = 0
+WHERE BuildingType = 'BUILDING_GOBLIN_CAVES';
+
+UPDATE Building_YieldChanges
+SET YieldChange = 3
+WHERE YieldType = 'YIELD_PRODUCTION'
+AND BuildingType = 'BUILDING_GOBLIN_CAVES';
+
+UPDATE ModifierArguments 
+SET Value = 165
+WHERE Name = 'UnitProductionPercent'
+AND (ModifierId = 'COTR_GOBLIN_CAVES_UNIT_FAITH'
+OR ModifierId = 'COTR_GOBLIN_CAVES_UNIT_CULTURE');
+
+--Azog
+UPDATE ModifierArguments
+SET Value = 15
+WHERE Name = 'Amount'
+AND ModifierId = 'COTR_AZOG_CITY_CAPTURE_AOE_STRENGTH_MODIFIER';
+
+---------------------------------------------------------
+---------------------------------------------------------
+--CIVILIZATION_DWARVES
+---------------------------------------------------------
+---------------------------------------------------------
+
+--Smithing Quarters
+UPDATE Districts
+SET Cost = 8
+WHERE DistrictType = 'DISTRICT_SMITHING_QUATERS';
+
+--Forge Cost=175*120/175^3, Prod=2+1*3
+UPDATE Buildings
+SET Cost = 4
+WHERE BuildingType = 'BUILDING_DWARVEN_FORGE';
+
+UPDATE Building_YieldChanges
+SET YieldChange = 5
+WHERE BuildingType = 'BUILDING_DWARVEN_FORGE';
+
+UPDATE Building_GreatPersonPoints
+SET PointsPerTurn = 3
+WHERE BuildingType = 'BUILDING_DWARVEN_FORGE'
+AND GreatPersonClassType = 'GREAT_PERSON_CLASS_MERCHANT';
+
+UPDATE District_CitizenYieldChanges
+SET YieldChange = 6
+WHERE DistrictType = 'DISTRICT_SMITHING_QUATERS'
+AND YieldType = 'YIELD_GOLD';
+
+--Guardian STR=36+2*10
+UPDATE Units
+SET Combat = 42 
+WHERE UnitType = 'UNIT_GUARDIAN';
+
+UPDATE ModifierArguments
+SET Value = 12
+WHERE Name = 'Amount'
+AND ModifierId = 'COTR_GUARDIAN_HILL_AND_MOUNTAIN_COMBAT_BONUS';
+
+--Durin
+UPDATE ModifierArguments
+SET Value = 3
+WHERE Name = 'Amount'
+AND ModifierId = 'DURIN_FREE_BUILDER';
+
+--Dain
+--Axethrower Cost=50+15*10, STR=15+10*10, ranged=25+5*10
+UPDATE Units
+SET Cost = 95, Combat = 45 , RangedCombat = 40
+WHERE UnitType = 'UNIT_AXETHROWER';
+
+UPDATE ModifierArguments
+SET Value = 300
+WHERE Name = 'Percent'
+AND ModifierId = 'COTR_MODIFIER_PLAYER_UNITS_ADJUST_SUPPORT_BONUS_MODIFIER';
+
+--Thror
+UPDATE ModifierArguments
+SET Value = 6
+WHERE Name = 'Amount'
+AND ModifierId = 'THROR_TRADE_ROUTE_INTERNATIONAL_GOLD';
+
+UPDATE ModifierArguments
+SET Value = 60
+WHERE Name = 'Amount'
+AND ModifierId = 'THROR_GOLD_FROM_MOUNTAIN_CITIES';
+
+UPDATE Building_GreatWorks
+SET NumSlots = 3
+WHERE BuildingType = 'BUILDING_THRORRELICSLOT'
+AND GreatWorkSlotType ='GREATWORKSLOT_PALACE';	
 ---------------------------------------------------------
 --Other modifications
 ---------------------------------------------------------
