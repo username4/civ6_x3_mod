@@ -13,7 +13,7 @@ AND Tag = 'LOC_TRAIT_CIVILIZATION_LEGEND_FIVE_SUNS_DESCRIPTION';
 
 --Eagle Warrior
 UPDATE LocalizedText
-SET Text = 'Expensive Aztec unique Ancient era unit that replaces the Warrior, with 52 [ICON_STRENGTH].  Has a chance to capture other civilization''s military units by turning them into Builders.'
+SET Text = 'Expensive Aztec unique Ancient era unit that replaces the Warrior, with 39 [ICON_STRENGTH].  Has a chance to capture other civilization''s military units by turning them into Builders.'
 WHERE Language = 'en_US'
 AND Tag = 'LOC_UNIT_AZTEC_EAGLE_WARRIOR_DESCRIPTION';
 
@@ -37,12 +37,12 @@ AND Tag = 'LOC_TRAIT_LEADER_GIFTS_FOR_TLATOANI_DESCRIPTION';
 
 --Digger
 UPDATE LocalizedText
-SET Text = 'Australian unique Modern era unit that replaces Infantry. +30 [ICON_Strength] Combat Strength when fighting on Coastal tiles. +15 [ICON_Strength] Combat Strength when fighting on Neutral or Foreign Territory.'
+SET Text = 'Australian unique Modern era unit that replaces Infantry. +23 [ICON_Strength] Combat Strength when fighting on Coastal tiles. +13 [ICON_Strength] Combat Strength when fighting on Neutral or Foreign Territory.'
 WHERE Language = 'en_US'
 AND Tag = 'LOC_UNIT_DIGGER_DESCRIPTION';
 
 UPDATE LocalizedText
-SET Text = '+30 [ICON_Strength] Combat Strength when fighting on Coastal tiles. +15 [ICON_Strength] Combat Strength when fighting on Neutral or Foreign Territory.'
+SET Text = '+23 [ICON_Strength] Combat Strength when fighting on Coastal tiles. +13 [ICON_Strength] Combat Strength when fighting on Neutral or Foreign Territory.'
 WHERE Language = 'en_US'
 AND Tag = 'LOC_ABILITY_DIGGER_DESCRIPTION';
 
@@ -72,7 +72,7 @@ AND Tag = 'LOC_TRAIT_LEADER_CITADEL_CIVILIZATION_DESCRIPTION';
 
 --Hussar
 UPDATE LocalizedText
-SET Text = 'Polish unique Medieval era unit, 69 [ICON_STRENGTH]. Pushes defending enemy units back from their hex in any battle where they score more damage. Defenders that cannot retreat suffer additional damage.'
+SET Text = 'Polish unique Medieval era unit, 65 [ICON_STRENGTH]. Pushes defending enemy units back from their hex in any battle where they score more damage. Defenders that cannot retreat suffer additional damage.'
 WHERE Language = 'en_US'
 AND Tag = 'LOC_UNIT_POLISH_HUSSAR_DESCRIPTION';
 
@@ -109,13 +109,13 @@ AND Tag = 'LOC_TRAIT_LEADER_HELLENISTIC_FUSION_DESCRIPTION';
 
 --Hypaspist
 UPDATE LocalizedText
-SET Text = 'Macedonian unique melee unit that replaces the Swordsman. +15 [ICON_Strength] Combat Strength when besieging districts. 150% Additional Support Bonus.'
+SET Text = 'Macedonian unique melee unit that replaces the Swordsman. +13 [ICON_Strength] Combat Strength when besieging districts. 150% Additional Support Bonus.'
 WHERE Language = 'en_US'
 AND Tag = 'LOC_UNIT_MACEDONIAN_HYPASPIST_DESCRIPTION';
 
 --Hetaroy
 UPDATE LocalizedText
-SET Text = 'Macedonian unique heavy cavalry unit that replaces the Horseman. Additional +15 [ICON_Strength] Combat Strength when adjacent to a Great General. +15 Great General points when killing an enemy unit. Starts with 1 free Promotion.'
+SET Text = 'Macedonian unique heavy cavalry unit that replaces the Horseman. Additional +13 [ICON_Strength] Combat Strength when adjacent to a Great General. +15 Great General points when killing an enemy unit. Starts with 1 free Promotion.'
 WHERE Language = 'en_US'
 AND Tag = 'LOC_UNIT_MACEDONIAN_HETAIROI_DESCRIPTION';
 

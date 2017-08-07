@@ -47,27 +47,27 @@ AND Tag = 'LOC_TRAIT_LEADER_MIKASA_RANGE_DESCRIPTION';
 ---------------------------------------------------------
 
 UPDATE LocalizedText
-SET Text = 'Missionary and Apostles are +24 [ICON_Religion] Religious Strength in Theological Combat. Missionaries and Apostles grant +12 and +24 [ICON_Strength] Combat Strength respectively to units that shares the tile with them.'
+SET Text = 'Missionary and Apostles are +19 [ICON_Religion] Religious Strength in Theological Combat. Missionaries and Apostles grant +10 and +19 [ICON_Strength] Combat Strength respectively to units that shares the tile with them.'
 WHERE Language = 'en_US'
 AND Tag = 'LOC_TRAIT_CIVILIZATION_CONS_AXIS_CULT_DESCRIPTION';
 
 UPDATE LocalizedText
-SET Text = '+24 [ICON_Religion] Religious Strength from the Axis Cult''s Fanatics ability.'
+SET Text = '+19 [ICON_Religion] Religious Strength from the Axis Cult''s Fanatics ability.'
 WHERE Language = 'en_US'
 AND Tag = 'LOC_ABILITY_CONS_AXIS_CULT_RELIGIOUS_COMBAT_BUFF_MODIFIER_DESCRIPTION';
 
 UPDATE LocalizedText
-SET Text = '+12 [ICON_Strength] Combat Strength when there is an Missionary in the same hex'
+SET Text = '+10 [ICON_Strength] Combat Strength when there is an Missionary in the same hex'
 WHERE Language = 'en_US'
 AND Tag = 'LOC_ABILITY_CONS_AXIS_CULT_MISSIONARY_UNIT_COMBAT_DESCRIPTION';
 
 UPDATE LocalizedText
-SET Text = '+24 [ICON_Strength] Combat Strength when there is an Apostle in the same hex.'
+SET Text = '+19 [ICON_Strength] Combat Strength when there is an Apostle in the same hex.'
 WHERE Language = 'en_US'
 AND Tag = 'LOC_ABILITY_CONS_AXIS_CULT_APOSTLE_UNIT_COMBAT_DESCRIPTION';
 
 UPDATE LocalizedText
-SET Text = '+24 [ICON_Religion] Religious Strength from the Axis Cult''s Fanatics ability'
+SET Text = '+19 [ICON_Religion] Religious Strength from the Axis Cult''s Fanatics ability'
 WHERE Language = 'en_US'
 AND Tag = 'LOC_ABILITY_CONS_AXIS_CULT_RELIGIOUS_COMBAT_BUFF_DESCRIPTION';
 
@@ -77,7 +77,7 @@ WHERE Language = 'en_US'
 AND Tag = 'LOC_IMPROVEMENT_CONS_KACHOUFUUGETSU_DESCRIPTION';
 
 UPDATE LocalizedText
-SET Text = 'Arch Priests are special units that must be unlocked with the Launch Inquisition action on an Apostle. Can use Remove Heresy. If this unit adjacent to a city when it''s captured, the city will automatically convert to the player''s majority Religion. +33 [ICON_Strength] Combat Strength each era from medieval era. Only purchase in the capital city.'
+SET Text = 'Arch Priests are special units that must be unlocked with the Launch Inquisition action on an Apostle. Can use Remove Heresy. If this unit adjacent to a city when it''s captured, the city will automatically convert to the player''s majority Religion. +24 [ICON_Strength] Combat Strength each era from medieval era. Only purchase in the capital city.'
 WHERE Language = 'en_US'
 AND Tag = 'LOC_UNIT_CONS_AXIS_CULT_PRIEST_DESCRIPTION';
 
@@ -93,17 +93,17 @@ AND Tag = 'LOC_TRAIT_LEADER_CONS_AQUA_DESCRIPTION';
 ---------------------------------------------------------
 
 UPDATE LocalizedText
-SET Text = '+15 [ICON_Strength] Combat Strength for ranged unit. +150% combat experience for all ranged land units trained in city.'
+SET Text = '+13 [ICON_Strength] Combat Strength for ranged unit. +150% combat experience for all ranged land units trained in city.'
 WHERE Language = 'en_US'
 AND Tag = 'LOC_TRAIT_CIVILIZATION_CONS_CRIMSON_MAGIC_CLAN_DESCRIPTION';
 
 UPDATE LocalizedText
-SET Text = '+30 [ICON_Strength] Combat Strength each era from medieval era'
+SET Text = '+23 [ICON_Strength] Combat Strength each era from medieval era'
 WHERE Language = 'en_US'
 AND Tag = 'LOC_ABILITY_UNIT_CONS_CMC_WIZARD_DESCRIPTION';
 
 UPDATE LocalizedText
-SET Text = '+30 [ICON_Strength] Combat Strength each era from medieval era'
+SET Text = '+23 [ICON_Strength] Combat Strength each era from medieval era'
 WHERE Language = 'en_US'
 AND Tag = 'LOC_ABILITY_UNIT_CONS_CMC_WIZARD_STRENGTH_PER_ERA_DESCRIPTION';
 
@@ -186,22 +186,22 @@ WHERE Language = 'en_US'
 AND Tag = 'LOC_BUILDING_NUMENORIAN_STONEWORK_DESCRIPTION';
 
 UPDATE LocalizedText
-SET Text = 'Unique gondorian replacement for the Pikeman.[NEWLINE]Weak when attacking, strong when defending. [NEWLINE]24 Bonus combat strength when fighting in Districts.'
+SET Text = 'Unique gondorian replacement for the Pikeman.[NEWLINE]Weak when attacking, strong when defending. [NEWLINE]19 Bonus combat strength when fighting in Districts.'
 WHERE Language = 'en_US'
 AND Tag = 'LOC_UNIT_CITADEL_GUARD_DESCRIPTION';
 
 UPDATE LocalizedText
-SET Text = '-15[ICON_STRENGTH] from being weak when attacking'
+SET Text = '-13[ICON_STRENGTH] from being weak when attacking'
 WHERE Language = 'en_US'
 AND Tag = 'LOC_ABILITY_CITADEL_GUARD_WEAK_WHEN_ATTACKING';
 
 UPDATE LocalizedText
-SET Text = '+15[ICON_STRENGTH] from being strong when defending'
+SET Text = '+13[ICON_STRENGTH] from being strong when defending'
 WHERE Language = 'en_US'
 AND Tag = 'LOC_ABILITY_CITADEL_GUARD_STRONG_WHEN_DEFENDING';
 
 UPDATE LocalizedText
-SET Text = '+24[ICON_STRENGTH] from fighting in or next to a District'
+SET Text = '+19[ICON_STRENGTH] from fighting in or next to a District'
 WHERE Language = 'en_US'
 AND Tag = 'LOC_ABILITY_CITADEL_GUARD_DISTRICT_COMBAT';
 
@@ -243,12 +243,12 @@ WHERE Language = 'en_US'
 AND Tag = 'LOC_TRAIT_LEADER_LADY_OF_THE_GOLDEN_FOREST_DESCRIPTION';
 
 UPDATE LocalizedText
-SET Text = '+15[ICON_STRENGTH]for all Ranged Units. Units in Forests and Jungle heal faster[NEWLINE]Elven Treehouses trigger a Culture Bomb'
+SET Text = '+13[ICON_STRENGTH]for all Ranged Units. Units in Forests and Jungle heal faster[NEWLINE]Elven Treehouses trigger a Culture Bomb'
 WHERE Language = 'en_US'
 AND Tag = 'LOC_TRAIT_LEADER_LORD_OF_MIRKWOOD_DESCRIPTION';
 
 UPDATE LocalizedText
-SET Text = '+15[ICON_STRENGTH] for beeing lead by Thranduil<'
+SET Text = '+13[ICON_STRENGTH] for beeing lead by Thranduil<'
 WHERE Language = 'en_US'
 AND Tag = 'LOC_THRADUIL_RANGED_DESCRIPTION';
 
@@ -263,12 +263,12 @@ WHERE Language = 'en_US'
 AND Tag = 'LOC_IMPROVEMENT_TREEHOUSE_DESCRIPTION';
 
 UPDATE LocalizedText
-SET Text = 'Significantly stronger silvan replacement for the Crossbowman. +15[ICON_STRENGTH]in friendly territory'
+SET Text = 'Significantly stronger silvan replacement for the Crossbowman. +13[ICON_STRENGTH]in friendly territory'
 WHERE Language = 'en_US'
 AND Tag = 'LOC_UNIT_GALADHRIM_DESCRIPTION';
 
 UPDATE LocalizedText
-SET Text = '+15[ICON_STRENGTH] from being in friendly territory'
+SET Text = '+13[ICON_STRENGTH] from being in friendly territory'
 WHERE Language = 'en_US'
 AND Tag = 'LOC_ABILITY_GALADHRIM_MODIFIER_DESCRIPTION';
 ---------------------------------------------------------
@@ -335,12 +335,12 @@ AND Tag = 'LOC_UNIT_NAZGUL_DESCRIPTION';
 ---------------------------------------------------------
 
 UPDATE LocalizedText
-SET Text = 'Units in range of 3 tiles of a City you captured get +15[ICON_STRENGTH]Combat Strength.[NEWLINE]All Units only use one movement point to pillage.[NEWLINE]Gain the Warg Pack unique Unit after researching Horseback riding.'
+SET Text = 'Units in range of 3 tiles of a City you captured get +13[ICON_STRENGTH]Combat Strength.[NEWLINE]All Units only use one movement point to pillage.[NEWLINE]Gain the Warg Pack unique Unit after researching Horseback riding.'
 WHERE Language = 'en_US'
 AND Tag = 'LOC_TRAIT_LEADER_THE_DEFILER_DESCRIPTION';
 
 UPDATE LocalizedText
-SET Text = '+15[ICON_STRENGTH] from being near a captured City'
+SET Text = '+13[ICON_STRENGTH] from being near a captured City'
 WHERE Language = 'en_US'
 AND Tag = 'LOC_AZOG_CITY_AOE_DESCRIPTION';
 
@@ -391,12 +391,12 @@ WHERE Language = 'en_US'
 AND Tag = 'LOC_BUILDING_DWARVEN_FORGE_DESCRIPTION';
 
 UPDATE LocalizedText
-SET Text = 'Unique dwarven replacement for the Swordsman.  +12[ICON_STRENGTH] when fighting on Hills or Mountain Tiles.'
+SET Text = 'Unique dwarven replacement for the Swordsman.  +10[ICON_STRENGTH] when fighting on Hills or Mountain Tiles.'
 WHERE Language = 'en_US'
 AND Tag = 'LOC_UNIT_GUARDIAN_DESCRIPTION';
 
 UPDATE LocalizedText
-SET Text = '+12[ICON_STRENGTH] from fighting on Hills or Mountain Tiles.'
+SET Text = '+10[ICON_STRENGTH] from fighting on Hills or Mountain Tiles.'
 WHERE Language = 'en_US'
 AND Tag = 'LOC_ABILITY_GUARDIAN_MODIFIER_DESCRIPTION';
 

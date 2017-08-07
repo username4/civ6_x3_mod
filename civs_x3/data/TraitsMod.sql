@@ -11,6 +11,8 @@
 ---------------------------------------------------------
 ---------------------------------------------------------
 
+
+
 --science and gold bonus
 UPDATE ModifierArguments
 SET Value = 30
@@ -98,20 +100,20 @@ AND ModifierId = 'MIKASA_LONG_RANGE';
 
 --combat buffs
 UPDATE ModifierArguments
-SET Value = 24
+SET Value = 19
 WHERE ModifierId = 'CONS_AXIS_CULT_RELIGIOUS_COMBAT_BUFF';
 
 UPDATE ModifierArguments
-SET Value = 24
+SET Value = 19
 WHERE ModifierId = 'CONS_AXIS_CULT_APOSTLE_UNIT_COMBAT';
 
 UPDATE ModifierArguments
-SET Value = 12
+SET Value = 10
 WHERE ModifierId = 'CONS_AXIS_CULT_MISSIONARY_UNIT_COMBAT';
 
 --Arch Priest
 UPDATE ModifierArguments
-SET Value = 33
+SET Value = 24
 WHERE Name = 'Amount'
 AND ModifierId LIKE 'CONS_AXIS_CULT_PRIEST_STRENGTH_%';
 
@@ -145,12 +147,12 @@ SET Value = 150
 WHERE ModifierId = 'TRAIT_CIVILIZATION_CONS_CRIMSON_MAGIC_CLAN_RANGED_UNIT_XP_BONUS_MOD';
 
 UPDATE ModifierArguments
-SET Value = 15
+SET Value = 13
 WHERE ModifierId = 'TRAIT_CIVILIZATION_CONS_CRIMSON_MAGIC_CLAN_RANGED_UNIT_INCREASE_STRENGTH_MOD';
 
 --Arch Wizard
 UPDATE ModifierArguments
-SET Value = 30
+SET Value = 23
 WHERE Name = 'Amount'
 AND ModifierId LIKE 'CONS_CMC_WIZARD_STRENGTH_%';
 
@@ -312,7 +314,7 @@ VALUES
 
 --stoneworks 50 + 10*3 = 80 defense, +3 culture per era
 UPDATE Buildings
-SET OuterDefenseHitPoints = 80
+SET OuterDefenseHitPoints = 73
 WHERE  BuildingType = 'BUILDING_NUMENORIAN_STONEWORK';
 
 UPDATE ModifierArguments 
@@ -355,7 +357,7 @@ AND ModifierId LIKE 'NUMENORLEGACY_%_HOUSING';
 
 --aragorn II: 3 dipl slot, dunedain ranger, STR = 10+5*10
 UPDATE Units 
-SET Combat = 25
+SET Combat = 23
 WHERE UnitType =  'UNIT_DUNEDAIN_RANGER';
 
 --For some Reasoin the mod author seems to add military slot and then converts it to diplomatic
@@ -399,7 +401,7 @@ OR ModifierId = 'THEODEN_CAVALRY_MOVEMENT');
 
 --Rohirrim Rider Cost=180*(150/180)^3, Combat= 48+4*3
 UPDATE Units
-SET Cost = 104 , Combat = 60 , BuildCharges = 6
+SET Cost = 104 , Combat = 58 , BuildCharges = 6
 WHERE UnitType = 'UNIT_ROHIRRIM';
 
 
@@ -450,11 +452,11 @@ OR ID = 'Treehouse_DistrictCulture_late';
 
 --Galadhrim +30 ranged and melee
 UPDATE Units
-SET RangedCombat = 49 , Combat = 39
+SET RangedCombat = 48 , Combat = 38
 WHERE UnitType = 'UNIT_GALADHRIM';
 
 UPDATE Units
-SET RangedCombat = 49 , Combat = 39
+SET RangedCombat = 48 , Combat = 38
 WHERE UnitType = 'UNIT_SENTINEL';
 
 UPDATE ModifierArguments 
@@ -469,7 +471,7 @@ WHERE Name = 'Amount'
 AND ModifierId = 'GOLDENLADY_FOREST_APPEAL';
 
 UPDATE Buildings
-SET OuterDefenseStrength = 15 , OuterDefenseHitPoints = 45
+SET OuterDefenseStrength = 13 , OuterDefenseHitPoints = 24
 WHERE BuildingType = 'BUILDING_LORIENDEFENSE';
 
 --Thranduil
@@ -479,7 +481,7 @@ WHERE Name = 'Amount'
 AND ModifierId = 'MIRKWOOD_UNIT_FOREST_HEAL_MODIFIER';
 
 UPDATE ModifierArguments 
-SET Value = 15
+SET Value = 13
 WHERE Name = 'Amount'
 AND ModifierId = 'MIRKWOOD_RANGED_UNITS_BONUS';
 
@@ -512,7 +514,7 @@ SET Value = 'CIVIC_MILITARY_TRAINING'
 WHERE Name = 'CivicType'
 AND ModifierId = 'TRAIT_LAND_CORPS_EARLY';
 
---Ballista +15 STR, +9 Bombard
+--Ballista +13 STR, +8 Bombard
 UPDATE Units
 SET Combat = 38, Bombard = 44
 WHERE UnitType = 'UNIT_BALLISTA';
@@ -578,7 +580,7 @@ AND ModifierId = 'WHERE_THE_SHADOWS_LIE_UNIT_PRODUCTION';
 */
 --Mumak 
 UPDATE Units 
-SET Combat = 64
+SET Combat = 68
 WHERE UnitType = 'UNIT_OLOG_HAI';
 --Wasteland
 UPDATE District_CitizenYieldChanges
@@ -589,19 +591,26 @@ WHERE DistrictType = 'DISTRICT_WASTELAND';
 UPDATE ModifierArguments 
 SET Value = Value*3
 WHERE Name = 'Amount'
-AND (ModifierId = 'WHERE_THE_SHADOWS_LIE_UNIT_PRODUCTION'
-OR ModifierId = 'MORGULBLADE_BONUS_VS_DAMAGED'
-OR ModifierId = 'DARK_LIEUTENANT_AOE_BUFF_MODIFIER'
+AND (ModifierId = 'DARK_LIEUTENANT_AOE_BUFF_MODIFIER'
 OR ModifierId = 'NAZGUL_BLACK_BREATH_AOE_NO_HEAL_1'
 OR ModifierId = 'NAZGUL_BLACK_BREATH_AOE_NO_HEAL_2'
-OR ModifierId = 'NAZGUL_BLACK_BREATH_AOE_NO_HEAL_3'
-OR ModifierId = 'NAZGUL_SCALING_CLASSICAL'
+OR ModifierId = 'NAZGUL_BLACK_BREATH_AOE_NO_HEAL_3');
+
+UPDATE ModifierArguments 
+SET Value = 23
+WHERE Name = 'Amount'
+AND (ModifierId = 'NAZGUL_SCALING_CLASSICAL'
 OR ModifierId = 'NAZGUL_SCALING_MEDIEVAL'
 OR ModifierId = 'NAZGUL_SCALING_RENAISSANCE'
 OR ModifierId = 'NAZGUL_SCALING_INDUSTRIAL'
 OR ModifierId = 'NAZGUL_SCALING_ATOMIC'
 OR ModifierId = 'NAZGUL_SCALING_MODERN'
 OR ModifierId = 'NAZGUL_SCALING_INFORMATION');
+
+UPDATE ModifierArguments 
+SET Value = 19
+WHERE ModifierId = 'MORGULBLADE_BONUS_VS_DAMAGED';
+
 
 UPDATE ModifierArguments 
 SET Value = 49
@@ -635,7 +644,7 @@ OR ModifierId = 'COTR_GOBLINS_EXTRA_WARG_PACK');
 
 --Marauder 20+3*10
 UPDATE Units 
-SET Combat = 15
+SET Combat = 28
 WHERE UnitType = 'UNIT_MARAUDER';
 
 UPDATE ModifierArguments 
@@ -649,7 +658,7 @@ SET Combat = 38
 WHERE UnitType = 'UNIT_WARG_PACK';
 
 UPDATE ModifierArguments 
-SET Value = 15
+SET Value = 13
 WHERE Name = 'Amount'
 AND ModifierId = 'COTR_WARG_ANTI_CAVALRY_BONUS';
 
@@ -671,7 +680,7 @@ OR ModifierId = 'COTR_GOBLIN_CAVES_UNIT_CULTURE');
 
 --Azog
 UPDATE ModifierArguments
-SET Value = 15
+SET Value = 13
 WHERE Name = 'Amount'
 AND ModifierId = 'COTR_AZOG_CITY_CAPTURE_AOE_STRENGTH_MODIFIER';
 
@@ -711,7 +720,7 @@ SET Combat = 42
 WHERE UnitType = 'UNIT_GUARDIAN';
 
 UPDATE ModifierArguments
-SET Value = 12
+SET Value = 10
 WHERE Name = 'Amount'
 AND ModifierId = 'COTR_GUARDIAN_HILL_AND_MOUNTAIN_COMBAT_BONUS';
 

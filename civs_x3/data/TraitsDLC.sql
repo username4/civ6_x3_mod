@@ -26,7 +26,7 @@ WHERE BuildingType='BUILDING_TLACHTLI';
 
 --Eagle Warrior
 UPDATE Units 
-SET Combat = 52
+SET Combat = 39
 WHERE UnitType='UNIT_AZTEC_EAGLE_WARRIOR';
 
 UPDATE Units 
@@ -48,17 +48,17 @@ WHERE ModifierId = 'TRAIT_COMBAT_BONUS_PER_LUXURY';
 ---------------------------------------------------------
 ---------------------------------------------------------
 
---Digger: +20 STR, +100 on coat, +50 abroad
+--Digger: +6 STR, +23 on coat, +13 abroad
 UPDATE Units 
 SET Combat = 76
 WHERE UnitType = 'UNIT_DIGGER';
 
 UPDATE ModifierArguments
-SET Value = 30
+SET Value = 23
 WHERE ModifierId = 'DIGGER_BONUS_ON_COAST';
 
 UPDATE ModifierArguments
-SET Value = 15
+SET Value = 13
 WHERE ModifierId = 'DIGGER_NON_DOMESTIC_BONUS';
 
 --Outback Station: 10 food, 10 production, 5 housing, 10 food per pasture, 10 food and production per adj. station
@@ -82,57 +82,29 @@ WHERE ImprovementType = 'IMPROVEMENT_OUTBACK_STATION';
 UPDATE ModifierArguments
 SET Value = 3
 WHERE Name = 'YieldChange'
-AND ModifierId = 'TRAIT_CHARMING_COMMERCIAL_HUB';
-
-UPDATE ModifierArguments
-SET Value = 3
-WHERE Name = 'YieldChange'
-AND ModifierId = 'TRAIT_CHARMING_CAMPUS';
-
-UPDATE ModifierArguments
-SET Value = 3
-WHERE Name = 'YieldChange'
-AND ModifierId = 'TRAIT_CHARMING_HOLY_SITE';
-
-UPDATE ModifierArguments
-SET Value = 3
-WHERE Name = 'YieldChange'
-AND ModifierId = 'TRAIT_CHARMING_THEATER_DISTRICT';
+AND (ModifierId = 'TRAIT_CHARMING_COMMERCIAL_HUB'
+OR ModifierId = 'TRAIT_CHARMING_HOLY_SITE'
+OR ModifierId = 'TRAIT_CHARMING_CAMPUS'
+OR ModifierId = 'TRAIT_CHARMING_THEATER_DISTRICT');
 
 UPDATE ModifierArguments
 SET Value = 9
 WHERE Name = 'YieldChange'
-AND ModifierId = 'TRAIT_BREATHTAKING_CAMPUS';
-
-UPDATE ModifierArguments
-SET Value = 9
-WHERE Name = 'YieldChange'
-AND ModifierId = 'TRAIT_BREATHTAKING_COMMERCIAL_HUB';
-
-UPDATE ModifierArguments
-SET Value = 9
-WHERE Name = 'YieldChange'
-AND ModifierId = 'TRAIT_BREATHTAKING_HOLY_SITE';
-
-UPDATE ModifierArguments
-SET Value = 9
-WHERE Name = 'YieldChange'
-AND ModifierId = 'TRAIT_BREATHTAKING_THEATER_DISTRICT';
+AND (ModifierId = 'TRAIT_BREATHTAKING_CAMPUS'
+OR ModifierId = 'TRAIT_BREATHTAKING_HOLY_SITE'
+OR ModifierId = 'TRAIT_BREATHTAKING_COMMERCIAL_HUB'
+OR ModifierId = 'TRAIT_BREATHTAKING_THEATER_DISTRICT');
 
 UPDATE ModifierArguments
 SET Value = 9
 WHERE ModifierId = 'TRAIT_COASTAL_HOUSING';
 
---Citadel of Civ +1000% Production
+--Citadel of Civ +300% Production
 UPDATE ModifierArguments
 SET Value = 300
 WHERE Name = 'Amount'
-AND ModifierId = 'TRAIT_CITADELCIVILIZATION_LIBERATION_PRODUCTION';
-
-UPDATE ModifierArguments
-SET Value = 300
-WHERE Name = 'Amount'
-AND ModifierId = 'TRAIT_CITADELCIVILIZATION_DEFENSIVE_PRODUCTION';
+AND (ModifierId = 'TRAIT_CITADELCIVILIZATION_LIBERATION_PRODUCTION'
+OR ModifierId = 'TRAIT_CITADELCIVILIZATION_DEFENSIVE_PRODUCTION');
 
 ---------------------------------------------------------
 ---------------------------------------------------------
@@ -148,9 +120,6 @@ INSERT INTO TraitModifiers (TraitType, ModifierId)
 SELECT 'TRAIT_CIVILIZATION_GOLDEN_LIBERTY' , 'TRAIT_REPLACE_MILITARY_SLOT_WITH_WILDCARD_2'
 WHERE EXISTS  (SELECT * FROM Traits WHERE TraitType = 'TRAIT_CIVILIZATION_GOLDEN_LIBERTY');
 
-
-
-
 INSERT INTO Modifiers (ModifierId, ModifierType)
 VALUES
     ('TRAIT_REPLACE_MILITARY_SLOT_WITH_WILDCARD_1','MODIFIER_PLAYER_CULTURE_REPLACE_GOVERNMENT_SLOTS'),
@@ -165,7 +134,7 @@ VALUES
     
 --Hussar, compare STR to Knight
 UPDATE Units 
-SET Combat = 69
+SET Combat = 65
 WHERE UnitType = 'UNIT_POLISH_HUSSAR';
 
 --Sukiennice
@@ -205,22 +174,10 @@ AND ModifierId = 'TRAIT_LITHUANIANUNION_GOLD_RELIC';
 UPDATE ModifierArguments
 SET Value = 3
 WHERE Name = 'Amount'
-AND ModifierId = 'TRAIT_HELLENISTIC_FUSION_ENCAMPMENT_EUREKA_MODIFIER';
-
-UPDATE ModifierArguments
-SET Value = 3
-WHERE Name = 'Amount'
-AND ModifierId = 'TRAIT_HELLENISTIC_FUSION_CAMPUS_EUREKA_MODIFIER';
-
-UPDATE ModifierArguments
-SET Value = 3
-WHERE Name = 'Amount'
-AND ModifierId = 'TRAIT_HELLENISTIC_FUSION_HOLY_SITE_INSPIRATION_MODIFIER';
-
-UPDATE ModifierArguments
-SET Value = 3
-WHERE Name = 'Amount'
-AND ModifierId = 'TRAIT_HELLENISTIC_FUSION_THEATER_INSPIRATION_MODIFIER';
+AND (ModifierId = 'TRAIT_HELLENISTIC_FUSION_ENCAMPMENT_EUREKA_MODIFIER'
+OR ModifierId = 'TRAIT_HELLENISTIC_FUSION_CAMPUS_EUREKA_MODIFIER'
+OR ModifierId = 'TRAIT_HELLENISTIC_FUSION_HOLY_SITE_INSPIRATION_MODIFIER'
+OR ModifierId = 'TRAIT_HELLENISTIC_FUSION_THEATER_INSPIRATION_MODIFIER');
 
 --Hypapist siege bunus and support bonus 
 UPDATE ModifierArguments
@@ -229,7 +186,7 @@ WHERE Name = 'Percent'
 AND ModifierId = 'HYPASPIST_SUPPORT_BONUS';
 
 UPDATE ModifierArguments
-SET Value = 15
+SET Value = 13
 WHERE Name = 'Amount'
 AND ModifierId = 'HYPASPIST_SIEGE_BONUS';
 
@@ -240,7 +197,7 @@ WHERE Name = 'Amount'
 AND ModifierId = 'HETAIROI_GREAT_GENERAL_POINTS';
 
 UPDATE ModifierArguments
-SET Value = 15
+SET Value = 13
 WHERE Name = 'Amount'
 AND ModifierId = 'HETAIROI_GREAT_GENERAL_COMBAT_BONUS';
 
@@ -285,7 +242,7 @@ SET Cost = 120
 WHERE UnitType = 'UNIT_PERSIAN_IMMORTAL';
 
 UPDATE Units 
-SET Combat = 50
+SET Combat = 46
 WHERE UnitType = 'UNIT_PERSIAN_IMMORTAL';
 
 --Paridaeza
@@ -329,21 +286,3 @@ UPDATE ModifierArguments
 SET Value = 6
 WHERE Name = 'Amount'
 AND ModifierId = 'TRAIT_FALLBABYLON_SURPRISE_MOVEMENT';
-WHERE ImprovementType = 'IMPROVEMENT_CONS_KACHOUFUUGETSU';
-
-UPDATE Improvement_YieldChanges
-SET YieldChange = 3
-WHERE ImprovementType = 'IMPROVEMENT_CONS_KACHOUFUUGETSU';
-
-UPDATE AdJacency_YieldChanges
-SET YieldChange = 3
-WHERE ID = 'Farms_Cons_Kachoufuugetsu1Adjacency';
-
-UPDATE AdJacency_YieldChanges
-SET YieldChange = 6
-WHERE ID = 'Farms_Cons_Kachoufuugetsu2Adjacency';
-
---Aqua
-UPDATE ModifierArguments
-SET Value = 6
-WHERE ModifierId = 'TRAIT_LEADER_CONS_AQUA_ADJACENT_RIVER_HOUSING_BONUS_MODIFIER';

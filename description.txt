@@ -9,7 +9,7 @@ This is a fork of my [url=https://steamcommunity.com/sharedfiles/filedetails/?id
 -legacy bonuses 3 times faster
 -P51: +13 ATK, +6 Range, +100% experience
 -FilmStudio: +300 Tourism
--Corollary: +15 Str on Home, +3 Appeal for National Park
+-Corollary: +13 Str on Home, +3 Appeal for National Park
 -Rough Rider: +100% STR on home continent, +23 on hills
 [u]Arabia[/u]    
 -+3 science for each converted city
@@ -31,7 +31,7 @@ This is a fork of my [url=https://steamcommunity.com/sharedfiles/filedetails/?id
 -Chariot Archer: +5 movement
 -Cleopatra: trade routes outgoing +12 Gold, incoming +6 gold, +6 food 
 [u]England[/u]
--3 free melle units on other continent
+-3 free melee units on other continent
 -9 slots in museum, 3 archeologists (can't do more, withoud bugging UI)
 -Seadog: +3 base moves
 -Dock: +3 movement, 6 gold from trade, cost=8
@@ -55,46 +55,46 @@ This is a fork of my [url=https://steamcommunity.com/sharedfiles/filedetails/?id
 -Pericles +15% Culture per city state 
 [u]India[/u]
 -Stepwell: 6 Housing, 3 Food, +3 food if farm, +3 faith if holysite 
--Varu: -8 STR to enemies (stackable!), 1 Move, 78 STR, 5 sight, 200 cost
+-Varu: -8 STR to enemies (stackable!), 1 Move, 5 STR, 5 sight, 200 cost
 -Ghandi: 3 fold War weeariness on enemy
 -15 faith per known civ with religion 
 [u]Japan[/u]
 -3 adjacent district bunus
 -Electronnic Factory: 6 Bunus to cities in 6 radius, 12 cuture
--Samurai: 53 STR, 131 cost
--Divine Wind: +300% Production of holy site, encampment and theater, +15 STR on coast and shallow water
+-Samurai: 51 STR, 131 cost
+-Divine Wind: +300% Production of holy site, encampment and theater, +13 STR on coast and shallow water
 [u]Kongo[/u]
 -3x artist and musician points, +12 Gold +6 Food, +6 Food from great works, 9 slots in palace (more breaks UI)
 -Mbanza: +12 Gold, +6 Food, Cost=8
--Nagao: 30 ranged defense
+-Nagao: 23 ranged defense
 -3 free apostles on mbanza and theater district build
 [u]Norway[/u]
 -Stave Church: 3 faith adjecency
--berserker:6 Movement in enimy territory, +21 when attacking, -21 when defending
+-berserker:6 Movement in enemy territory, +17 when attacking, -17 when defending
 -Harald:
--Longship: 40 Combat, 6 coast movement 
+-Longship: 38 Combat, 6 coast movement 
 [u]Rome[/u]
 -Bath: Cost=8, Housing 6, Entertainment 3
--Legion: 48 Combat, 3 Charges, cost 150
--Fort: 12 Def
+-Legion: 46 Combat, 3 Charges, cost 150
+-Fort: 10 Def
 -3 Gold on traderoutes
 -Trajan: 3 free Buildings in new City
 [u]Russia[/u]
 -new cities start with 12 tiles
 -+3 faith and production on tundra
 -Lavra: Cost=8, +3 great person production
--Cossack: Cost=360, 77 STR, +15 STR in own territory
+-Cossack: Cost=360, 75 STR, +13 STR in own territory
 -Peter: traderoutes give +1 science
 [u]Scythia[/u]
 -3 extra light cavalry
 -Kurgan: +3 Faith. +3 Gold, per pasture +3 Faith
 -Horse Archer: more cost, 3 range, weak melee
--Tomyris: heal 87 after kill, 15 bonus vs wounded
+-Tomyris: heal 87 after kill, 13 bonus vs wounded
 [u]Spain[/u]
 -Mission: 6 Faith, +6 if on different continent, +6 if next to campus
--Conquisitor: +30 STR, if with Missionary
+-Conquisitor: +23 STR, if with Missionary
 -+10 gold and production on demestzic, +12 gold on international routes
--phillip: 3 extra spanish inquisitions and +12 str against other religions
+-phillip: 3 extra spanish inquisitions and +10 str against other religions
 [u]Sumeria[/u]
 -Ziggurat: 6 science, 
 -Warcart: cost=40, for early Spam
@@ -103,28 +103,38 @@ This is a fork of my [url=https://steamcommunity.com/sharedfiles/filedetails/?id
 [u]Aztecs[/u]
 -Builders complete distict 49%
 -Tlachtli: 6 faith, 3 Great General points
--Eagle Warrior: 52 STR, 110 cost
+-Eagle Warrior: 39 STR, 110 cost
 -Montezuma: +3 STR per luxury, 6 extra amenities per luxury
 [u]Australia[/u]
--Digger: +30 STR on coast, +15 on abroad
+-Digger: +23 STR on coast, +13 on abroad
 -Outback Station: +3 food, +3 prod, +3 food for adj pastuire, +3 food abd +3 prod with civs
--9 housing on coastal cities, districs bonuses +3 on chaming, +9 on breathtaking
+-9 housing on coastal cities, districs bonuses +3 on charming, +9 on breathtaking
 -Curtin: +300% production on war declared
 [u]Poland[/u]
--Hussar: Made stronger (69 STR)
+-Hussar: Made stronger (65 STR)
 -Sukiennice: +6 prod on in trade, 12 gold on domestic
 -Jadwiga: 6 faith 6 culture and 12 gold for relic
 [u]Macedonia[/u]
 -3 inspirations/ eureka when capturing appropriate city
--Hypapist: 150% support, 15 STR siege
--Hetaroy: 15 general GPP, 15 bonus if with genera
+-Hypapist: 150% support, 13 STR siege
+-Hetaroy: 15 general GPP, 13 bonus if with general
 -basilikoi: 75% unit production to science
 [u]Persia[/u]
 -3 gold and 3 culture for internal routes, roads 3 times more advanced
--Immortal: 50 STR, cost 120
+-Immortal: 46 STR, cost 120
 -Paradaeza: Appeal 6, 6 Gold, 3 Culture, 3 for adj holy and theater, 3 culture with dipolmatic service
 -Cyrus: 6 Movement on surprise war
 [u]MOD CIVS:[/u]
+[u][url=https://steamcommunity.com/workshop/filedetails/?id=896454049]JFD's The Empire: Civlization and Leader Packs[/url][/u]
+-India Ajatasattu: +13 STR near cities with same religion, 3 art slots
+-Germany Frederick: 3 times gold and science equal to production of Hansa
+-Gremany Landwehr: +29 STR adjecency
+-Germany Hitler: +3 movement, +200% wartime production
+-Germany panzer: +13 Combat Bonus
+-France Louis XIV: +3 Envoy and +206Culture per wonders
+-France Regiment Vieux: +19 vs city centre
+-France De Gaulle: 3 GPP for General, +6 movement for General
+-France B1: +19 Defense
 [u][url=https://steamcommunity.com/sharedfiles/filedetails/?id=945917617]Railgun Misaka[/url][/u]
 -30% science bonus, +3 science, +3 gold
 -institude: +10 gold, production
@@ -132,13 +142,13 @@ This is a fork of my [url=https://steamcommunity.com/sharedfiles/filedetails/?id
 -lv 5: +3 movement, +3 sight
 -misaka: +3 range
 [u][url=https://steamcommunity.com/sharedfiles/filedetails/?id=891438514]Konosuba Aqua[/url][/u]
--Missionary and Apostle +24 religious str, +12/+24 STR to units
--Arch Priest: +33 STR per era after medieval
+-Missionary and Apostle +19 religious str, +10/+19 STR to units
+-Arch Priest: +24 STR per era after medieval
 -Kachoufuugetsu: +3 gold, faith, food adjecency
 -6 housing on freshwater 
 [u][url=https://steamcommunity.com/sharedfiles/filedetails/?id=951144129]Konosuba Megumin[/url][/u]
--+15 ranged STR, +150% XP 
--Arch Wizard: +30 STR per Era
+-+13 ranged STR, +150% XP 
+-Arch Wizard: +23 STR per Era
 -Crimson Magic Village: Cost 8 
 -Explosion Magic: 3 Nukes
 -Magic Stuff: 3x more science and Gold
@@ -153,9 +163,9 @@ This is a fork of my [url=https://steamcommunity.com/sharedfiles/filedetails/?id
 [u][url=https://steamcommunity.com/sharedfiles/filedetails/?id=894221062]Civ of the Rings[/url][/u]
 [u]Gondor[/u]
 -+75% district build speed, +3 housing for walls
--Citatel guards: +15 Def, -15 Atk, +24 bonus for districts
--Stonework: +3 cultere per era, defense=80
--Aragorn: 3 dipl policies, scout 25 STR
+-Citatel guards: +13 Def, -13 Atk, +19 bonus for districts
+-Stonework: +3 cultere per era, defense=73
+-Aragorn: 3 dipl policies, scout 23 STR
 [u]Rohan[/u]
 -farms +3 adjecencies,  +3 movement for cavalry
 -Rider: 60 STR, 105 cost, 6 charges 
@@ -163,32 +173,32 @@ This is a fork of my [url=https://steamcommunity.com/sharedfiles/filedetails/?id
 -Théoden: food and prod increased by 150% after liberation
 [u]Silvan[/u]
 -+3 culture on charming, +6 on breathtaking, +3 faith from Forest
--Galadrian Archer: +15 in friendy, +9 STR
+-Galadrian Archer: +13 in friendy, +8 STR
 -Treehouse: +3 food, +3 culture, +6 faith , more food and culture later
 -Galadriel: forests +3 appeal, all cities start with op walls
--Thranduil: +15 for ranged
+-Thranduil: +13 for ranged
 [u]Isengard[/u]
 -build Industrial Zone, Encampement, Siege, Support 150% faster, corp and, armies very early
--Ballista: +9 bombard, +15 melee
+-Ballista: +8 bombard, +13 melee
 -Uruk Pits: +6 Prod
 -Saruman: Spy 3 increase, a lot of faith by babarians
 [u]Mordor[/u]
 -Units no maintenance
--Mamak: +9STR
+-Mamak: +8 STR
 -Nazgul: heals 49 hp on kill
 -Wasteland: Cost=1
 -Sauron: 3 envoys per capture, 3 nazgul per era
 [u]Goblins[/u]
 -3 units when producing infantry
--marauder: 15 STR, 300% gold on kill
+-marauder: 28 STR, 300% gold on kill
 -Warg: 45 STR, +15 anticav
 -Goblin Caves: +3 Prod, 0 housing, 165% unit production to faith and culture
 -Azog: +15 STR near conquered city
 [u]Dwarves[/u]
--Guardian: +12 STR in hill or mountain, +6
+-Guardian: +10 STR in hill or mountain, +6
 -Forge: 3x adjecency gold bonuses, 3 merchant GPP, +5 Prod
 -Durin: 3 free builders, +3 charges
--Dain: +300% support, Axe thrower 45 STR 40 ranged
+-Dain: +300% support, Axe thrower 38 STR 38 ranged
 -Thror: mountains +60% gold, +6 gold form int trade, 3 slots in moountain cities (more breaks UI)
 [/quote]
 

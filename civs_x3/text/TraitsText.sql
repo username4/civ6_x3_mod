@@ -34,7 +34,7 @@ AND Tag = 'LOC_ABILITY_ROUGH_RIDER_DESCRIPTION';
 
 --Corollary
 UPDATE LocalizedText
-SET Text = 'Units receive a +15 [ICON_Strength] Combat Strength on their home continent. +10 Appeal to all tiles in a city with a National Park. Gain the Rough Rider unique unit when they research the Rifling technology.'
+SET Text = 'Units receive a +13 [ICON_Strength] Combat Strength on their home continent. +10 Appeal to all tiles in a city with a National Park. Gain the Rough Rider unique unit when they research the Rifling technology.'
 WHERE Language = 'en_US'
 AND Tag = 'LOC_TRAIT_LEADER_ROOSEVELT_COROLLARY_DESCRIPTION';
 
@@ -320,7 +320,7 @@ WHERE Language = 'en_US'
 AND Tag = 'LOC_BUILDING_ELECTRONICS_FACTORY_DESCRIPTION';
 
 UPDATE LocalizedText
-SET Text = 'Land units receive +15 [ICON_Strength] Combat Strength in land tiles adjacent to Coast; naval units receive +15 [ICON_Strength] Combat Strength in shallow water tiles. Builds Encampment, Holy Site and Theater Square districts 3 time faster.'
+SET Text = 'Land units receive +13 [ICON_Strength] Combat Strength in land tiles adjacent to Coast; naval units receive +13 [ICON_Strength] Combat Strength in shallow water tiles. Builds Encampment, Holy Site and Theater Square districts 3 time faster.'
 WHERE Language = 'en_US'
 AND Tag = 'LOC_TRAIT_LEADER_DIVINE_WIND_DESCRIPTION';
 
@@ -346,7 +346,7 @@ WHERE Language = 'en_US'
 AND Tag = 'LOC_DISTRICT_MBANZA_DESCRIPTION';
 
 UPDATE LocalizedText
-SET Text = 'Kongo unique Classical era unit that replaces the Swordsman. +30 [ICON_Strength] Combat Strength when defending against ranged attacks. Can move and see through Woods and Rainforest.'
+SET Text = 'Kongo unique Classical era unit that replaces the Swordsman. +23 [ICON_Strength] Combat Strength when defending against ranged attacks. Can move and see through Woods and Rainforest.'
 WHERE Language = 'en_US'
 AND Tag = 'LOC_UNIT_KONGO_SHIELD_BEARER_DESCRIPTION';
 
@@ -388,7 +388,7 @@ WHERE Language = 'en_US'
 AND Tag = 'LOC_UNIT_NORWEGIAN_BERSERKER_DESCRIPTION';
 
 UPDATE LocalizedText
-SET Text = 'Norwegian unique Ancient era naval unit that replaces the Galley. Can pillage enemy coastal lands and capture civilians if adjacent using its coastal raiding ability. 3 [ICON_Movement] Movement while in coastal waters.'
+SET Text = 'Norwegian unique Ancient era naval unit that replaces the Galley. Can pillage enemy coastal lands and capture civilians if adjacent using its coastal raiding ability. 6 [ICON_Movement] Movement while in coastal waters.'
 WHERE Language = 'en_US'
 AND Tag = 'LOC_UNIT_NORWEGIAN_LONGSHIP_DESCRIPTION';
 
@@ -415,7 +415,7 @@ WHERE Language = 'en_US'
 AND Tag = 'LOC_UNIT_ROMAN_LEGION_DESCRIPTION';
 
 UPDATE LocalizedText
-SET Text = 'Unlocks the Roman Legion ability to construct a Roman Fort, unique to Rome.[NEWLINE][NEWLINE]Occupying unit receives +12 [ICON_Strength] Defense Strength, and automatically gains 2 turns of fortification.'
+SET Text = 'Unlocks the Roman Legion ability to construct a Roman Fort, unique to Rome.[NEWLINE][NEWLINE]Occupying unit receives +10 [ICON_Strength] Defense Strength, and automatically gains 2 turns of fortification.'
 WHERE Language = 'en_US'
 AND Tag = 'LOC_IMPROVEMENT_ROMAN_FORT_DESCRIPTION';
 
@@ -442,12 +442,12 @@ WHERE Language = 'en_US'
 AND Tag = 'LOC_TRAIT_CIVILIZATION_MOTHER_RUSSIA_DESCRIPTION';
 
 UPDATE LocalizedText
-SET Text = 'Can move after attacking. +15 [ICON_Strength] Combat Strength in your territory or adjacent to your territory.'
+SET Text = 'Can move after attacking. +13 [ICON_Strength] Combat Strength in your territory or adjacent to your territory.'
 WHERE Language = 'en_US'
 AND Tag = 'LOC_ABILITY_COSSACK_DESCRIPTION';
 
 UPDATE LocalizedText
-SET Text = 'Russian unique Industrial era unit that replaces Cavalry. Stronger than Cavalry, and gains +15 [ICON_Strength] Combat Strength when fighting in or adjacent to its home territory. Can move after attacking if [ICON_Movement] Movement points remain.'
+SET Text = 'Russian unique Industrial era unit that replaces Cavalry. Stronger than Cavalry, and gains +13 [ICON_Strength] Combat Strength when fighting in or adjacent to its home territory. Can move after attacking if [ICON_Movement] Movement points remain.'
 WHERE Language = 'en_US'
 AND Tag = 'LOC_UNIT_RUSSIAN_COSSACK_DESCRIPTION';
 
@@ -478,7 +478,7 @@ WHERE Language = 'en_US'
 AND Tag = 'LOC_UNIT_SCYTHIAN_HORSE_ARCHER_DESCRIPTION';
 
 UPDATE LocalizedText
-SET Text = 'All units receive +15  [ICON_Strength] Combat Strength when attacking wounded units. When they eliminate a unit, they heal up to 87 hit points.'
+SET Text = 'All units receive +13  [ICON_Strength] Combat Strength when attacking wounded units. When they eliminate a unit, they heal up to 87 hit points.'
 WHERE Language = 'en_US'
 AND Tag = 'LOC_TRAIT_LEADER_KILLER_OF_CYRUS_DESCRIPTION';
 
@@ -499,12 +499,12 @@ WHERE Language = 'en_US'
 AND Tag = 'LOC_IMPROVEMENT_MISSION_DESCRIPTION';
 
 UPDATE LocalizedText
-SET Text = 'Spanish unique Renaissance era unit that replaces the Musketman. +30 [ICON_Strength] Combat Strength when there is a Missionary, Inquisitor, or Apostle in the same hex. If this unit captures a city or is adjacent to a city when it is captured, the city will automatically adopt the Conquistador player''s Religion as the dominant Religion.'
+SET Text = 'Spanish unique Renaissance era unit that replaces the Musketman. +23 [ICON_Strength] Combat Strength when there is a Missionary, Inquisitor, or Apostle in the same hex. If this unit captures a city or is adjacent to a city when it is captured, the city will automatically adopt the Conquistador player''s Religion as the dominant Religion.'
 WHERE Language = 'en_US'
 AND Tag = 'LOC_UNIT_SPANISH_CONQUISTADOR_DESCRIPTION';
 
 UPDATE LocalizedText
-SET Text = '+30 [ICON_Strength] Combat Strength when there is an Apostle, Inquisitor, or Missionary in the same hex. If this unit captures a city or is adjacent to a city when it''s captured, the city will automatically convert to the Conquistador player''s majority Religion.'
+SET Text = '+23 [ICON_Strength] Combat Strength when there is an Apostle, Inquisitor, or Missionary in the same hex. If this unit captures a city or is adjacent to a city when it''s captured, the city will automatically convert to the Conquistador player''s majority Religion.'
 WHERE Language = 'en_US'
 AND Tag = 'LOC_ABILITY_CONQUISTADOR_DESCRIPTION';
 
@@ -514,7 +514,7 @@ WHERE Language = 'en_US'
 AND Tag = 'LOC_TRAIT_CIVILIZATION_TREASURE_FLEET_DESCRIPTION';
 
 UPDATE LocalizedText
-SET Text = 'Inquisitors can Remove Heresy 10 extra time. Combat units have a bonus of +12 [ICON_Strength] Combat Strength against players following other Religions.'
+SET Text = 'Inquisitors can Remove Heresy 10 extra time. Combat units have a bonus of +10 [ICON_Strength] Combat Strength against players following other Religions.'
 WHERE Language = 'en_US'
 AND Tag = 'LOC_TRAIT_LEADER_EL_ESCORIAL_DESCRIPTION';
 
