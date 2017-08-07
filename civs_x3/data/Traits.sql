@@ -22,22 +22,22 @@ SET BaseMoves = 10
 WHERE UnitType = 'UNIT_AMERICAN_P51';
 
 UPDATE Units
-SET Combat = 95
+SET Combat = 93
 WHERE UnitType = 'UNIT_AMERICAN_P51';
 
 UPDATE Units
-SET RangedCombat = 95
+SET RangedCombat = 93
 WHERE UnitType = 'UNIT_AMERICAN_P51';
 
 UPDATE ModifierArguments
-SET Value = 100
+SET Value = 150
 WHERE ModifierId = 'MUSTANG_MORE_EXPERIENCE';
 
 
 --LEADER Teddy
 --Corollary
 UPDATE ModifierArguments
-SET Value = 15
+SET Value = 13
 WHERE ModifierId = 'COMBAT_BONUS_HOME_CONTINENT_MODIFIER';
 
 UPDATE ModifierArguments
@@ -46,11 +46,11 @@ WHERE ModifierId = 'TRAIT_NATIONAL_PARK_APPEAL_BONUS';
 
 --rough rider as replacement for cavalry  
 UPDATE Units
-SET Combat = 77
+SET Combat = 75
 WHERE UnitType = 'UNIT_AMERICAN_ROUGH_RIDER';
 
 UPDATE ModifierArguments
-SET Value = 30
+SET Value = 23
 WHERE ModifierId = 'ROUGH_RIDER_BONUS_ON_HILLS';
 
 UPDATE ModifierArguments
@@ -138,11 +138,9 @@ AND ModifierId = 'TRAIT_AMAZON_RAINFOREST_EXTRA_APPEAL';
 
 --MINAS_GERAES
 UPDATE Units
-SET Combat = 90
+SET Combat = 83 , RangedCombat = 73 , AntiAirCombat = 88
 WHERE UnitType = 'UNIT_BRAZILIAN_MINAS_GERAES';
-UPDATE Units
-SET RangedCombat = 100
-WHERE UnitType = 'UNIT_BRAZILIAN_MINAS_GERAES';
+
 
 
 --"CIVILIZATION_BRAZIL"	"TRAIT_CIVILIZATION_STREET_CARNIVAL"
@@ -199,7 +197,7 @@ WHERE ID = 'GreatWall_Culture';
 
 --"TRAIT_CIVILIZATION_UNIT_CHINESE_CROUCHING_TIGER
 UPDATE Units
-SET RangedCombat = 70
+SET RangedCombat = 63
 WHERE UnitType = 'UNIT_CHINESE_CROUCHING_TIGER';
 --cost reduction (exponential, 160/180^3 *180 = 126 )
 UPDATE Units
@@ -335,7 +333,7 @@ VALUES
 
 --REDCOAT 
 UPDATE ModifierArguments
-SET Value = 30
+SET Value = 23
 WHERE ModifierId = 'REDCOAT_FOREIGN_COMBAT';
 
 
@@ -371,75 +369,27 @@ SET Value = 600
 WHERE (Name = 'ScalingFactor'
 AND ModifierId = 'TRAIT_WONDER_DOUBLETOURISM');
 
---ress. Wonders 20% to 90%, exponential scaling
+--ress. Wonders 20% to 49%, exponential scaling
 UPDATE ModifierArguments
 SET Value = 49
-WHERE (Name = 'Amount'
-AND ModifierId = 'TRAIT_ALHAMBRAPRODUCTION');
-
-UPDATE ModifierArguments
-SET Value = 49
-WHERE (Name = 'Amount'
-AND ModifierId = 'TRAIT_CHICHENITZAPRODUCTION');
-
-UPDATE ModifierArguments
-SET Value = 49
-WHERE (Name = 'Amount'
-AND ModifierId = 'TRAIT_FORBIDDENCITYPRODUCTION');
-
-UPDATE ModifierArguments
-SET Value = 49
-WHERE (Name = 'Amount'
-AND ModifierId = 'TRAIT_GREATZIMBABWEPRODUCTION');
-
-UPDATE ModifierArguments
-SET Value = 49
-WHERE (Name = 'Amount'
-AND ModifierId = 'TRAIT_HAGIASOPHIAPRODUCTION');
-
-UPDATE ModifierArguments
-SET Value = 49
-WHERE (Name = 'Amount'
-AND ModifierId = 'TRAIT_VENETIANARSENALPRODUCTION');
-
-UPDATE ModifierArguments
-SET Value = 49
-WHERE (Name = 'Amount'
-AND ModifierId = 'TRAIT_MONTSTMICHELPRODUCTION');
-
-UPDATE ModifierArguments
-SET Value = 49
-WHERE (Name = 'Amount'
-AND ModifierId = 'TRAIT_POTALAPALACEPRODUCTION');
-
-UPDATE ModifierArguments
-SET Value = 49
-WHERE (Name = 'Amount'
-AND ModifierId = 'TRAIT_BOLSHOITHEATREPRODUCTION');
-
-UPDATE ModifierArguments
-SET Value = 49
-WHERE (Name = 'Amount'
-AND ModifierId = 'TRAIT_HERMITAGEPRODUCTION');
-
-UPDATE ModifierArguments
-SET Value = 49
-WHERE (Name = 'Amount'
-AND ModifierId = 'TRAIT_RUHRVALLEYPRODUCTION');
-
-UPDATE ModifierArguments
-SET Value = 49
-WHERE (Name = 'Amount'
-AND ModifierId = 'TRAIT_OXFORDUNIVERSITYPRODUCTION');
-
-UPDATE ModifierArguments
-SET Value = 49
-WHERE (Name = 'Amount'
-AND ModifierId = 'TRAIT_BIGBENPRODUCTION');
+WHERE Name = 'Amount'
+AND (ModifierId = 'TRAIT_ALHAMBRAPRODUCTION'
+OR ModifierId = 'TRAIT_CHICHENITZAPRODUCTION'
+OR ModifierId = 'TRAIT_FORBIDDENCITYPRODUCTION'
+OR ModifierId = 'TRAIT_GREATZIMBABWEPRODUCTION'
+OR ModifierId = 'TRAIT_HAGIASOPHIAPRODUCTION'
+OR ModifierId = 'TRAIT_VENETIANARSENALPRODUCTION'
+OR ModifierId = 'TRAIT_MONTSTMICHELPRODUCTION'
+OR ModifierId = 'TRAIT_POTALAPALACEPRODUCTION'
+OR ModifierId = 'TRAIT_BOLSHOITHEATREPRODUCTION'
+OR ModifierId = 'TRAIT_HERMITAGEPRODUCTION'
+OR ModifierId = 'TRAIT_RUHRVALLEYPRODUCTION'
+OR ModifierId = 'TRAIT_OXFORDUNIVERSITYPRODUCTION'
+OR ModifierId = 'TRAIT_BIGBENPRODUCTION');
 
 --GARDE_IMPERIALE" combat bonus
 UPDATE ModifierArguments
-SET Value = 30
+SET Value = 23
 WHERE ModifierId = 'GARDE_CONTINENT_COMBAT';
 
 --"FLYING_SQUADRON_TRAIT", 10 spy and 10 vis
@@ -487,16 +437,16 @@ SET BaseSightRange = 5
 WHERE UnitType = 'UNIT_GERMAN_UBOAT';
 
 UPDATE ModifierArguments
-SET Value = 30
+SET Value = 23
 WHERE ModifierId = 'UBOAT_OCEAN_COMBAT';
 
 --LEADER BABAROSSA
 UPDATE ModifierArguments
-SET Value = 21
+SET Value = 17
 WHERE (Name = 'Amount'
 AND ModifierId = 'COMBAT_BONUS_VS_CITY_STATES_MODIFIER');
---Militatry slots
 
+--Militatry slots
 INSERT INTO TraitModifiers (TraitType, ModifierId)
 VALUES 
     ('TRAIT_LEADER_HOLY_ROMAN_EMPEROR', 'TRAIT_MILITARY_GOVERNMENT_SLOT_1'),
@@ -608,7 +558,7 @@ SET Cost = 200
 WHERE UnitType = 'UNIT_INDIAN_VARU';
 
 UPDATE Units
-SET Combat = 50
+SET Combat = 48
 WHERE UnitType = 'UNIT_INDIAN_VARU';
 
 UPDATE Units
@@ -616,7 +566,7 @@ SET BaseSightRange = 5
 WHERE UnitType = 'UNIT_INDIAN_VARU';
 
 UPDATE ModifierArguments
-SET Value = -15
+SET Value = -13
 WHERE (Name = 'Amount'
 AND ModifierId = 'VARU_NEGATIVE_COMBAT_MODIFIER');
 
@@ -1291,470 +1241,6 @@ AND ModifierId = 'TRAIT_ADJUST_JOINTWAR_EXPERIENCE';
 
 ---------------------------------------------------------
 ---------------------------------------------------------
---Aztec
----------------------------------------------------------
----------------------------------------------------------
-
---five suns
-UPDATE ModifierArguments
-SET Value = 49
-WHERE ModifierId = 'TRAIT_BUILDER_DISTRICT_PERCENT';
-
---Tlachtli
-UPDATE Building_YieldChanges 
-SET YieldChange = 6
-WHERE BuildingType='BUILDING_TLACHTLI';
-
-UPDATE Building_GreatPersonPoints
-SET PointsPerTurn = 3
-WHERE BuildingType='BUILDING_TLACHTLI';
-
---Eagle Warrior
-UPDATE Units 
-SET Combat = 52
-WHERE UnitType='UNIT_AZTEC_EAGLE_WARRIOR';
-
-UPDATE Units 
-SET Cost = 110
-WHERE UnitType='UNIT_AZTEC_EAGLE_WARRIOR';
-
---Montezuma
-UPDATE ModifierArguments
-SET Value = 6
-WHERE ModifierId = 'TRAIT_OWNED_LUXURY_EXTRA_AMENITIES';
-
-UPDATE ModifierArguments
-SET Value = 3
-WHERE ModifierId = 'TRAIT_COMBAT_BONUS_PER_LUXURY';
-
----------------------------------------------------------
----------------------------------------------------------
---Australia
----------------------------------------------------------
----------------------------------------------------------
-
---Digger: +20 STR, +100 on coat, +50 abroad
-UPDATE Units 
-SET Combat = 76
-WHERE UnitType = 'UNIT_DIGGER';
-
-UPDATE ModifierArguments
-SET Value = 30
-WHERE ModifierId = 'DIGGER_BONUS_ON_COAST';
-
-UPDATE ModifierArguments
-SET Value = 15
-WHERE ModifierId = 'DIGGER_NON_DOMESTIC_BONUS';
-
---Outback Station: 10 food, 10 production, 5 housing, 10 food per pasture, 10 food and production per adj. station
-UPDATE Improvement_YieldChanges
-SET YieldChange = 3
-WHERE ImprovementType = 'IMPROVEMENT_OUTBACK_STATION';
-
-UPDATE Adjacency_YieldChanges
-SET YieldChange = 3
-WHERE ID = 'Outback_Pasture_Food';
-
-UPDATE Adjacency_YieldChanges
-SET YieldChange = 3
-WHERE ID = 'Pasture_Outback_Production';
-
-UPDATE Improvements
-SET Housing = 5
-WHERE ImprovementType = 'IMPROVEMENT_OUTBACK_STATION';
-
---Down Under: 30 Housing on Coast, +10 district bonus for Charming, +30 for breathtaking
-UPDATE ModifierArguments
-SET Value = 3
-WHERE Name = 'YieldChange'
-AND ModifierId = 'TRAIT_CHARMING_COMMERCIAL_HUB';
-
-UPDATE ModifierArguments
-SET Value = 3
-WHERE Name = 'YieldChange'
-AND ModifierId = 'TRAIT_CHARMING_CAMPUS';
-
-UPDATE ModifierArguments
-SET Value = 3
-WHERE Name = 'YieldChange'
-AND ModifierId = 'TRAIT_CHARMING_HOLY_SITE';
-
-UPDATE ModifierArguments
-SET Value = 3
-WHERE Name = 'YieldChange'
-AND ModifierId = 'TRAIT_CHARMING_THEATER_DISTRICT';
-
-UPDATE ModifierArguments
-SET Value = 9
-WHERE Name = 'YieldChange'
-AND ModifierId = 'TRAIT_BREATHTAKING_CAMPUS';
-
-UPDATE ModifierArguments
-SET Value = 9
-WHERE Name = 'YieldChange'
-AND ModifierId = 'TRAIT_BREATHTAKING_COMMERCIAL_HUB';
-
-UPDATE ModifierArguments
-SET Value = 9
-WHERE Name = 'YieldChange'
-AND ModifierId = 'TRAIT_BREATHTAKING_HOLY_SITE';
-
-UPDATE ModifierArguments
-SET Value = 9
-WHERE Name = 'YieldChange'
-AND ModifierId = 'TRAIT_BREATHTAKING_THEATER_DISTRICT';
-
-UPDATE ModifierArguments
-SET Value = 9
-WHERE ModifierId = 'TRAIT_COASTAL_HOUSING';
-
---Citadel of Civ +1000% Production
-UPDATE ModifierArguments
-SET Value = 300
-WHERE Name = 'Amount'
-AND ModifierId = 'TRAIT_CITADELCIVILIZATION_LIBERATION_PRODUCTION';
-
-UPDATE ModifierArguments
-SET Value = 300
-WHERE Name = 'Amount'
-AND ModifierId = 'TRAIT_CITADELCIVILIZATION_DEFENSIVE_PRODUCTION';
-
----------------------------------------------------------
----------------------------------------------------------
---Poland
----------------------------------------------------------
----------------------------------------------------------
-
---golden Liberty: 10 Military to wildcard
-INSERT INTO TraitModifiers (TraitType, ModifierId)
-SELECT 'TRAIT_CIVILIZATION_GOLDEN_LIBERTY' , 'TRAIT_REPLACE_MILITARY_SLOT_WITH_WILDCARD_1'
-WHERE EXISTS  (SELECT * FROM Traits WHERE TraitType = 'TRAIT_CIVILIZATION_GOLDEN_LIBERTY');
-INSERT INTO TraitModifiers (TraitType, ModifierId)
-SELECT 'TRAIT_CIVILIZATION_GOLDEN_LIBERTY' , 'TRAIT_REPLACE_MILITARY_SLOT_WITH_WILDCARD_2'
-WHERE EXISTS  (SELECT * FROM Traits WHERE TraitType = 'TRAIT_CIVILIZATION_GOLDEN_LIBERTY');
-
-
-
-
-INSERT INTO Modifiers (ModifierId, ModifierType)
-VALUES
-    ('TRAIT_REPLACE_MILITARY_SLOT_WITH_WILDCARD_1','MODIFIER_PLAYER_CULTURE_REPLACE_GOVERNMENT_SLOTS'),
-    ('TRAIT_REPLACE_MILITARY_SLOT_WITH_WILDCARD_2','MODIFIER_PLAYER_CULTURE_REPLACE_GOVERNMENT_SLOTS');
-
-INSERT INTO ModifierArguments (ModifierId, Name, Value)
-VALUES
-    ('TRAIT_REPLACE_MILITARY_SLOT_WITH_WILDCARD_1','ReplacedGovernmentSlotType','SLOT_MILITARY'),
-    ('TRAIT_REPLACE_MILITARY_SLOT_WITH_WILDCARD_1','AddedGovernmentSlotType','SLOT_WILDCARD'),
-    ('TRAIT_REPLACE_MILITARY_SLOT_WITH_WILDCARD_2','ReplacedGovernmentSlotType','SLOT_MILITARY'),
-    ('TRAIT_REPLACE_MILITARY_SLOT_WITH_WILDCARD_2','AddedGovernmentSlotType','SLOT_WILDCARD');
-    
---Hussar, compare STR to Knight
-UPDATE Units 
-SET Combat = 69
-WHERE UnitType = 'UNIT_POLISH_HUSSAR';
-
---Sukiennice
-UPDATE ModifierArguments
-SET Value = 6
-WHERE Name = 'Amount'
-AND ModifierId = 'SUKIENNICE_INTERNATIONALPRODUCTION';
-
-UPDATE ModifierArguments
-SET Value = 12
-WHERE Name = 'YieldChange'
-AND ModifierId = 'SUKIENNICE_DOMESTICGOLD';
-
---Lithuanian Union
-UPDATE ModifierArguments
-SET Value = 6
-WHERE Name = 'YieldChange'
-AND ModifierId = 'TRAIT_LITHUANIANUNION_FAITH_RELIC';
-
-UPDATE ModifierArguments
-SET Value = 6
-WHERE Name = 'YieldChange'
-AND ModifierId = 'TRAIT_LITHUANIANUNION_CULTURE_RELIC';
-
-UPDATE ModifierArguments
-SET Value = 12
-WHERE Name = 'YieldChange'
-AND ModifierId = 'TRAIT_LITHUANIANUNION_GOLD_RELIC';
-
----------------------------------------------------------
----------------------------------------------------------
---Macedonia
----------------------------------------------------------
----------------------------------------------------------
-
---Hellinistic Fusion
-UPDATE ModifierArguments
-SET Value = 3
-WHERE Name = 'Amount'
-AND ModifierId = 'TRAIT_HELLENISTIC_FUSION_ENCAMPMENT_EUREKA_MODIFIER';
-
-UPDATE ModifierArguments
-SET Value = 3
-WHERE Name = 'Amount'
-AND ModifierId = 'TRAIT_HELLENISTIC_FUSION_CAMPUS_EUREKA_MODIFIER';
-
-UPDATE ModifierArguments
-SET Value = 3
-WHERE Name = 'Amount'
-AND ModifierId = 'TRAIT_HELLENISTIC_FUSION_HOLY_SITE_INSPIRATION_MODIFIER';
-
-UPDATE ModifierArguments
-SET Value = 3
-WHERE Name = 'Amount'
-AND ModifierId = 'TRAIT_HELLENISTIC_FUSION_THEATER_INSPIRATION_MODIFIER';
-
---Hypapist siege bunus and support bonus 
-UPDATE ModifierArguments
-SET Value = 150
-WHERE Name = 'Percent'
-AND ModifierId = 'HYPASPIST_SUPPORT_BONUS';
-
-UPDATE ModifierArguments
-SET Value = 15
-WHERE Name = 'Amount'
-AND ModifierId = 'HYPASPIST_SIEGE_BONUS';
-
---Hetaroy 50 bnus with gerneral, 50 general points
-UPDATE ModifierArguments
-SET Value = 15
-WHERE Name = 'Amount'
-AND ModifierId = 'HETAIROI_GREAT_GENERAL_POINTS';
-
-UPDATE ModifierArguments
-SET Value = 15
-WHERE Name = 'Amount'
-AND ModifierId = 'HETAIROI_GREAT_GENERAL_COMBAT_BONUS';
-
---Basilikoi, 250% science
-UPDATE ModifierArguments
-SET Value = 75
-WHERE Name = 'UnitProductionPercent'
-AND ModifierId = 'BASILIKOI_PAIDES_SCIENCE_TRAINED_UNIT';
-
---Alexander worlds end, nothing really to x10
-
----------------------------------------------------------
----------------------------------------------------------
---Persia
----------------------------------------------------------
----------------------------------------------------------
-
---Satrapies
-UPDATE ModifierArguments
-SET Value = 6
-WHERE Name = 'Amount'
-AND ModifierId = 'TRAIT_SATRAPIES_INTERNAL_TRADE_GOLD';
-
-UPDATE ModifierArguments
-SET Value = 3
-WHERE Name = 'Amount'
-AND ModifierId = 'TRAIT_SATRAPIES_INTERNAL_TRADE_CULTURE';
-
-UPDATE ModifierArguments
-SET Value = 3
-WHERE Name = 'Amount'
-AND ModifierId = 'TRAIT_SATRAPIES_POLITICAL_PHILOSOPHY_TRADE_ROUTE';
-
-UPDATE ModifierArguments
-SET Value = 3
-WHERE Name = 'ImprovedRouteLevel'
-AND ModifierId = 'TRAIT_SATRAPIES_IMPROVED_ROUTE_LEVEL';
-
---Immortal essentially an archer with stromnger melee, so 10 times stronger melee
-UPDATE Units 
-SET Cost = 120
-WHERE UnitType = 'UNIT_PERSIAN_IMMORTAL';
-
-UPDATE Units 
-SET Combat = 50
-WHERE UnitType = 'UNIT_PERSIAN_IMMORTAL';
-
---Paridaeza
-UPDATE Adjacency_YieldChanges
-SET YieldChange = 3 
-WHERE ID = 'Pairidaeza_CityCenterAdjacency';
-
-UPDATE Adjacency_YieldChanges
-SET YieldChange = 3 
-WHERE ID = 'Pairidaeza_CommercialHubAdjacency';
-
-UPDATE Adjacency_YieldChanges
-SET YieldChange = 3 
-WHERE ID = 'Pairidaeza_HolySiteAdjacency';
-
-UPDATE Adjacency_YieldChanges
-SET YieldChange = 3 
-WHERE ID = 'Pairidaeza_TheaterAdjacency';
-
-UPDATE Improvement_BonusYieldChanges
-SET BonusYieldChange = 3
-WHERE ImprovementType = 'IMPROVEMENT_PAIRIDAEZA';
-
-UPDATE Improvements 
-SET Appeal = 6 
-WHERE ImprovementType = 'IMPROVEMENT_PAIRIDAEZA';
-
-UPDATE Improvement_YieldChanges 
-SET YieldChange = 6 
-WHERE YieldType = 'YIELD_GOLD'
-AND ImprovementType= 'IMPROVEMENT_PAIRIDAEZA';
-
-UPDATE Improvement_YieldChanges 
-SET YieldChange = 3 
-WHERE YieldType = 'YIELD_CULTURE'
-AND ImprovementType= 'IMPROVEMENT_PAIRIDAEZA';
-
---Cyrus
-
-UPDATE ModifierArguments
-SET Value = 6
-WHERE Name = 'Amount'
-AND ModifierId = 'TRAIT_FALLBABYLON_SURPRISE_MOVEMENT';
-
----------------------------------------------------------
----------------------------------------------------------
---MOD CIVS
----------------------------------------------------------
----------------------------------------------------------
-
----------------------------------------------------------
----------------------------------------------------------
---Campus Metropolitan
----------------------------------------------------------
----------------------------------------------------------
-
---science and gold bonus
-UPDATE ModifierArguments
-SET Value = 30
-WHERE Name = 'Amount'
-AND ModifierId = 'TRAIT_CIVILIZATION_GAKUINTOSHI_SCIENCE_BONUS';
-
-UPDATE ModifierArguments
-SET Value = 3
-WHERE Name = 'Amount'
-AND ModifierId = 'TRAIT_CIVILIZATION_GAKUINTOSHI_CITY_GOLD';
-
-UPDATE ModifierArguments
-SET Value = 3
-WHERE Name = 'Amount'
-AND ModifierId = 'TRAIT_CIVILIZATION_GAKUINTOSHI_CITY_SCIENCE';
-
---KENKYUJO
-UPDATE Districts
-SET Cost = 8
-WHERE DistrictType = 'DISTRICT_KENKYUJO';
-
-INSERT INTO AdJacency_YieldChanges (ID, Description, YieldType, YieldChange, TilesRequired, AdjacentFeature)
-SELECT 'KENKYUJO_JUNGLE_GOLD' , 'LOC_DISTRICT_JUNGLE_GOLD' , 'YIELD_GOLD' , 2 , 2 , 'FEATURE_JUNGLE'
-WHERE EXISTS  (SELECT * FROM Civilizations WHERE CivilizationType = 'CIVILIZATION_GAKUINTOSHI');
-INSERT INTO AdJacency_YieldChanges (ID, Description, YieldType, YieldChange, TilesRequired, AdjacentFeature)
-SELECT 'KENKYUJO_JUNGLE_PRODUCTION' , 'LOC_DISTRICT_JUNGLE_PRODUCTION' , 'YIELD_PRODUCTION' , 2 , 2 , 'FEATURE_JUNGLE'
-WHERE EXISTS  (SELECT * FROM Civilizations WHERE CivilizationType = 'CIVILIZATION_GAKUINTOSHI');
-INSERT INTO AdJacency_YieldChanges (ID, Description, YieldType, YieldChange, TilesRequired, OtherDistrictAdjacent)
-SELECT 'KENKYUJO_DISTRICT_PRODUCTION' , 'LOC_DISTRICT_JUNGLE_PRODUCTION' , 'YIELD_PRODUCTION' , 2 , 2 , 1
-WHERE EXISTS  (SELECT * FROM Civilizations WHERE CivilizationType = 'CIVILIZATION_GAKUINTOSHI');
-
-INSERT INTO District_Adjacencies (DistrictType, YieldChangeId)
-SELECT 'DISTRICT_KENKYUJO', 'KENKYUJO_JUNGLE_GOLD'
-WHERE EXISTS  (SELECT * FROM Civilizations WHERE CivilizationType = 'CIVILIZATION_GAKUINTOSHI');
-INSERT INTO District_Adjacencies (DistrictType, YieldChangeId)	
-SELECT 'DISTRICT_KENKYUJO', 'KENKYUJO_JUNGLE_PRODUCTION'
-WHERE EXISTS  (SELECT * FROM Civilizations WHERE CivilizationType = 'CIVILIZATION_GAKUINTOSHI');
-INSERT INTO District_Adjacencies (DistrictType, YieldChangeId)	
-SELECT 'DISTRICT_KENKYUJO', 'KENKYUJO_DISTRICT_PRODUCTION'
-WHERE EXISTS  (SELECT * FROM Civilizations WHERE CivilizationType = 'CIVILIZATION_GAKUINTOSHI');	
-
-UPDATE AdJacency_YieldChanges
-SET YieldChange = 3
-WHERE ID = 'Mountains_Production1'
-OR ID = 'Mountains_Production2'
-OR ID = 'Mountains_Production3'
-OR ID = 'Mountains_Production4'
-OR ID = 'Mountains_Production5';
-
-UPDATE AdJacency_YieldChanges
-SET YieldChange = 3
-WHERE ID = 'Mountains_Gold1'
-OR ID = 'Mountains_Gold2'
-OR ID = 'Mountains_Gold3'
-OR ID = 'Mountains_Gold4'
-OR ID = 'Mountains_Gold5';
-
-UPDATE District_CitizenYieldChanges
-SET YieldChange = 3
-WHERE YieldType = 'YIELD_PRODUCTION'
-AND DistrictType = 'DISTRICT_KENKYUJO'; 
-
---Lv 5 Judgement
-UPDATE Units 
-SET BaseSightRange = 5 , BaseMoves = 6
-WHERE UnitType = 'UNIT_LV5_JUDGEMENT';
-
---Imouto
-UPDATE Units 
-SET Maintenance = 3 , Cost = 370
-WHERE UnitType = 'UNIT_MIKASA_SISTERS';
-
-
---Misaka
-UPDATE ModifierArguments
-SET Value = 3
-WHERE Name = 'Amount'
-AND ModifierId = 'MIKASA_LONG_RANGE';
-
----------------------------------------------------------
----------------------------------------------------------
---Konosuba Aqua
----------------------------------------------------------
----------------------------------------------------------
-
---combat buffs
-UPDATE ModifierArguments
-SET Value = 24
-WHERE ModifierId = 'CONS_AXIS_CULT_RELIGIOUS_COMBAT_BUFF';
-
-UPDATE ModifierArguments
-SET Value = 24
-WHERE ModifierId = 'CONS_AXIS_CULT_APOSTLE_UNIT_COMBAT';
-
-UPDATE ModifierArguments
-SET Value = 12
-WHERE ModifierId = 'CONS_AXIS_CULT_MISSIONARY_UNIT_COMBAT';
-
---Arch Priest
-UPDATE ModifierArguments
-SET Value = 33
-WHERE Name = 'Amount'
-AND ModifierId LIKE 'CONS_AXIS_CULT_PRIEST_STRENGTH_%';
-
---Kachoufuugetsu
-UPDATE Improvements
-SET Appeal = 3 
-WHERE ImprovementType = 'IMPROVEMENT_CONS_KACHOUFUUGETSU';
-
-UPDATE Improvement_YieldChanges
-SET YieldChange = 3
-WHERE ImprovementType = 'IMPROVEMENT_CONS_KACHOUFUUGETSU';
-
-UPDATE AdJacency_YieldChanges
-SET YieldChange = 3
-WHERE ID = 'Farms_Cons_Kachoufuugetsu1Adjacency';
-
-UPDATE AdJacency_YieldChanges
-SET YieldChange = 6
-WHERE ID = 'Farms_Cons_Kachoufuugetsu2Adjacency';
-
---Aqua
-UPDATE ModifierArguments
-SET Value = 6
-WHERE ModifierId = 'TRAIT_LEADER_CONS_AQUA_ADJACENT_RIVER_HOUSING_BONUS_MODIFIER';
-
----------------------------------------------------------
----------------------------------------------------------
 --Konosuba Megumin
 ---------------------------------------------------------
 ---------------------------------------------------------
@@ -2367,6 +1853,8 @@ UPDATE Building_GreatWorks
 SET NumSlots = 3
 WHERE BuildingType = 'BUILDING_THRORRELICSLOT'
 AND GreatWorkSlotType ='GREATWORKSLOT_PALACE';	
+
+---------------------------------------------------------
 ---------------------------------------------------------
 --Other modifications
 ---------------------------------------------------------
@@ -2385,14 +1873,4 @@ VALUES
     ('POLICY_BLANK_2', 'KIND_POLICY'),
     ('POLICY_BLANK_3', 'KIND_POLICY');
     
-INSERT INTO Policies (PolicyType, Name, Description, PrereqCivic, GovernmentSlotType)
-VALUES
-    ('POLICY_BLANK_DIPL_1', 'LOC_POLICY_BLANK_NAME', 'LOC_POLICY_BLANK_DESCRIPTION', 'CIVIC_CODE_OF_LAWS', 'SLOT_DIPLOMATIC' ),
-    ('POLICY_BLANK_DIPL_2', 'LOC_POLICY_BLANK_NAME', 'LOC_POLICY_BLANK_DESCRIPTION', 'CIVIC_CODE_OF_LAWS', 'SLOT_DIPLOMATIC' ),
-    ('POLICY_BLANK_DIPL_3', 'LOC_POLICY_BLANK_NAME', 'LOC_POLICY_BLANK_DESCRIPTION', 'CIVIC_CODE_OF_LAWS', 'SLOT_DIPLOMATIC' );
-    
-INSERT INTO Types (Type, Kind)
-VALUES
-    ('POLICY_BLANK_DIPL_1', 'KIND_POLICY'),
-    ('POLICY_BLANK_DIPL_2', 'KIND_POLICY'),
-    ('POLICY_BLANK_DIPL_3', 'KIND_POLICY');
+

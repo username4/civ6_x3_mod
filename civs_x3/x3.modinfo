@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Mod id="0556b023-070e-4342-9714-30b650cb7efd" version="1.3">
+<Mod id="0556b023-070e-4342-9714-30b650cb7efd" version="1.5">
     <Properties>
         <Name>Civs x3</Name>
         <Teaser/>
-        <Description>All traits multiplied times 3.</Description>
+        <Description>All traits of a civilization are made 3 time more powerfull.</Description>
         <Authors>username4</Authors>
     </Properties>
     <References>
@@ -21,6 +21,8 @@
             </Properties>         					
             <Items>
                 <File>data/Traits.sql</File>
+                <File>data/TraitsDLC.sql</File>
+                <File>data/TraitsMod.sql</File>
             </Items>
         </UpdateDatabase>
         <LocalizedText id="civs_x3_text">
@@ -28,7 +30,9 @@
                 <LoadOrder>100</LoadOrder>
             </Properties>                        
             <Items>
-                <File>data/TraitsText.sql</File>
+                <File>text/TraitsText.sql</File>
+                <File>text/TraitsTextDLC.sql</File>
+                <File>text/TraitsTextMod.sql</File>
             </Items>
         </LocalizedText>   
     </Components>
@@ -38,12 +42,18 @@
                 <LoadOrder>100</LoadOrder>
             </Properties>
             <Items>
-                <File>data/TraitsText.sql</File>
+                <File>text/TraitsText.sql</File>
+                <File>text/TraitsTextDLC.sql</File>
+                <File>text/TraitsTextMod.sql</File>
             </Items>
         </LocalizedText>
     </Settings>
     <Files>
         <File>data/Traits.sql</File>
-        <File>data/TraitsText.sql</File>
+        <File>data/TraitsDLC.sql</File>
+        <File>data/TraitsMod.sql</File>
+        <File>text/TraitsText.sql</File>
+        <File>text/TraitsTextDLC.sql</File>
+        <File>text/TraitsTextMod.sql</File>
     </Files>
 </Mod>

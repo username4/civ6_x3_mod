@@ -7,23 +7,23 @@ This is a fork of my [url=https://steamcommunity.com/sharedfiles/filedetails/?id
 [quote]
 [u]America[/u]
 -legacy bonuses 3 times faster
--P51: +15 ATK, +6 Range, +100% experience
+-P51: +13 ATK, +6 Range, +100% experience
 -FilmStudio: +300 Tourism
 -Corollary: +15 Str on Home, +3 Appeal for National Park
--Rough Rider: +100% STR on home continent, +30 on hills
+-Rough Rider: +100% STR on home continent, +23 on hills
 [u]Arabia[/u]    
 -+3 science for each converted city
 -Madrasa +7 science
 -Saladin: Faith purchase cost 3%, +30% output of worship buildings
 [u]Brazil[/u]
 -3 Adjecency Bonus for rainforests
--Minas Geraes: 90 Melee, 100 Ranged
+-Minas Geraes: 83 Melee, 93 Ranged
 -Carneval: Cost=8, Entertainment 4, 3 Great Person points 
 -Pedro: 51% Refund for Great People
 [u]China[/u]
 -74% Eureka and Inspiration Bunus
--Wall 12 Defense, +3 Gold and Culture
--Crouching Tiger: 70 Ranged and Cost=126
+-Wall 10 Defense, +3 Gold and Culture
+-Crouching Tiger: 63 Ranged and Cost=126
 -Qin: Builders +3 charges and complete wonders 39% 
 [u]Egypt[/u]
 -+152% to wonder and district production, if build next to river
@@ -33,29 +33,29 @@ This is a fork of my [url=https://steamcommunity.com/sharedfiles/filedetails/?id
 [u]England[/u]
 -3 free melle units on other continent
 -9 slots in museum, 3 archeologists (can't do more, withoud bugging UI)
--Seadog: 3 base moves
+-Seadog: +3 base moves
 -Dock: +3 movement, 6 gold from trade, cost=8
--Redcoat: +30 STR in foreign continent
+-Redcoat: +23 STR in foreign continent
 [u]France[/u]
 -Chateau: +6 Culture, +3 Appeal, +6 Culture, if next to wonder, +3 gold if next to lux 
 -res. wonders 49% complete
 -3 times tourism
--Imp. Guard +30 STR on home continent
+-Imp. Guard +23 STR on home continent
 -Catherine: +3 spies and +3 dipl. vis. 
 [u]Germany[/u]
 -can build +3 districs
 -Hansa: +3 Adjecency to ressource and districs, +6 to commercial hub
--U-Boot: +30 STR, +3 sight range
--Babarossa: +21 vs city states, +3 Military slots
+-U-Boot: +23 STR, +3 sight range
+-Babarossa: +17 vs city states, +3 Military slots
 [u]Greece[/u]
 -+3 Wildcard slots
 -Acropolis: Cost=8, +6 Adjecency for centre
--Hoplite: +30 STR if near other Hoplite 
+-Hoplite: +23 STR if near other Hoplite 
 -Gorgo: 150% culture of defeated unit strength
 -Pericles +15% Culture per city state 
 [u]India[/u]
 -Stepwell: 6 Housing, 3 Food, +3 food if farm, +3 faith if holysite 
--Varu: -15 STR to enemies (stackable!), 1 Move, 60 STR, 5 sight, 200 cost
+-Varu: -8 STR to enemies (stackable!), 1 Move, 78 STR, 5 sight, 200 cost
 -Ghandi: 3 fold War weeariness on enemy
 -15 faith per known civ with religion 
 [u]Japan[/u]
