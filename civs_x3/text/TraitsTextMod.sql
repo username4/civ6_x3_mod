@@ -319,7 +319,7 @@ WHERE Language = 'en_US'
 AND Tag = 'LOC_DISTRICT_WASTELAND_DESCRIPTION';
 
 UPDATE LocalizedText
-SET Text = 'Unique mordor heavy cavalry unit, unlocked with Siege Tactics. Acts as a Battering Ram, allowing melee units to deal full damage to city walls. +9 [ICON_STRENGTH]'
+SET Text = 'Unique mordor heavy cavalry unit, unlocked with Siege Tactics. Acts as a Battering Ram, allowing melee units to deal full damage to city walls. +8 [ICON_STRENGTH]'
 WHERE Language = 'en_US'
 AND Tag = 'LOC_UNIT_OLOG_HAI_DESCRIPTION';
 
