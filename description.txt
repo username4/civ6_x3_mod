@@ -193,7 +193,7 @@ This is a fork of my [url=https://steamcommunity.com/sharedfiles/filedetails/?id
 -marauder: 28 STR, 300% gold on kill
 -Warg: 45 STR, +15 anticav
 -Goblin Caves: +3 Prod, 0 housing, 165% unit production to faith and culture
--Azog: +15 STR near conquered city
+-Azog: +13 STR near conquered city
 [u]Dwarves[/u]
 -Guardian: +10 STR in hill or mountain, +6
 -Forge: 3x adjecency gold bonuses, 3 merchant GPP, +5 Prod

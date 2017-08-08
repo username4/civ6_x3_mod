@@ -376,17 +376,17 @@ WHERE Language = 'en_US'
 AND Tag = 'LOC_TRAIT_LEADER_LORD_OF_THE_IRON_HILLS_DESCRIPTION';
 
 UPDATE LocalizedText
-SET Text = 'Cities founded on Mountains yield +60%[ICON_GOLD]Gold and recieve an additional Great Work Slot.[NEWLINE]+20[ICON_GOLD]Gold from international Trade Routes.'
+SET Text = 'Cities founded on Mountains yield +60%[ICON_GOLD]Gold and recieve an additional Great Work Slot.[NEWLINE]+6[ICON_GOLD]Gold from international Trade Routes.'
 WHERE Language = 'en_US'
 AND Tag = 'LOC_TRAIT_LEADER_KING_UNDER_THE_MOUNTAIN_DESCRIPTION';
 
 UPDATE LocalizedText
-SET Text = 'Founding a city claims all surrounding Mountain Tiles for that city. Gets 3 free Builders after researching Mining. Builders receive 10 additional charges.'
+SET Text = 'Founding a city claims all surrounding Mountain Tiles for that city. Gets 3 free Builders after researching Mining. Builders receive 3 additional charges.'
 WHERE Language = 'en_US'
 AND Tag = 'LOC_TRAIT_LEADER_HALLS_OF_MORIA_DESCRIPTION';
 
 UPDATE LocalizedText
-SET Text = 'Unique dwarven replacement for the Workshop.[NEWLINE]Cheaper to produce and provides bonus [ICON_GOLD] Gold equal to the adjacency bonus of the Industrial district, 10 [ICON_GreatMerchant] and 5 [ICON_PRODUCTION].'
+SET Text = 'Unique dwarven replacement for the Workshop.[NEWLINE]Cheaper to produce and provides bonus [ICON_GOLD] Gold equal to the adjacency bonus of the Industrial district, 3 [ICON_GreatMerchant] and 5 [ICON_PRODUCTION].'
 WHERE Language = 'en_US'
 AND Tag = 'LOC_BUILDING_DWARVEN_FORGE_DESCRIPTION';
 
