@@ -286,3 +286,42 @@ UPDATE ModifierArguments
 SET Value = 6
 WHERE Name = 'Amount'
 AND ModifierId = 'TRAIT_FALLBABYLON_SURPRISE_MOVEMENT';
+
+
+---------------------------------------------------------
+---------------------------------------------------------
+--Nubia
+---------------------------------------------------------
+---------------------------------------------------------
+
+--Ta Seti
+UPDATE ModifierArguments
+SET Value = Value * 3
+WHERE Name = 'Amount'
+AND (ModifierId = 'TRAIT_RANGED_EXPERIENCE_MODIFIER'
+OR ModifierId LIKE 'TRAIT_%_RANGED_UNIT_PRODUCTION'
+OR ModifierId = 'TRAIT_BONUS_MINE_GOLD'
+OR ModifierId = 'TRAIT_LUXURY_MINE_GOLD'
+OR ModifierId = 'TRAIT_STRATEGIC_MINE_PRODUCTION');
+
+--Pyramid
+UPDATE Improvement_YieldChanges 
+SET YieldChange = 3
+WHERE ImprovementType = 'IMPROVEMENT_PYRAMID'
+AND YieldType = 'YIELD_FAITH';
+
+UPDATE Adjacency_YieldChanges
+SET YieldChange = 3
+WHERE ID LIKE 'Pyramid_%Adjacency';
+
+--Pitati
+UPDATE Units
+SET Cost = 60 + (10 * 3) , Combat = 15 + 6 , RangedCombat = 25 + 13 , BaseMoves = 2 + 3
+WHERE UnitType = 'UNIT_NUBIAN_PITATI';
+
+--Aminatore
+UPDATE ModifierArguments
+SET Value = Value * 3
+WHERE Name = 'Amount'
+AND (ModifierId = 'TRAIT_BASE_DISTRICT_PRODUCTION_MODIFIER'
+OR ModifierId = 'TRAIT_PYRAMID_DISTRICT_PRODUCTION_MODIFIER');

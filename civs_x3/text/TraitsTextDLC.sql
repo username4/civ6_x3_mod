@@ -159,3 +159,33 @@ UPDATE LocalizedText
 SET Text = '+6 [ICON_Movement] Movement for the first 10 turns after declaring a Surprise War. No penalties to yields in occupied cities. Declaring a Surprise War only counts as a Formal War for the purpose of warmongering and war weariness.'
 WHERE Language = 'en_US'
 AND Tag = 'LOC_TRAIT_LEADER_FALL_BABYLON_DESCRIPTION';
+
+---------------------------------------------------------
+---------------------------------------------------------
+--Nubia
+---------------------------------------------------------
+---------------------------------------------------------
+
+--Ta Seti
+UPDATE LocalizedText
+SET Text = '+150% [ICON_Production] Production toward Ranged units. All Ranged units gain +150% combat experience. Mines over strategic resources provide +3 [ICON_Production] Production. Mines over bonus and luxury resources provide +6 [ICON_Gold] Gold.'
+WHERE Language = 'en_US'
+AND Tag = 'LOC_TRAIT_CIVILIZATION_TA_SETI_DESCRIPTION';
+
+--Pyramid
+UPDATE LocalizedText
+SET Text = 'Improvement that unlocks with Masonry and must be built on Desert, Desert Hills or Floodplains. +3 [ICON_Faith] Faith. Receives additional yields from adjacent districts. +3 [ICON_Food] Food if adjacent to a city center. For all other districts that award adjacency bonuses: +3 of the appropriate yield if that district is adjacent.'
+WHERE Language = 'en_US'
+AND Tag = 'LOC_IMPROVEMENT_PYRAMID_DESCRIPTION';
+
+--UU Pitati
+UPDATE LocalizedText
+SET Text = 'Expensive Nubian unique Ancient era unit that replaces the Archer. Much stronger than the Archer with 3 extra [ICON_Movement] Movement. Upgrades to Crossbowman.'
+WHERE Language = 'en_US'
+AND Tag = 'LOC_UNIT_NUBIAN_PITATI_DESCRIPTION';
+
+--Aminatore
+UPDATE LocalizedText
+SET Text = '+60% [ICON_Production] Production towards all districts rising to +120% if there is a Nubian Pyramid adjacent to the City Center.'
+WHERE Language = 'en_US'
+AND Tag = 'LOC_TRAIT_LEADER_KANDAKE_OF_MEROE_DESCRIPTION';
