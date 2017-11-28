@@ -189,3 +189,56 @@ UPDATE LocalizedText
 SET Text = '+60% [ICON_Production] Production towards all districts rising to +120% if there is a Nubian Pyramid adjacent to the City Center.'
 WHERE Language = 'en_US'
 AND Tag = 'LOC_TRAIT_LEADER_KANDAKE_OF_MEROE_DESCRIPTION';
+
+---------------------------------------------------------
+---------------------------------------------------------
+--Indonesia
+---------------------------------------------------------
+---------------------------------------------------------
+
+-- UI
+
+UPDATE LocalizedText
+SET Text = 'Unlocks the Builder ability to construct a Kampung, unique to Indonesia.[NEWLINE][NEWLINE]+3 [ICON_PRODUCTION] Production and +3 [ICON_Housing] Housing.+10 [ICON_FOOD] Food for each adjacent Fishing Boat. Additional [ICON_PRODUCTION] Production, [ICON_Housing] Housing, and  [ICON_TOURISM] Tourism as you advance through the Technology and Civics Tree. Must be placed on a Coast or Lake tile adjacent to a sea resource.'
+WHERE Language = 'en_US'
+AND Tag = 'LOC_IMPROVEMENT_KAMPUNG_DESCRIPTION';
+
+-- UU
+
+UPDATE LocalizedText
+SET Text = 'Indonesian unique Medieval era naval unit that replaces the Frigate. Formation units all inherit escort''s [ICON_Movement] Movement speed and +13 [ICON_Strength] Combat Strength when in a formation.'
+WHERE Language = 'en_US'
+AND Tag = 'LOC_UNIT_INDONESIAN_JONG_DESCRIPTION';
+
+-- UCA
+
+UPDATE LocalizedText
+SET Text = 'Coast and Lake tiles provide a large adjacency bonus for Holy Site, Campus, Industrial Zone, and Theater Square districts. +3 [ICON_AMENITIES] Amenity from entertainment to each Entertainment Complex adjacent to a Coast or Lake tile.'
+WHERE Language = 'en_US'
+AND Tag = 'LOC_TRAIT_CIVILIZATION_INDONESIA_NUSANTARA_DESCRIPTION';
+
+-- ULA
+
+UPDATE LocalizedText
+SET Text = 'Naval units can be purchased with [ICON_FAITH] Faith. Religious units pay no movement to embark or disembark. +6[ICON_FAITH] Faith to City Centers that are adjacent to Coast or Lake tiles.'
+WHERE Language = 'en_US'
+AND Tag = 'LOC_TRAIT_LEADER_EXALTED_GODDESS_DESCRIPTION';
+
+---------------------------------------------------------
+---------------------------------------------------------
+--Indonesia
+---------------------------------------------------------
+---------------------------------------------------------
+
+-- UCA
+UPDATE LocalizedText
+SET Text = '+6 [ICON_FAITH] Faith and +3 [ICON_AMENITIES] Amenity from entertainment to each city with an Aqueduct. Farms provide +6 [ICON_FOOD] Food if adjacent to an Aqueduct.'
+WHERE Language = 'en_US'
+AND Tag = 'LOC_TRAIT_CIVILIZATION_KHMER_BARAYS_DESCRIPTION';
+
+-- ULA
+
+UPDATE LocalizedText
+SET Text = 'Holy Sites provide +6 [ICON_FOOD] Food and +3 [ICON_HOUSING] Housing if placed on a river. Holy Sites trigger a culture bomb.'
+WHERE Language = 'en_US'
+AND Tag = 'LOC_TRAIT_LEADER_MONASTERIES_KING_DESCRIPTION';
