@@ -325,3 +325,106 @@ SET Value = Value * 3
 WHERE Name = 'Amount'
 AND (ModifierId = 'TRAIT_BASE_DISTRICT_PRODUCTION_MODIFIER'
 OR ModifierId = 'TRAIT_PYRAMID_DISTRICT_PRODUCTION_MODIFIER');
+
+	
+---------------------------------------------------------
+---------------------------------------------------------
+--Indonesia
+---------------------------------------------------------
+---------------------------------------------------------
+
+-- UU
+
+UPDATE Units
+SET BaseMoves = 4 + 3
+WHERE UnitType = 'UNIT_INDONESIAN_JONG';
+
+UPDATE ModifierArguments
+SET Value = 13
+WHERE Name = 'Amount'
+AND ModifierId = 'JONG_BONUS_IN_FORMATION';
+
+-- UI
+
+UPDATE Improvements
+SET Housing = 6
+WHERE ImprovementType = 'IMPROVEMENT_KAMPUNG';
+
+UPDATE Improvement_YieldChanges
+SET YieldChange = 3 * YieldChange
+WHERE ImprovementType = 'IMPROVEMENT_KAMPUNG';
+
+UPDATE Improvement_BonusYieldChanges
+SET BonusYieldChange = BonusYieldChange * 3
+WHERE ImprovementType = 'IMPROVEMENT_KAMPUNG';
+
+UPDATE Improvement_Tourism
+SET ScalingFactor = ScalingFactor * 3
+WHERE ImprovementType = 'IMPROVEMENT_KAMPUNG';
+
+UPDATE Adjacency_YieldChanges
+SET YieldChange = YieldChange * 3
+WHERE ID = 'Kampung_FoodFishingBoats';
+
+UPDATE ModifierArguments
+SET Value = Value * 3
+WHERE ModifierId = 'KAMPUNG_HOUSING_WITHTECH';
+
+-- UCA
+
+UPDATE ModifierArguments
+SET Value = Value * 3
+WHERE ModifierId LIKE 'TRAIT_NUSANTARA_COAST%' AND Name = 'Amount';
+
+-- ULA
+
+UPDATE ModifierArguments
+SET Value = Value * 3
+WHERE ModifierId = 'TRAIT_FAITH_CITY_CENTER' AND Name = 'Amount';
+
+---------------------------------------------------------
+---------------------------------------------------------
+--Khmer
+---------------------------------------------------------
+---------------------------------------------------------
+
+-- UCA
+
+UPDATE ModifierArguments
+SET Value = Value * 3
+WHERE ModifierId = 'TRAIT_AQUEDUCT_AMENITY';
+
+UPDATE ModifierArguments
+SET Value = Value * 3
+WHERE ModifierId = 'TRAIT_AQUEDUCT_FAITH' AND Name = 'Amount';
+
+UPDATE ModifierArguments
+SET Value = Value * 3
+WHERE ModifierId = 'TRAIT_FARM_AQUEDUCT_ADJECENCY_FOOD' AND Name = 'Amount';
+
+-- ULA
+
+UPDATE ModifierArguments
+SET Value = Value * 3
+WHERE ModifierId = 'TRAIT_HOLY_SITE_RIVER_FOOD' AND Name = 'Amount';
+
+UPDATE ModifierArguments
+SET Value = Value * 3
+WHERE ModifierId = 'TRAIT_HOLY_SITE_RIVER_HOUSING';
+
+-- UB
+
+UPDATE Building_GreatWorks
+SET NumSlots = 9
+WHERE BuildingType = 'BUILDING_PRASAT';
+
+-- UU
+--Basically it's stronger catapult, bombard 35+23, strength 23+23
+
+UPDATE Units
+SET Bombard = 58
+WHERE  UnitType = 'UNIT_KHMER_DOMREY';
+
+UPDATE Units
+SET Combat = 46
+WHERE  UnitType = 'UNIT_KHMER_DOMREY';
