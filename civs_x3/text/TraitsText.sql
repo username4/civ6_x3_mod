@@ -268,7 +268,7 @@ WHERE Language = 'en_US'
 AND Tag = 'LOC_TRAIT_CIVILIZATION_PLATOS_REPUBLIC_DESCRIPTION';
 
 UPDATE LocalizedText
-SET Text = 'Adjacency: +3 [ICON_Culture] Culture bonus for adjacent City Center. +3 [ICON_Culture] Culture bonus for each adjacent wonder and district. Can only be built on Hills.'
+SET Text = 'Adjacency: +3 [ICON_Culture] Culture bonus for adjacent City Center. +3 [ICON_Culture] Culture bonus for each adjacent wonder and district. Can only be built on Hills. +3 Envoys'
 WHERE Language = 'en_US'
 AND Tag = 'LOC_DISTRICT_ACROPOLIS_DESCRIPTION_ADJACENCY';
  
@@ -378,7 +378,7 @@ AND Tag = 'LOC_TRAIT_LEADER_RELIGIOUS_CONVERT_DESCRIPTION';
 ---------------------------------------------------------
 
 UPDATE LocalizedText
-SET Text = 'A building unique to Norway. Required to purchase Apostles and Inquisitors with [ICON_Faith] Faith. Holy Site districts get 10 additional adjacency bonus from Woods.'
+SET Text = 'A building unique to Norway. Required to purchase Apostles and Inquisitors with [ICON_Faith] Faith. Holy Site districts get 10 additional adjacency bonus from Woods. +10 Production for every coastal ressource worked by city.'
 WHERE Language = 'en_US'
 AND Tag = 'LOC_BUILDING_STAVE_CHURCH_DESCRIPTION';
 
@@ -406,6 +406,12 @@ UPDATE LocalizedText
 SET Text = '+3 [ICON_Movement] Movement while in coastal waters.'
 WHERE Language = 'en_US'
 AND Tag = 'LOC_ABILITY_LONGSHIP_MOVEMENT_DESCRIPTION';
+
+UPDATE LocalizedText
+SET Text = 'Allows coastal raiding for all naval melee units and +150% [ICON_PRODUCTION] Production toward all naval melee units.'
+WHERE Language = 'en_US'
+AND Tag = 'LOC_TRAIT_LEADER_THUNDERBOLT_DESCRIPTION';
+
 
 ---------------------------------------------------------
 ---------------------------------------------------------
