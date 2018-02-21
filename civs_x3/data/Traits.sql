@@ -274,7 +274,7 @@ AND ModifierId = 'TRAIT_INCOMING_TRADE_GAIN_GOLD');
 UPDATE ModifierArguments
 SET Value = 6
 WHERE (Name = 'Amount'
-AND ModifierId = 'TRAIT_INCOMING_TRADE_GAIN_FOOD');
+AND ModifierId = 'TRAIT_INCOMING_TRADE_OFFER_FOOD');
 
 
 ---------------------------------------------------------
@@ -499,11 +499,9 @@ SET YieldChange = 6
 WHERE ID = 'District_Culture_City_Center';
 
 --HOPLITE crashes on windows
---Only does change, if platform already has the fall-update. Mac, linux stay playable, but bonus is not applied. Remove when update released.
 UPDATE ModifierArguments 
 SET Value = 23
-WHERE ModifierId = 'HOPLITE_NEIGHBOR_COMBAT_MODIFIER'
-AND EXISTS (SELECT * FROM ModifierArguments WHERE ModifierId = 'HOPLITE_NEIGHBOR_COMBAT_MODIFIER');
+WHERE ModifierId = 'HOPLITE_NEIGHBOR_COMBAT_MODIFIER';
 
 --gorgo
 UPDATE ModifierArguments
@@ -877,7 +875,7 @@ AND GreatPersonClassType = 'GREAT_PERSON_CLASS_PROPHET');
 UPDATE District_GreatPersonPoints
 SET PointsPerTurn = 3
 WHERE (DistrictType = 'DISTRICT_LAVRA'
-AND GreatPersonClassType = 'GREAT_PERSON_CLASS_WRITER');
+AND GreatPersonClassType = 'GREAT_PERSON_CLASS_MUSICIAN');
 
 UPDATE District_GreatPersonPoints
 SET PointsPerTurn = 3
