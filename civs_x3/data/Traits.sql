@@ -138,7 +138,7 @@ AND ModifierId = 'TRAIT_AMAZON_RAINFOREST_EXTRA_APPEAL';
 
 --MINAS_GERAES
 UPDATE Units
-SET Combat = 83 , RangedCombat = 73 , AntiAirCombat = 88
+SET Combat = 60+23 , RangedCombat = 70+23 , AntiAirCombat = 70+23;
 WHERE UnitType = 'UNIT_BRAZILIAN_MINAS_GERAES';
 
 
@@ -149,9 +149,9 @@ UPDATE Project_GreatPersonPoints
 SET Points = Points * 3
 WHERE ProjectType = 'PROJECT_CARNIVAL';
 
---cost 0.5^3 *60 = 7,5
+--cost 0.5^3 *57 = 7,1
 UPDATE Districts
-SET Cost = 8
+SET Cost = 7
 WHERE DistrictType = 'DISTRICT_STREET_CARNIVAL';
 
 --Bonus
