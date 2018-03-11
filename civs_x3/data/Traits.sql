@@ -138,7 +138,7 @@ AND ModifierId = 'TRAIT_AMAZON_RAINFOREST_EXTRA_APPEAL';
 
 --MINAS_GERAES
 UPDATE Units
-SET Combat = 60+23 , RangedCombat = 70+23 , AntiAirCombat = 70+23
+SET Combat = 60 + 23 , RangedCombat = 70 + 23 , AntiAirCombat = 70 + 23
 WHERE UnitType = 'UNIT_BRAZILIAN_MINAS_GERAES';
 
 
@@ -767,9 +767,9 @@ WHERE ModifierId = 'UNIT_WEAK_WHEN_DEFENDING';
 --"TRAIT_IGNORE_EMBARK_DISEMBARK_COST" BOOL
 
 --LEADER Harald
-+UPDATE ModifierArguments
-+SET Value = 150
-+WHERE ModifierId LIKE 'TRAIT_%_NAVAL_MELEE_PRODUCTION';
+UPDATE ModifierArguments
+SET Value = 150
+WHERE ModifierId LIKE 'TRAIT_%_NAVAL_MELEE_PRODUCTION';
 
 
 UPDATE Units
