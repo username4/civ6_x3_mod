@@ -5,6 +5,7 @@
         <Teaser/>
         <Description>All traits of a civilization are made 3 times more powerfull.</Description>
         <Authors>username4</Authors>
+        <CompatibleVersions>2.0</CompatibleVersions>
     </Properties>
     <References>
 		<Mod id="98fa6e61-b517-47c6-8e06-ad10fffa3d02" title="Konosuba Aqua" />
