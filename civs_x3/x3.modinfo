@@ -24,6 +24,7 @@
                 <File>data/Traits.sql</File>
                 <File>data/TraitsDLC.sql</File>
                 <File>data/TraitsMod.sql</File>
+                <File>data/TraitsGS.sql</File>
             </Items>
         </UpdateDatabase>
         <LocalizedText id="civs_x3_text">
@@ -34,6 +35,7 @@
                 <File>text/TraitsText.sql</File>
                 <File>text/TraitsTextDLC.sql</File>
                 <File>text/TraitsTextMod.sql</File>
+                <File>text/TraitsTextGS.sql</File>
             </Items>
         </LocalizedText>   
     </Components>
@@ -46,6 +48,7 @@
                 <File>text/TraitsText.sql</File>
                 <File>text/TraitsTextDLC.sql</File>
                 <File>text/TraitsTextMod.sql</File>
+                <File>text/TraitsTextGS.sql</File>
             </Items>
         </LocalizedText>
     </Settings>
@@ -53,8 +56,10 @@
         <File>data/Traits.sql</File>
         <File>data/TraitsDLC.sql</File>
         <File>data/TraitsMod.sql</File>
+        <File>data/TraitsGS.sql</File>
         <File>text/TraitsText.sql</File>
         <File>text/TraitsTextDLC.sql</File>
         <File>text/TraitsTextMod.sql</File>
+        <File>text/TraitsTextGS.sql</File>
     </Files>
 </Mod>
