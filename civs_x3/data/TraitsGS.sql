@@ -22,16 +22,16 @@ AND Name = 'Amount';
 
 --Mountie (compare against cavalry)
 UPDATE Units
-SET Maintenance = 0, BaseSightRange = 2 + 6, Cost = 330 + 210, Combat = 62 - 6, ParkCharges = ParkCharges * 3
+SET Maintenance = 0, BaseSightRange = 2 + 6, Cost = 330 + 210, Combat = 62 - 15, ParkCharges = ParkCharges * 10
 WHERE UnitType = 'UNIT_CANADA_MOUNTIE';
 
 UPDATE ModifierArguments
-SET Value = 13
+SET Value = 6
 WHERE ModifierId = 'ALL_PARK_COMBAT_BONUS'
 AND Name = 'Amount';
 
 UPDATE ModifierArguments
-SET Value = 13
+SET Value = 6
 WHERE ModifierId = 'OWNER_PARK_COMBAT_BONUS'
 AND Name = 'Amount';
 
@@ -44,7 +44,7 @@ UPDATE Adjacency_YieldChanges
 SET YieldChange = YieldChange * 3
 WHERE ID LIKE 'Hockey_%Adjacency';
 
-UPDATE Adjacency_YieldChanges
+UPDATE Improvement_BonusYieldChanges
 SET BonusYieldChange = BonusYieldChange * 3
 WHERE ImprovementType = 'IMPROVEMENT_ICE_HOCKEY_RINK';
 
@@ -86,7 +86,7 @@ SET Cost = 330 + 15, Combat = 62 + 8
 WHERE UnitType = 'UNIT_HUNGARY_HUSZAR';
 
 UPDATE ModifierArguments
-SET Value = 8
+SET Value = 6
 WHERE ModifierId = 'HUSZAR_ALLIES_COMBAT_BONUS'
 AND Name = 'Amount';
 
@@ -116,17 +116,17 @@ WHERE ModifierId = 'RAVEN_LEVY_MOVEMENT'
 AND Name = 'Amount';
 
 UPDATE ModifierArguments
-SET Value = 13
+SET Value = 8
 WHERE ModifierId = 'RAVEN_LEVY_COMBAT'
 AND Name = 'Amount';
 
 --Black Army (compare against courser)
 UPDATE Units
-SET Cost = 200 + 15, Combat = 44 + 8
+SET Cost = 200 + 185 Combat = 44 + 6
 WHERE UnitType = 'UNIT_HUNGARY_BLACK_ARMY';
 
 UPDATE ModifierArguments
-SET Value = 8
+SET Value = 6
 WHERE ModifierId = 'BLACK_ARMY_ADJACENT_LEVY'
 AND Name = 'Amount';
 
@@ -148,12 +148,16 @@ AND Name = 'Amount';
 
 --Warakaq (compare against skirmisher)
 UPDATE Units
-SET Cost = 150 + 45, Combat = 30 + 23
+SET Cost = 150 + 45 Combat = 30 + 23
 WHERE UnitType = 'UNIT_INCA_WARAKAQ';
-
+/*
 INSERT INTO Types (Type, Kind)
 VALUES 
     ('ABILITY_WARAKAQ_MARKSMAN', 'KIND_ABILITY');
+    
+INSERT INTO TypeTags (Type, Tag)
+VALUES 
+    ('ABILITY_WARAKAQ_MARKSMAN', 'CLASS_WARAKAQ');    
 
 INSERT INTO UnitAbilities (UnitAbilityType, Name, Description)
 VALUES 
@@ -169,8 +173,8 @@ VALUES
 	
 INSERT INTO ModifierArguments (ModifierId, Name, Value)
 VALUES 
-    ('WARAKAQ_MARKSMAN_ADDITIONAL_ATTACK', 'Amount', 2);
-	
+    ('WARAKAQ_MARKSMAN_ADDITIONAL_ATTACK', 'Amount', 9);
+*/
 --Terrace Farm
 UPDATE Improvements
 SET Housing = 5, TilesRequired = 1
@@ -192,7 +196,7 @@ AND Name = 'Amount';
 
 ---------------------------------------------------------
 ---------------------------------------------------------
---Mail
+--Mali
 ---------------------------------------------------------
 ---------------------------------------------------------
 --Songs of the Jeli
@@ -218,13 +222,13 @@ AND Name = 'PercentDefeatedStrength';
 
 UPDATE RequirementArguments
 SET Value = Value * 3
-WHERE ModifierId = 'TRADER_IS_WITHIN_FOUR_REQUIREMENT'
+WHERE RequirementId = 'TRADER_IS_WITHIN_FOUR_REQUIREMENT'
 AND Name = 'MaxDistance';
 
 --Suguba
 UPDATE Districts
-SET Cost = 1
-WHERE UnitType = 'DISTRICT_SUGUBA';
+SET Cost = 7
+WHERE DistrictType = 'DISTRICT_SUGUBA';
 
 UPDATE Adjacency_YieldChanges
 SET YieldChange = YieldChange * 3
@@ -274,7 +278,7 @@ SET Combat = 36 + 10, BuildCharges = 3
 WHERE UnitType = 'UNIT_MAORI_TOA';
 
 UPDATE ModifierArguments
-SET Value = -13
+SET Value = -11
 WHERE ModifierId = 'TOA_NEGATIVE_COMBAT_MODIFIER'
 AND Name = 'Amount';
 
@@ -322,7 +326,7 @@ WHERE ModifierId LIKE 'TRAIT_CAPTURED_%TY'
 AND Name = 'Amount';
 
 UPDATE ModifierArguments
-SET Value = 29
+SET Value = 8
 WHERE ModifierId = 'GREAT_TURKISH_BOMBARD_STRENGTH'
 AND Name = 'Amount';
 
@@ -338,7 +342,7 @@ WHERE ModifierId LIKE 'GRANDBAZAAR_A%'
 AND Name = 'Amount';
 
 UPDATE Buildings
-SET Cost = 1
+SET Cost = 8
 WHERE BuildingType = 'BUILDING_GRAND_BAZAAR';
 
 --Grand Vizer
@@ -369,7 +373,7 @@ AND Name = 'Score';
 
 --Janissary
 UPDATE Units
-SET Cost = 40, Combat = 55 + 13, PrereqPopulation = 1 + 3
+SET Cost = 40, Combat = 55 + 8, PrereqPopulation = 1 + 3
 WHERE UnitType = 'UNIT_SULEIMAN_JANISSARY';
 
 UPDATE ModifierArguments
@@ -390,13 +394,13 @@ AND Name = 'Amount';
 
 --Bireme
 UPDATE Units
-SET Combat = 25 + 13, BaseMoves = 3 + 3
+SET Combat = 25 + 8, BaseMoves = 3 + 3
 WHERE UnitType = 'UNIT_PHOENICIA_BIREME';
 
 --Cothon
 UPDATE Districts
-SET Cost = 7
-WHERE UnitType = 'DISTRICT_SUGUBA';
+SET Cost = 8
+WHERE DistrictType = 'DISTRICT_COTHON';
 
 UPDATE ModifierArguments
 SET Value = Value * 3
@@ -446,7 +450,7 @@ SET BaseMoves = 2 + 3, Maintenance = 1
 WHERE UnitType = 'UNIT_SWEDEN_CAROLEAN';
 
 UPDATE ModifierArguments
-SET Value = 8
+SET Value = 6
 WHERE ModifierId = 'CAROLEAN_UNUSED_MOVEMENT_COMBAT'
 AND Name = 'Amount';
 
