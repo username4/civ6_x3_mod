@@ -122,7 +122,7 @@ AND Name = 'Amount';
 
 --Black Army (compare against courser)
 UPDATE Units
-SET Cost = 200 + 185 Combat = 44 + 6
+SET Cost = 200 + 185, Combat = 44 + 6
 WHERE UnitType = 'UNIT_HUNGARY_BLACK_ARMY';
 
 UPDATE ModifierArguments
@@ -148,7 +148,7 @@ AND Name = 'Amount';
 
 --Warakaq (compare against skirmisher)
 UPDATE Units
-SET Cost = 150 + 45 Combat = 30 + 23
+SET Cost = 150 + 45, Combat = 30 + 23
 WHERE UnitType = 'UNIT_INCA_WARAKAQ';
 /*
 INSERT INTO Types (Type, Kind)
