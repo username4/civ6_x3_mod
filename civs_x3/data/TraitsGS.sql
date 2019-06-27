@@ -69,6 +69,18 @@ SET Value = Value * 3
 WHERE ModifierId LIKE '%_RESOURCE_EXTRACTION'
 AND Name = 'Amount';
 
+UPDATE ModifierArguments
+SET Value = Value * 3
+WHERE ModifierId LIKE 'SNOW%MINES_PRODUCTION'
+AND Name = 'Amount';
+
+UPDATE ModifierArguments
+SET Value = Value * 3
+WHERE ModifierId LIKE 'TUNDRA%MINES_PRODUCTION'
+AND Name = 'Amount';
+
+
+
 ---------------------------------------------------------
 ---------------------------------------------------------
 --Hungary
@@ -119,6 +131,12 @@ UPDATE ModifierArguments
 SET Value = 8
 WHERE ModifierId = 'RAVEN_LEVY_COMBAT'
 AND Name = 'Amount';
+
+UPDATE ModifierArguments
+SET Value = 30
+WHERE ModifierId = 'LEVY_UNITUPGRADEDISCOUNT'
+AND Name = 'Amount';
+
 
 --Black Army (compare against courser)
 UPDATE Units
@@ -274,7 +292,7 @@ AND Name = 'Amount';
 
 --Toa (compare against swordsman)
 UPDATE Units
-SET Combat = 36 + 10, BuildCharges = 3
+SET BuildCharges = 3
 WHERE UnitType = 'UNIT_MAORI_TOA';
 
 UPDATE ModifierArguments
@@ -487,3 +505,62 @@ UPDATE ModifierArguments
 SET Value = Value * 3
 WHERE ModifierId = 'IDENTITY_NEARBY_GREATWORKS'
 AND Name = 'Amount';
+
+---------------------------------------------------------
+---------------------------------------------------------
+--Antarctic Late Summer
+---------------------------------------------------------
+---------------------------------------------------------
+--Great Wall
+UPDATE Improvement_YieldChanges
+SET YieldChange = YieldChange * 3
+WHERE ImprovementType = 'IMPROVEMENT_GREAT_WALL';
+
+UPDATE Adjacency_YieldChanges
+SET YieldChange = YieldChange * 3
+WHERE ID = 'GreatWall_Gold';
+
+UPDATE Adjacency_YieldChanges
+SET YieldChange = YieldChange * 3
+WHERE ID = 'GreatWall_Culture';
+
+--Sphinx
+UPDATE Improvements
+SET Appeal = 6
+WHERE ImprovementType = 'IMPROVEMENT_SPHINX';
+
+UPDATE ModifierArguments
+SET Value = Value * 3
+WHERE ModifierId = 'SPHINX_FLOODPLAINS_CULTURE'
+AND Name = 'Amount';
+
+--Chateau
+UPDATE Adjacency_YieldChanges
+SET YieldChange = YieldChange * 3
+WHERE ID LIKE 'Chateau%';
+
+--India
+UPDATE ModifierArguments
+SET Value = Value * 3
+WHERE ModifierId = 'TRAIT_MISSIONARY_SPREADS'
+AND Name = 'Amount';
+
+UPDATE ModifierArguments
+SET Value = Value * 3
+WHERE ModifierId = 'TRAIT_AMENITIES_FOR_MIN_FOLLOWERS'
+AND Name = 'Amenities';
+
+UPDATE ModifierArguments
+SET Value = Value * 3
+WHERE ModifierId = 'TRAIT_ORIGIN_DESTINATION_RELIGIOUS_PRESSURE'
+AND Name = 'Amount';
+
+UPDATE Units
+SET Maintenance = 0
+WHERE UnitType = 'UNIT_INDIAN_VARU';
+
+--Spain
+UPDATE ModifierArguments
+SET Value = Value * 3
+WHERE ModifierId = 'MISSION_NEWCONTINENT_%'
+AND Name LIKE 'Amount'; 
