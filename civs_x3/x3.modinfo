@@ -25,6 +25,7 @@
                 <File>data/TraitsDLC.sql</File>
                 <File>data/TraitsMod.sql</File>
                 <File>data/TraitsGS.sql</File>
+                <File>data/TraitsInca.sql</File>
             </Items>
         </UpdateDatabase>
         <LocalizedText id="civs_x3_text">
@@ -57,6 +58,8 @@
         <File>data/TraitsDLC.sql</File>
         <File>data/TraitsMod.sql</File>
         <File>data/TraitsGS.sql</File>
+        <File>data/TraitsInca.sql</File>
+        
         <File>text/TraitsText.sql</File>
         <File>text/TraitsTextDLC.sql</File>
         <File>text/TraitsTextMod.sql</File>
