@@ -53,7 +53,7 @@ AND Tag = 'LOC_TRAIT_CIVILIZATION_PEARL_DANUBE_DESCRIPTION';
 
 --Raven King
 UPDATE LocalizedText
-SET Text = 'Levied units gain an ability giving them +20 [ICON_Movement] Movement and +29 [ICON_Strength] Combat Strength. It costs no [ICON_GOLD] Gold or Resources to upgrade Levied units. If you Levy troops from a City-State receive 2 [ICON_ENVOY] Envoys with that City-State. Gain the Black Army unique unit when the Castles technology is researched.'
+SET Text = 'Levied units gain an ability giving them +6 [ICON_Movement] Movement and +13 [ICON_Strength] Combat Strength. It costs no [ICON_GOLD] Gold or Resources to upgrade Levied units. If you Levy troops from a City-State receive 2 [ICON_ENVOY] Envoys with that City-State. Gain the Black Army unique unit when the Castles technology is researched.'
 WHERE Language = 'en_US'
 AND Tag = 'LOC_TRAIT_LEADER_RAVEN_KING_DESCRIPTION';
 
@@ -123,7 +123,7 @@ AND Tag = 'LOC_UNIT_MALI_MANDEKALU_CAVALRY_DESCRIPTION';
 
 --SUGUBA
 UPDATE LocalizedText
-SET Text = 'A district unique to Mali specializing in finance and trade that replaces the Commercial Hub. Units, Buildings, and Districts are 30% cheaper to purchase with [ICON_GOLD] Gold and [ICON_FAITH] Faith in this City.[NEWLINE][NEWLINE]+6 [ICON_Gold] Gold bonus for each adjacent Holy Site. +20 [ICON_Gold] Gold bonus from a tile containing a River edge. +3 [ICON_Gold] Gold bonus for every two adjacent district tiles.'
+SET Text = 'A district unique to Mali specializing in finance and trade that replaces the Commercial Hub. Units, Buildings, and Districts are 30% cheaper to purchase with [ICON_GOLD] Gold and [ICON_FAITH] Faith in this City.[NEWLINE][NEWLINE]+6 [ICON_Gold] Gold bonus for each adjacent Holy Site. +6 [ICON_Gold] Gold bonus from a tile containing a River edge. +3 [ICON_Gold] Gold bonus for every two adjacent district tiles.'
 WHERE Language = 'en_US'
 AND Tag = 'LOC_DISTRICT_SUGUBA_DESCRIPTION';
 
@@ -193,7 +193,7 @@ AND Tag = 'LOC_UNIT_SULEIMAN_JANISSARY_DESCRIPTION';
 
 --Grand Bazzar
 UPDATE LocalizedText
-SET Text = 'A building unique to the Ottomans. Accumulate 10 extra Strategic resource for every different type of Strategic resource this city has improved. Receive 10 [ICON_AMENITIES] Amenity for every Luxury resource this city has improved.'
+SET Text = 'A building unique to the Ottomans. Accumulate 3 extra Strategic resource for every different type of Strategic resource this city has improved. Receive 3 [ICON_AMENITIES] Amenity for every Luxury resource this city has improved.'
 WHERE Language = 'en_US'
 AND Tag = 'LOC_BUILDING_GRAND_BAZAAR_DESCRIPTION';
 

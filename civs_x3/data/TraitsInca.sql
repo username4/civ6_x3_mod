@@ -27,7 +27,7 @@ INSERT INTO ModifierArguments (ModifierId, Name, Value)
 VALUES 
     ('WARAKAQ_MARKSMAN_ADDITIONAL_ATTACK', 'Amount', 3);
 
-UPDATE UnitAbilityModifiers (UnitAbilityType, ModifierId)
+UPDATE UnitAbilityModifiers
 SET ModifierId = 'WARAKAQ_MARKSMAN_ADDITIONAL_ATTACK'
 WHERE UnitAbilityType = 'ABILITY_EXPERT_MARKSMAN';
 
