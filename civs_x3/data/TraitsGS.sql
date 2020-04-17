@@ -79,7 +79,25 @@ SET Value = Value * 3
 WHERE ModifierId LIKE 'TUNDRA%MINES_PRODUCTION'
 AND Name = 'Amount';
 
+UPDATE ModifierArguments
+SET Value = Value * 3
+WHERE ModifierId LIKE 'TUNDRA%CAMPS_FOOD'
+AND Name = 'Amount';
 
+UPDATE ModifierArguments
+SET Value = Value * 3
+WHERE ModifierId LIKE 'SNOW%CAMPS_FOOD'
+AND Name = 'Amount';
+
+UPDATE ModifierArguments
+SET Value = Value * 3
+WHERE ModifierId LIKE 'TUNDRA%LUMBER_MILLS_PRODUCTION'
+AND Name = 'Amount';
+
+UPDATE ModifierArguments
+SET Value = Value * 3
+WHERE ModifierId LIKE 'SNOW%LUMBER_MILLS_PRODUCTION'
+AND Name = 'Amount';
 
 ---------------------------------------------------------
 ---------------------------------------------------------
@@ -169,7 +187,7 @@ AND Name = 'Amount';
 --Mandekalu Cavalry (compare against knight)
 UPDATE Units
 SET Combat = 48 + 3
-WHERE UnitType = 'UNIT_INCA_WARAKAQ';
+WHERE UnitType = 'UNIT_MALI_MANDEKALU_CAVALRY';
 
 UPDATE ModifierArguments
 SET Value = Value * 3
@@ -438,6 +456,21 @@ SET Value = Value * 3
 WHERE ModifierId LIKE 'TRAIT_ACCUMULATE_MORE_%'
 AND Name = 'Amount';
 
+UPDATE ModifierArguments
+SET Value = Value * 3
+WHERE ModifierId LIKE 'TRAIT_ADJUST_MILITARY_ENGINEER_%'
+AND Name = 'Amount';
+
+UPDATE ModifierArguments
+SET Value = Value * 3
+WHERE ModifierId = 'TRAIT_ADJUST_INDUSTRIAL_ZONE_BUILDINGS_PRODUCTION'
+AND Name = 'Amount';
+
+UPDATE ModifierArguments
+SET Value = Value * 3
+WHERE ModifierId LIKE 'TRAIT_ADJUST_%_STOCKPILE_CAP'
+AND Name = 'Amount';
+
 --Court of Love
 UPDATE ModifierArguments
 SET Value = Value * 3
@@ -446,7 +479,7 @@ AND Name = 'Amount';
 
 ---------------------------------------------------------
 ---------------------------------------------------------
---Antarctic Late Summer
+--Antarctic Late Summer and more
 ---------------------------------------------------------
 ---------------------------------------------------------
 --Great Wall
@@ -502,3 +535,31 @@ UPDATE ModifierArguments
 SET Value = Value * 3
 WHERE ModifierId = 'MISSION_NEWCONTINENT_%'
 AND Name LIKE 'Amount'; 
+UPDATE Adjacency_YieldChanges
+SET YieldChange = YieldChange * 10
+WHERE ID LIKE 'Mission_Science_%';
+
+--Netherlands
+UPDATE ModifierArguments
+SET Value = Value * 10
+WHERE ModifierId = 'TRAIT_FLOOD_BARRIER_PRODUCTION'
+AND Name = 'Amount';
+
+--Japan
+UPDATE Building_YieldChangesBonusWithPower
+SET YieldChange = 23
+WHERE BuildingType = 'BUILDING_ELECTRONICS_FACTORY';
+
+UPDATE ModifierArguments
+SET Value = Value * 10
+WHERE ModifierId LIKE 'TRAIT_HURRICANE_DOUBLE_DAMAGE_CAT%'
+AND Name = 'Amount';
+
+--Russia
+UPDATE ModifierArguments
+SET Value = Value * 10
+WHERE ModifierId LIKE 'TRAIT_BLIZZARD_DOUBLE_DAMAGE%'
+AND Name = 'Amount';
+
+--Georgia
+--Looking into using inner join

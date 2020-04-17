@@ -79,44 +79,70 @@ AND ModifierId = 'ROUGH_RIDER_POST_COMBAT_CULTURE';
 ---------------------------------------------------------
 
 --Last Prophet
---TODO maybe Prophet at start, but then name stupid? or spawn 9 apostles?
+
 UPDATE ModifierArguments
 SET Value = 3
 WHERE (Name = 'Amount'
 AND ModifierId = 'TRAIT_SCIENCE_PER_FOREIGN_CITY_FOLLOWING_RELIGION');
 
+INSERT INTO Types (Type, Kind)
+VALUES 
+    ('BUILDING_CLAIM_PROPHETS', 'KIND_BUILDING');
+
+INSERT INTO Buildings (BuildingType, Name, PrereqDistrict, Cost, MaxPlayerInstances, Description, TraitType, RequiresReligion)
+VALUES
+	('BUILDING_CLAIM_PROPHETS', 'LOC_CLAIM_PROPHETS_NAME', 'DISTRICT_CITY_CENTER', 1, 1, 'LOC_CLAIM_PROPHETS_DESC', 'TRAIT_CIVILIZATION_LAST_PROPHET', 1);
+	
+INSERT INTO Modifiers (ModifierId, ModifierType, RunOnce, Permanent)
+VALUES
+	('LAST_NINE_PRHOPHETS', 'MODIFIER_SINGLE_CITY_GRANT_UNIT_IN_CITY', 1, 1);
+	
+INSERT INTO ModifierArguments (ModifierId, Name, Value)
+VALUES 
+    ('LAST_NINE_PRHOPHETS', 'UnitType', 'UNIT_APOSTLE');
+
+INSERT INTO ModifierArguments (ModifierId, Name, Value)
+VALUES 
+    ('LAST_NINE_PRHOPHETS', 'Amount', 3);
+	
+INSERT INTO BuildingModifiers (BuildingType, ModifierId)
+VALUES 
+    ('BUILDING_CLAIM_PROPHETS', 'LAST_NINE_PRHOPHETS');
+	
+
 --Madrasa
---TODO faith bonus
+
 UPDATE Building_YieldChanges
 SET YieldChange = 7
 WHERE BuildingType = 'BUILDING_MADRASA';
 
+
 --Mamluk
---TODO MAMLUK_HEAL_EVERY_MOVE to heal after combat?
---MODIFIER_PLAYER_UNIT_GRANT_HEAL_AFTER_ACTION -> EFFECT_GRANT_HEAL_AFTER_ACTION or MODIFIER_PLAYER_UNITS_ADJUST_HEAL_FROM_COMBAT
---INSERT INTO UnitAbilityModifiers (UnitAbilityType, ModifierId)
---VALUES ('ABILITY_MAMLUK', 'MEDIC_INCREASE_HEAL_RATE');
+INSERT INTO UnitAbilityModifiers (UnitAbilityType, ModifierId)
+VALUES ('ABILITY_MAMLUK', 'MAMLUK_INCREASE_HEAL_RATE');
+
+INSERT INTO Modifiers (ModifierId, ModifierType)
+VALUES 
+    ('MAMLUK_INCREASE_HEAL_RATE', 'MODIFIER_PLAYER_UNIT_ADJUST_HEAL_PER_TURN');
+
+INSERT INTO ModifierArguments (ModifierId, Name, Value)
+VALUES 
+    ('MAMLUK_INCREASE_HEAL_RATE', 'Amount', 30);
+
+INSERT INTO ModifierArguments (ModifierId, Name, Value)
+VALUES 
+    ('MAMLUK_INCREASE_HEAL_RATE', 'Type', 'ALL');
 
 
 --LEADER Saladin
 UPDATE ModifierArguments
-SET Value = 97
+SET Value = 99
 WHERE ModifierId = 'TRAIT_RELIGIOUS_BUILDING_DISCOUNT';
 
 UPDATE ModifierArguments
 SET Value = 30
 WHERE (Name = 'Multiplier'
-AND ModifierId = 'TRAIT_RELIGIOUS_BUILDING_MULTIPLIER_SCIENCE');
-
-UPDATE ModifierArguments
-SET Value = 30
-WHERE (Name = 'Multiplier'
-AND ModifierId = 'TRAIT_RELIGIOUS_BUILDING_MULTIPLIER_FAITH');
-
-UPDATE ModifierArguments
-SET Value = 30
-WHERE (Name = 'Multiplier'
-AND ModifierId = 'TRAIT_RELIGIOUS_BUILDING_MULTIPLIER_CULTURE');
+AND ModifierId LIKE 'TRAIT_RELIGIOUS_BUILDING_MULTIPLIER_%');
 
 ---------------------------------------------------------
 ---------------------------------------------------------
@@ -975,7 +1001,7 @@ WHERE ID = 'Kurgan_Faith';
 
 --Saka Horse Archer, more reach, more expensive
 UPDATE Units
-SET Cost = 140
+SET Cost = 180
 WHERE UnitType = 'UNIT_SCYTHIAN_HORSE_ARCHER';
 
 UPDATE Units
@@ -1010,9 +1036,9 @@ SET BonusYieldChange = 6
 WHERE ImprovementType = 'IMPROVEMENT_MISSION';
 
 UPDATE ModifierArguments
-SET Value = 6
-WHERE (Name = 'Amount'
-AND ModifierId = 'MISSION_NEWCONTINENT_FAITH');
+SET Value = Value * 3
+WHERE ModifierId = 'MISSION_NEWCONTINENT_%'
+AND Name LIKE 'Amount';
 
 UPDATE ModifierArguments
 SET Value = 3
@@ -1108,7 +1134,7 @@ AND ModifierId = 'ZIGGURAT_RIVERADJACENCY_CULTURE';
 
 --TRAIT_CIVILIZATION_UNIT_SUMERIAN_WAR_CART Rush early, so reduced cost for 10x the early rush
 UPDATE Units
-SET Cost = 40
+SET Cost = 40, Combat = 28 + 6, BaseMoves = 2 + 3
 WHERE UnitType = 'UNIT_SUMERIAN_WAR_CART';
 
 --LEADER Gilgamesh

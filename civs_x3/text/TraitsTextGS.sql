@@ -94,7 +94,7 @@ AND Tag = 'LOC_TRAIT_LEADER_PACHACUTI_QHAPAQ_NAN_DESCRIPTION';
 
 
 UPDATE LocalizedText
-SET Text = 'Unlocks the Builder ability to construct a Qhapaq Ñan, unique to Pachacuti.[NEWLINE][NEWLINE]Acts as a movement portal on a mountain range, allowing units to move into it and exit from another portal at the cost of 6 [ICON_Movement] Movement. Can only be built on an adjacent Mountain tile. Cannot be pillaged or removed.'
+SET Text = 'Unlocks the Builder ability to construct a Qhapaq Ñan, unique to Pachacuti.[NEWLINE][NEWLINE]Acts as a movement portal on a mountain range, allowing units to move into it and exit from another portal at the cost of 2 [ICON_Movement] Movement. Can only be built on an adjacent Mountain tile. Cannot be pillaged or removed.'
 WHERE Language = 'en_US'
 AND Tag = 'LOC_IMPROVEMENT_MOUNTAIN_ROAD_DESCRIPTION';
 

@@ -316,7 +316,7 @@ WHERE ModifierId = 'GOLFCOURSE_HOUSING_WITHGLOBLIZATION';
 UPDATE ModifierArguments
 SET Value = 300
 WHERE ModifierId = 'TRAIT_LIBERATION_WAR_PRODUCTION'
-AND Name = 'Amount';
+AND 'Amount';
 
 UPDATE ModifierArguments
 SET Value = 6
