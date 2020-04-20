@@ -52,7 +52,7 @@ WHERE ModifierId = 'MUSTANG_MORE_EXPERIENCE';
 --Corollary
 UPDATE ModifierArguments
 SET Value = 13
-WHERE ModifierId = 'COMBAT_BONUS_HOME_CONTINENT_MODIFIER';
+WHERE ModifierId = 'ROOSEVELT_COMBAT_BONUS_HOME_CONTINENT';
 
 UPDATE ModifierArguments
 SET Value = 3
