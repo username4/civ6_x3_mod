@@ -284,7 +284,7 @@ AND ImprovementType= 'IMPROVEMENT_PAIRIDAEZA';
 UPDATE ModifierArguments
 SET Value = 6
 WHERE Name = 'Amount'
-AND (Name = 'Amount' OR Name = 'TurnsActive');
+AND ModifierId = 'TRAIT_FALLBABYLON_SURPRISE_MOVEMENT';;
 
 
 ---------------------------------------------------------
