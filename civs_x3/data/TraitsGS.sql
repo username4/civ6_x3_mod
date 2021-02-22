@@ -22,16 +22,16 @@ AND Name = 'Amount';
 
 --Mountie (compare against cavalry)
 UPDATE Units
-SET Maintenance = 0, BaseSightRange = 2 + 6, Cost = 330 + 210, Combat = 62 - 15, ParkCharges = ParkCharges * 10
+SET Maintenance = 0, BaseSightRange = 2 + 6, Cost = 400, Combat = 62 - 15, ParkCharges = ParkCharges * 10
 WHERE UnitType = 'UNIT_CANADA_MOUNTIE';
 
 UPDATE ModifierArguments
-SET Value = 6
+SET Value = 13
 WHERE ModifierId = 'ALL_PARK_COMBAT_BONUS'
 AND Name = 'Amount';
 
 UPDATE ModifierArguments
-SET Value = 6
+SET Value = 13
 WHERE ModifierId = 'OWNER_PARK_COMBAT_BONUS'
 AND Name = 'Amount';
 
@@ -347,13 +347,13 @@ AND Name = 'Score';
 
 --Janissary
 UPDATE Units
-SET Cost = 40, Combat = 55 + 8, PrereqPopulation = 1 + 3
+SET Cost = 40, Combat = 55 + 8--, PrereqPopulation = 1 + 3
 WHERE UnitType = 'UNIT_SULEIMAN_JANISSARY';
 
-UPDATE ModifierArguments
-SET Value = Value * 3
-WHERE ModifierId = 'JANISSARY_LOSE_POPULATION_IN_FOUNDED_CITIES'
-AND Name = 'Score';
+-- UPDATE ModifierArguments
+-- SET Value = Value * 3
+-- WHERE ModifierId = 'JANISSARY_LOSE_POPULATION_IN_FOUNDED_CITIES'
+-- AND Name = 'Score';
 
 ---------------------------------------------------------
 ---------------------------------------------------------
@@ -482,24 +482,19 @@ AND Name = 'Amount';
 --Antarctic Late Summer and more
 ---------------------------------------------------------
 ---------------------------------------------------------
+
+-- Founding Father
+UPDATE ModifierArguments
+SET Value = Value * 3
+WHERE ModifierId = 'TRAIT_WILD_CARD_FAVOR'
+AND Name = 'Amount';
+
 --Great Wall
 UPDATE Improvement_YieldChanges
 SET YieldChange = YieldChange * 3
 WHERE ImprovementType = 'IMPROVEMENT_GREAT_WALL';
 
-UPDATE Adjacency_YieldChanges
-SET YieldChange = YieldChange * 3
-WHERE ID = 'GreatWall_Gold';
-
-UPDATE Adjacency_YieldChanges
-SET YieldChange = YieldChange * 3
-WHERE ID = 'GreatWall_Culture';
-
 --Sphinx
-UPDATE Improvements
-SET Appeal = 6
-WHERE ImprovementType = 'IMPROVEMENT_SPHINX';
-
 UPDATE ModifierArguments
 SET Value = Value * 3
 WHERE ModifierId = 'SPHINX_FLOODPLAINS_CULTURE'
@@ -536,30 +531,45 @@ SET Value = Value * 3
 WHERE ModifierId = 'MISSION_NEWCONTINENT_%'
 AND Name LIKE 'Amount'; 
 UPDATE Adjacency_YieldChanges
-SET YieldChange = YieldChange * 10
+SET YieldChange = YieldChange * 3
 WHERE ID LIKE 'Mission_Science_%';
 
 --Netherlands
 UPDATE ModifierArguments
-SET Value = Value * 10
+SET Value = Value * 3
 WHERE ModifierId = 'TRAIT_FLOOD_BARRIER_PRODUCTION'
 AND Name = 'Amount';
 
 --Japan
 UPDATE Building_YieldChangesBonusWithPower
-SET YieldChange = 23
+SET YieldChange = 3+2*3
 WHERE BuildingType = 'BUILDING_ELECTRONICS_FACTORY';
 
 UPDATE ModifierArguments
-SET Value = Value * 10
+SET Value = Value * 3
 WHERE ModifierId LIKE 'TRAIT_HURRICANE_DOUBLE_DAMAGE_CAT%'
 AND Name = 'Amount';
 
 --Russia
 UPDATE ModifierArguments
-SET Value = Value * 10
+SET Value = Value * 3
 WHERE ModifierId LIKE 'TRAIT_BLIZZARD_DOUBLE_DAMAGE%'
 AND Name = 'Amount';
 
+--Georgia
+--Looking into using inner join
+UPDATE ModifierArguments
+SET Value = Value * 3
+WHERE Name = 'Amount'
+AND (ModifierId = 'TRAIT_WALLS_PRODUCTION'
+OR ModifierId = 'TRAIT_CASTLE_PRODUCTION'
+OR ModifierId = 'TRAIT_TSIKHE_PRODUCTION'
+OR ModifierId = 'TRAIT_STAR_FORT_PRODUCTION');
+
+-- Norway
+UPDATE ModifierArguments
+SET Value = Value * 3
+WHERE Name = 'Amount'
+AND ModifierId LIKE "TRAIT_LEADER_PILLAGE%"
 --Georgia
 --Looking into using inner join

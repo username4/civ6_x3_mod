@@ -189,6 +189,10 @@ UPDATE Project_GreatPersonPoints
 SET Points = Points * 3
 WHERE ProjectType = 'PROJECT_CARNIVAL';
 
+UPDATE Projects
+SET AmenitiesWhileActive = AmenitiesWhileActive*3
+WHERE ProjectType="PROJECT_CARNIVAL";
+
 --cost 0.5^3 *57 = 7,1
 UPDATE Districts
 SET Cost = 7
@@ -252,7 +256,7 @@ WHERE ModifierId = 'TRAIT_ADJUST_BUILDER_CHARGES';
 
 --Wonder Production, exponential 15% to 1-0.85^3 = 39%
 UPDATE ModifierArguments
-SET Value = 80
+SET Value = 39
 WHERE ModifierId = 'TRAIT_BUILDER_WONDER_PERCENT';
 
 ---------------------------------------------------------
@@ -279,10 +283,10 @@ AND YieldType = 'YIELD_FAITH');
 UPDATE Improvement_YieldChanges
 SET YieldChange = 3
 WHERE (ImprovementType = 'IMPROVEMENT_SPHINX'
-
 AND YieldType = 'YIELD_CULTURE');
+
 UPDATE Improvements
-SET Appeal = 3
+SET Appeal = Appeal * 3
 WHERE ImprovementType = 'IMPROVEMENT_SPHINX';
 
 UPDATE Improvement_BonusYieldChanges
@@ -535,7 +539,11 @@ SET Cost = 8
 WHERE DistrictType = 'DISTRICT_ACROPOLIS';
 
 UPDATE Adjacency_YieldChanges
-SET YieldChange = 6
+SET YieldChange = (YieldChange-0.5)*3+1
+WHERE ID = 'District_Culture_Standard';
+
+UPDATE Adjacency_YieldChanges
+SET YieldChange = (YieldChange-1)*3+1
 WHERE ID = 'District_Culture_City_Center';
 
 --HOPLITE crashes on windows
@@ -793,12 +801,12 @@ SET Value = 6
 WHERE ModifierId = 'BERSERKER_FASTER_ENEMY_TERRITORY';
 
 UPDATE ModifierArguments
-SET Value = 17
+SET Value = 23
 WHERE ModifierId = 'UNIT_STRONG_WHEN_ATTACKING';
 
-UPDATE ModifierArguments
-SET Value = -17
-WHERE ModifierId = 'UNIT_WEAK_WHEN_DEFENDING';
+-- UPDATE ModifierArguments
+-- SET Value = -17
+-- WHERE ModifierId = 'UNIT_WEAK_WHEN_DEFENDING';
 
 
 --"TRAIT_CIVILIZATION_EARLY_OCEAN_NAVIGATION"
