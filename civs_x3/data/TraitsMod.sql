@@ -850,11 +850,11 @@ AND ModifierId = 'JFD_VIEUX_CITY_CENTRE_COMBAT';
 ---------------------------------------------------------
 
 UPDATE Buildings
-SET Cost = 1
+SET Cost = 10
 WHERE BuildingType='BUILDING_DESSERT_HOUSE';
 
 UPDATE Districts
-SET Cost = 1
+SET Cost = 7
 WHERE DistrictType="DISTRICT_FAIRYCO";
 
 UPDATE Building_YieldChanges
