@@ -60,7 +60,7 @@ AND Tag = 'LOC_TRAIT_CIVILIZATION_LAND_DOWN_UNDER_DESCRIPTION';
 
 --John Curtin
 UPDATE LocalizedText
-SET Text = '+300% [ICON_Production] Production if either they have received a declaration of war in the past 10 turns or if they have liberated a city in the past 20 turns.'
+SET Text = '+300% [ICON_Production] Production if either they have received a declaration of war in the past 30 turns or if they have liberated a city in the past 20 turns.'
 WHERE Language = 'en_US'
 AND Tag = 'LOC_TRAIT_LEADER_CITADEL_CIVILIZATION_DESCRIPTION';
 
@@ -156,7 +156,7 @@ AND Tag = 'LOC_IMPROVEMENT_PAIRIDAEZA_DESCRIPTION';
 
 --Cyrus
 UPDATE LocalizedText
-SET Text = '+6 [ICON_Movement] Movement for the first 10 turns after declaring a Surprise War. No penalties to yields in occupied cities. Declaring a Surprise War only counts as a Formal War for the purpose of warmongering and war weariness.'
+SET Text = '+6 [ICON_Movement] Movement for the first 30 turns after declaring a Surprise War. No penalties to yields in occupied cities. Declaring a Surprise War only counts as a Formal War for the purpose of warmongering and war weariness.'
 WHERE Language = 'en_US'
 AND Tag = 'LOC_TRAIT_LEADER_FALL_BABYLON_DESCRIPTION';
 

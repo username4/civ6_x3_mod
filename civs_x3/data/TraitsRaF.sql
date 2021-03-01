@@ -136,6 +136,18 @@ UPDATE Building_YieldChanges
 SET YieldChange = 6
 WHERE BuildingType = 'BUILDING_TSIKHE';
 
+-- 3*3
+UPDATE ModifierArguments
+SET Value = Value*9
+WHERE Name = 'Amount'
+AND ModifierId LIKE 'TSIKHE_FAITH_GOLDEN_AGE';
+
+UPDATE ModifierArguments
+SET Value = Value*3
+WHERE Name = 'Amount'
+AND ModifierId LIKE 'CONSERVATION_TSIKHE_TOURISM_GOLDEN_AGE';
+
+
 --Tamar
 UPDATE ModifierArguments
 SET Value = 300
@@ -156,6 +168,16 @@ UPDATE ModifierArguments
 SET Value = 13
 WHERE ModifierId = 'TRAIT_TERRITORIAL_WAR_COMBAT'
 AND Name = 'Amount';
+
+UPDATE ModifierArguments
+SET Value = Value*3
+WHERE ModifierId = 'TRAIT_TERRITORIAL_WAR_COMBAT'
+AND Name = 'TurnsActive';
+
+UPDATE ModifierArguments
+SET Value = Value*3
+WHERE ModifierId = 'TRAIT_TERRITORIAL_WAR_MOVEMENT'
+AND Name = 'TurnsActive' OR Name='Amount';
 
 /* should be movement
 UPDATE ModifierArguments
@@ -314,14 +336,14 @@ WHERE ModifierId = 'GOLFCOURSE_HOUSING_WITHGLOBLIZATION';
 
 --Robert the Bruce
 UPDATE ModifierArguments
-SET Value = 300
+SET Value = Value * 3
 WHERE ModifierId = 'TRAIT_LIBERATION_WAR_PRODUCTION'
-AND 'Amount';
+AND Name = 'Amount' OR Name = 'TurnsActive';
 
 UPDATE ModifierArguments
-SET Value = 6
+SET Value = Value * 3
 WHERE ModifierId = 'TRAIT_LIBERATION_WAR_MOVEMENT'
-AND Name = 'Amount';
+AND Name = 'Amount' OR Name = 'TurnsActive';
 
 ---------------------------------------------------------
 ---------------------------------------------------------
@@ -359,14 +381,27 @@ AND Name = 'Amount';
 --Shaka
 UPDATE ModifierArguments
 SET Value = 13
-WHERE ModifierId = ('TRAIT_LAND_ARMIES_COMBAT_STRENGTH' OR 'TRAIT_LAND_ARMIES_COMBAT_STRENGTH')
+WHERE ModifierId IN ('TRAIT_LAND_ARMIES_COMBAT_STRENGTH', 'TRAIT_LAND_ARMIES_COMBAT_STRENGTH')
 AND Name = 'Amount';
 
 ---/*Vanilla Civs*/---
+--England
+UPDATE ModifierArguments
+SET Value = Value*3
+WHERE ModifierId = 'ROYAL_NAVY_DOCKYARD_IDENTITY_PER_TURN_MODIFIER';
+
 --Brazil
 UPDATE Districts
 SET Cost = 8, Entertainment = 4
 WHERE DistrictType = 'DISTRICT_WATER_STREET_CARNIVAL';
+
+UPDATE Projects
+SET AmenitiesWhileActive = AmenitiesWhileActive*3
+WHERE ProjectType="PROJECT_WATER_CARNIVAL";
+
+UPDATE Project_GreatPersonPoints
+SET Points = Points * 3
+WHERE ProjectType = 'PROJECT_WATER_CARNIVAL';
 
 --Egypt
 UPDATE ModifierArguments

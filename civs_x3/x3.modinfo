@@ -3,7 +3,7 @@
     <Properties>
         <Name>Civilization Traits x3</Name>
         <Teaser/>
-        <Description>All traits of a civilization are made 3 times more powerfull.</Description>
+        <Description>All traits of a civilization are made 3 times more powerful.</Description>
         <Authors>username4, Siuwa</Authors>
         <CompatibleVersions>2.0</CompatibleVersions>
     </Properties>
@@ -26,6 +26,7 @@
                 <File>data/TraitsMod.sql</File>
                 <File>data/TraitsGS.sql</File>
                 <File>data/TraitsInca.sql</File>
+				<File>data/TraitsSeasonPass.sql</File>
             </Items>
         </UpdateDatabase>
         <LocalizedText id="civs_x3_text">
@@ -37,8 +38,13 @@
                 <File>text/TraitsTextDLC.sql</File>
                 <File>text/TraitsTextMod.sql</File>
                 <File>text/TraitsTextGS.sql</File>
+				<File>text/TraitsTextSeasonPass.sql</File>
             </Items>
-        </LocalizedText>   
+        </LocalizedText>
+		<AddGameplayScripts id="civ_x10_Script">
+			<File>data/TraitsScript.lua</File>
+		</AddGameplayScripts>
+
     </Components>
     <Settings>
         <LocalizedText id="civs_x3_text_menu">
@@ -50,6 +56,7 @@
                 <File>text/TraitsTextDLC.sql</File>
                 <File>text/TraitsTextMod.sql</File>
                 <File>text/TraitsTextGS.sql</File>
+				<File>text/TraitsTextSeasonPass.sql</File>
             </Items>
         </LocalizedText>
     </Settings>
@@ -59,7 +66,10 @@
         <File>data/TraitsMod.sql</File>
         <File>data/TraitsGS.sql</File>
         <File>data/TraitsInca.sql</File>
-        
+		<File>data/TraitsSeasonPass.sql</File>
+		<File>data/TraitsScript.lua</File>
+		
+        <File>text/TraitsTextSeasonPass.sql</File>
         <File>text/TraitsText.sql</File>
         <File>text/TraitsTextDLC.sql</File>
         <File>text/TraitsTextMod.sql</File>
