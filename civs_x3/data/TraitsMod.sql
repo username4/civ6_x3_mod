@@ -993,11 +993,18 @@ WHERE Name="Amount" AND ModifierId IN ('Koishi_Increase_Spy_Level',
 'SHA_ORIN_CITY_EMEMY_GRANT_DAMAGE',
 'SHA_ORIN_CITY_ENEMY_GRANT_MOVEMENT_DEBUFF_MODIFIER',
 'SHA_ORIN_ENGINEER_GRANT_MOVEMENT',
-'SHA_ORIN_ENGINEER_GRANT_CHARGES'
+'SHA_ORIN_ENGINEER_GRANT_CHARGES',
+"SHA_KOMEIJI_ENGINEER_MORE_CHARGES"-- imba patch
+"SHA_KOMEIJI_PLOT_GRANT_PRODUCTION",
+"SHA_KOMEIJI_PLOT_GRANT_SCIENCE",
+"SHA_KOMEIJI_PLOT_GRANT_GOLD",
+"SHA_ORIN_UNITS_GRANT_MOVEMENT_MODIFIER",
+"SHA_ORIN_HEAVY_CAVALRY_GRANT_MOVEMENT",
+"SHA_ORIN_BUILDER_GRANT_CHARGES"
 ); 
 
 UPDATE Units 
-SET Range = 14
+SET Range = 14, BaseMoves = (BaseMoves-2)*3+2
 Where UnitType = 'UNIT_OKUU_ROD_MASTER';
 
 UPDATE Improvement_YieldChanges
@@ -1220,3 +1227,78 @@ WHERE ID LIKE 'Tundra_Science%';
 UPDATE District_GreatPersonPoints
 SET PointsPerTurn = 3
 WHERE DistrictType = 'DISTRICT_FENGCHENG' AND GreatPersonClassType IN ("GREAT_PERSON_CLASS_ARTIST","GREAT_PERSON_CLASS_PROPHET");
+
+
+
+---------------------------------------------------------
+---------------------------------------------------------
+-- 2113314311 Reisen Inaba
+---------------------------------------------------------
+---------------------------------------------------------
+
+UPDATE Building_YieldChanges
+SET YieldChange = 4
+WHERE BuildingType IN ( 'BUILDING_RABBIT_LAB', 'BUILDING_TANK_LAB') and YieldType="YIELD_PRODUCTION" ;
+
+UPDATE Building_YieldChanges
+SET YieldChange = YieldChange * 3
+WHERE BuildingType IN ( 'BUILDING_RABBIT_LAB', 'BUILDING_TANK_LAB') and YieldType="YIELD_SCIENCE" ;
+
+update Districts
+set Cost = 0.052734375, Entertainment="10"
+where DistrictType="DISTRICT_UDONGEIN";
+
+update Adjacency_YieldChanges
+set YieldChange = YieldChange * 3
+where ID in ("UNaturalWonder_Culture", "UWonder_Faith", "UWonder_Culture", "UCampus_Faith", "UU_Faith");
+
+update Adjacency_YieldChanges
+set YieldChange = 10, TilesRequired="2"
+where ID in ("UForest_Faith");
+
+update District_GreatPersonPoints
+set PointsPerTurn = PointsPerTurn*3
+where  DistrictType="DISTRICT_UDONGEIN" and GreatPersonClassType in ("GREAT_PERSON_CLASS_ARTIST", "GREAT_PERSON_CLASS_MUSICIAN");
+
+update District_CitizenYieldChanges
+set YieldChange=YieldChange*3
+where DistrictType="DISTRICT_UDONGEIN" and YieldType="YIELD_CULTURE";
+
+update District_CitizenYieldChanges
+set YieldChange=5
+where DistrictType="DISTRICT_UDONGEIN" and YieldType="YIELD_FAITH";
+
+update District_TradeRouteYields
+set YieldChangeAsDomesticDestination = YieldChangeAsDomesticDestination *3
+where DistrictType="DISTRICT_UDONGEIN" and  YieldType in ("YIELD_PRODUCTION", "YIELD_FAITH");
+
+update ModifierArguments
+set Value = Value*3
+WHERE Name = 'Amount'
+AND ModifierId = 'BAMBOOFOREST_ADJ%';
+
+
+update ModifierArguments
+set Value = Value*3
+WHERE Name = 'Amount'
+AND ModifierId in ("INABA_REACH_MOON_BOOST", 
+"RABBIT_LAB_ADJUST_MOVEMENT",
+"KUNS_INABA_JUNYING_PROBUFF");
+
+update ModifierArguments
+set Value = 10
+WHERE Name = 'Amount' and ModifierId = "TANK_LAB_ADJUST_MORE_COMBAT";
+
+update ModifierArguments
+set Value = -13
+WHERE Name = 'Amount' and ModifierId = "REISEN_INABA_LOW_ENEMY_COMBAT_MODIFIER";
+
+
+update ModifierArguments
+set Value = 15
+WHERE Name = 'Amount' and ModifierId = "INABA_ALL_UNITS_MORE_COMBAT_WHEN_ATTACKING";
+
+
+update Units
+set BaseMoves=5,Maintenance = 0,Cost=212
+WHERE UnitType="UNIT_LUNATIC_MOONRABBIT";
