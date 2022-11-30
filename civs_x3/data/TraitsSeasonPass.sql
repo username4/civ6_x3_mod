@@ -668,3 +668,86 @@ UPDATE ModifierArguments
 SET Value = Value * 3
 WHERE Name="Amount"
 AND ModifierId = 'NAVIGATION_SCHOOL_NAVAL_COAST_SCIENCE';
+
+
+---------------------------------------------------------
+---------------------------------------------------------
+-- Caesar 
+---------------------------------------------------------
+---------------------------------------------------------
+
+update ModifierArguments
+set Value = Value * 3
+where Name = "Amount"
+and ModifierId like 'BARBARIAN_CAMP_GOLD_CAPTURED_CITY%';
+
+update ModifierArguments
+set Value = Value * 3
+where Name = "Amount"
+and ModifierId like 'TRAIT_CAESAR_GOLD_CAPTURED_CITY%_MODIFIER';
+
+
+---------------------------------------------------------
+---------------------------------------------------------
+-- Abraham Lincoln 
+---------------------------------------------------------
+---------------------------------------------------------
+
+    update ModifierArguments
+    set Value = 13
+    where Name = "Amount"
+    and ModifierId = 'LINCOLN_MELEE_BUFF';
+
+    update ModifierArguments
+    set Value = Value * 3
+    where Name = "Amount"
+    and ModifierId = 'TRAIT_LINCOLN_INDUSTRIAL_ZONE_LOYALTY';
+
+
+    INSERT INTO TraitModifiers(TraitType, ModifierId)
+    VALUES("TRAIT_LEADER_LINCOLN","TRAIT_LINCOLN_INDUSTRIAL_ZONE_FREE_MELEE_UNIT1"),
+    ("TRAIT_LEADER_LINCOLN","TRAIT_LINCOLN_INDUSTRIAL_ZONE_FREE_MELEE_UNIT2");
+
+
+    INSERT INTO Modifiers (ModifierId, ModifierType)
+    VALUES("TRAIT_LINCOLN_INDUSTRIAL_ZONE_FREE_MELEE_UNIT1", "MODIFIER_PLAYER_DISTRICT_ADJUST_PLAYER_DISTRICT_AND_BUILDINGS_CREATE_UNIT_WITH_ABILITY_BY_CLASS_GREAT_NEGOTIATORS"),
+    ("TRAIT_LINCOLN_INDUSTRIAL_ZONE_FREE_MELEE_UNIT2", "MODIFIER_PLAYER_DISTRICT_ADJUST_PLAYER_DISTRICT_AND_BUILDINGS_CREATE_UNIT_WITH_ABILITY_BY_CLASS_GREAT_NEGOTIATORS");
+
+
+    INSERT INTO ModifierArguments(ModifierId, Name, Value)
+    VALUES("TRAIT_LINCOLN_INDUSTRIAL_ZONE_FREE_MELEE_UNIT1","DistrictType","DISTRICT_INDUSTRIAL_ZONE"),
+    ("TRAIT_LINCOLN_INDUSTRIAL_ZONE_FREE_MELEE_UNIT2","DistrictType","DISTRICT_INDUSTRIAL_ZONE");
+
+
+    INSERT INTO ModifierArguments(ModifierId, Name, Value)
+    VALUES("TRAIT_LINCOLN_INDUSTRIAL_ZONE_FREE_MELEE_UNIT1","UnitPromotionClass","PROMOTION_CLASS_MELEE"),
+    ("TRAIT_LINCOLN_INDUSTRIAL_ZONE_FREE_MELEE_UNIT2","UnitPromotionClass","PROMOTION_CLASS_MELEE");
+
+
+    INSERT INTO ModifierArguments(ModifierId, Name, Value)
+    VALUES("TRAIT_LINCOLN_INDUSTRIAL_ZONE_FREE_MELEE_UNIT1","UnitAbilityType","ABILITY_LINCOLN_MELEE_UNITS"),
+    ("TRAIT_LINCOLN_INDUSTRIAL_ZONE_FREE_MELEE_UNIT2","UnitAbilityType","ABILITY_LINCOLN_MELEE_UNITS");
+
+---------------------------------------------------------
+---------------------------------------------------------
+-- Nzinga Mbande
+---------------------------------------------------------
+---------------------------------------------------------
+
+update ModifierArguments
+set Value = "30, 30, 30, 30, 30, 30"
+where Name = "Amount"
+and ModifierId = 'TRAIT_SAME_CONTINENT_YIELD';
+
+
+
+---------------------------------------------------------
+---------------------------------------------------------
+-- Saladin Alt
+---------------------------------------------------------
+---------------------------------------------------------
+
+update ModifierArguments
+set Value = Value * 3
+where Name = "Amount"
+and ModifierId like 'SALADIN_%_BONUS_UNITS';
