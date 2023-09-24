@@ -686,6 +686,10 @@ set Value = Value * 3
 where Name = "Amount"
 and ModifierId like 'TRAIT_CAESAR_GOLD_CAPTURED_CITY%_MODIFIER';
 
+update ModifierArguments
+set Value = 13
+where Name = "Amount"
+and ModifierId = 'TRAIT_CAESAR_BARB_COMBAT';
 
 ---------------------------------------------------------
 ---------------------------------------------------------
@@ -703,6 +707,10 @@ and ModifierId like 'TRAIT_CAESAR_GOLD_CAPTURED_CITY%_MODIFIER';
     where Name = "Amount"
     and ModifierId = 'TRAIT_LINCOLN_INDUSTRIAL_ZONE_LOYALTY';
 
+    update ModifierArguments
+    set Value = Value * 3
+    where Name = "Amount"
+    and ModifierId = 'INDUSTRIAL_ZONE_ADDAMENITIES';
 
     INSERT INTO TraitModifiers(TraitType, ModifierId)
     VALUES("TRAIT_LEADER_LINCOLN","TRAIT_LINCOLN_INDUSTRIAL_ZONE_FREE_MELEE_UNIT1"),
@@ -751,3 +759,192 @@ update ModifierArguments
 set Value = Value * 3
 where Name = "Amount"
 and ModifierId like 'SALADIN_%_BONUS_UNITS';
+
+---------------------------------------------------------
+---------------------------------------------------------
+-- Tokugawa
+---------------------------------------------------------
+---------------------------------------------------------
+
+update ModifierArguments
+set Value = Value * 3
+where Name = "Amount"
+and ModifierId in ('TOKUGAWA_POSITIVE_DOMESTIC_CULTURE_DISTRICTS', 
+'TOKUGAWA_POSITIVE_DOMESTIC_SCIENCE_DISTRICTS',
+'TOKUGAWA_POSITIVE_DOMESTIC_GOLD_DISTRICTS',
+'TOKUGAWA_TOURISM_DISTRICTS',
+'TOKUGAWA_AMENITIES_NEAR_CAPITAL');
+
+update RequirementArguments
+set Value = Value * 3
+where Name = "MaxDistance"
+and RequirementId = 'REQUIRES_CITY_6_TILES_FROM_CAPITAL';
+
+---------------------------------------------------------
+---------------------------------------------------------
+-- Nader Shah
+---------------------------------------------------------
+---------------------------------------------------------
+update ModifierArguments
+set Value = 13
+where Name = "Amount"
+and ModifierId = 'NADER_SHAH_COMBAT_BUFF';
+
+update ModifierArguments
+set Value = Value * 3
+where Name = "Amount"
+and ModifierId in ('NADER_SHAH_TRADE_GOLD',
+'NADER_SHAH_TRADE_FAITH');
+
+
+---------------------------------------------------------
+---------------------------------------------------------
+-- Suleiman Alt
+---------------------------------------------------------
+---------------------------------------------------------
+
+update ModifierArguments
+set Value = "45, 45"
+where Name = "Amount"
+and ModifierId = 'TRAIT_SULEIMAN_ALT_SCIENCE_CULTURE_GOLDEN_AGE';
+
+update ModifierArguments
+set Value = 10
+where Name = "Amount"
+and ModifierId = 'SULEIMAN_COMBAT_BUFF';
+
+---------------------------------------------------------
+---------------------------------------------------------
+-- YongLe
+---------------------------------------------------------
+---------------------------------------------------------
+
+update ModifierArguments
+set Value = Value * 3
+where Name = "Amount"
+and ModifierId in ('YONGLE_SCIENCE_POPULATION',
+'YONGLE_CULTURE_POPULATION',
+'YONGLE_GOLD_POPULATION');
+
+
+update Project_YieldConversions
+set PercentOfProductionRate = PercentOfProductionRate * 3
+where ProjectType like 'PROJECT_LIJIA_%';
+
+
+---------------------------------------------------------
+---------------------------------------------------------
+-- Qin (Mandate of Heaven)
+---------------------------------------------------------
+---------------------------------------------------------
+
+update ModifierArguments
+set Value = Value * 3
+where Name = "Amount"
+and ModifierId = 'QIN_MELEE_UNIT_SPREAD_CHARGE';
+
+
+
+---------------------------------------------------------
+---------------------------------------------------------
+-- Wu Zetian
+---------------------------------------------------------
+---------------------------------------------------------
+
+update ModifierArguments
+set Value = Value * 3
+where Name = "Amount"
+and ModifierId like 'WU_ZETIAN%';
+
+---------------------------------------------------------
+---------------------------------------------------------
+-- Ramesses II
+---------------------------------------------------------
+---------------------------------------------------------
+
+update ModifierArguments
+set Value = Value * 10
+where Name = "BuildingProductionPercent"
+and ModifierId in ('RAMSES_CULTURE_POSITIVE_WONDERS_BUILDINGS','RAMSES_CULTURE_NEGATIVE_BUILDINGS');
+
+---------------------------------------------------------
+---------------------------------------------------------
+-- Cleopatra Alt
+---------------------------------------------------------
+---------------------------------------------------------
+
+update ModifierArguments
+set Value = 11
+where Name = "Amount"
+and ModifierId in ('CLEOPATRA_GRASS_FLOODPLAINS_APPEAL', 'CLEOPATRA_FLOODPLAINS_APPEAL','CLEOPATRA_PLAINS_FLOODPLAINS_APPEAL');
+
+update ModifierArguments
+set Value = "10, 10"
+where Name = "Amount"
+and ModifierId = 'CLEOPATRA_FLOODPLAINS_RESOURCE_YIELD';
+
+---------------------------------------------------------
+---------------------------------------------------------
+-- Sundiata Keita
+---------------------------------------------------------
+---------------------------------------------------------
+
+update ModifierArguments
+set Value = Value * 10
+where Name in ("Amount", "YieldChange")
+and ModifierId in ('SUNDIATA_KEITA_MARKET_GREAT_WRITING_SLOTS',
+'SUNDIATA_KEITA_PURCHASE_GREAT_PEOPLE',
+'SUNDIATA_KEITA_GREAT_WORK_GOLD_WRITING',
+'SUNDIATA_KEITA_GREAT_WORK_PRODUCTION_WRITING');
+
+---------------------------------------------------------
+---------------------------------------------------------
+-- Sejong
+---------------------------------------------------------
+---------------------------------------------------------
+
+
+
+update ModifierArguments
+set Value = Value * 3
+where Name = "Multiplier"
+and ModifierId like 'SEJONG_%_SCIENCE_INTO_CULTURE';
+
+---------------------------------------------------------
+---------------------------------------------------------
+-- Ludwig
+---------------------------------------------------------
+---------------------------------------------------------
+
+update ModifierArguments
+set Value = Value * 3
+where Name = "Amount"
+and ModifierId in ('LUDWIG_WONDER_ADJACENCY');
+
+---------------------------------------------------------
+---------------------------------------------------------
+-- Theodora
+---------------------------------------------------------
+---------------------------------------------------------
+
+insert into TraitModifiers (TraitType, ModifierId)
+values ('TRAIT_LEADER_THEODORA', 'THEODORA_CULTURE_HOLY_SITE_1'),
+('TRAIT_LEADER_THEODORA', 'THEODORA_CULTURE_HOLY_SITE_2');
+
+
+
+insert into Modifiers (ModifierId, ModifierType, SubjectRequirementSetId)
+values ('THEODORA_CULTURE_HOLY_SITE_1', 'MODIFIER_PLAYER_DISTRICTS_ADJUST_YIELD_BASED_ON_ADJACENCY_BONUS_BUILDER', 'DISTRICT_IS_HOLY_SITE'),
+('THEODORA_CULTURE_HOLY_SITE_2', 'MODIFIER_PLAYER_DISTRICTS_ADJUST_YIELD_BASED_ON_ADJACENCY_BONUS_BUILDER', 'DISTRICT_IS_HOLY_SITE');
+
+insert into ModifierArguments (ModifierId, Name, Value)
+values ('THEODORA_CULTURE_HOLY_SITE_1', 'YieldTypeToMirror', 'DISTRICT_IS_HOLYIELD_FAITHY_SITE'), ('THEODORA_CULTURE_HOLY_SITE_1', 'YieldTypeToGrant', 'YIELD_CULTURE'),
+('THEODORA_CULTURE_HOLY_SITE_2', 'YieldTypeToMirror', 'DISTRICT_IS_HOLYIELD_FAITHY_SITE'), ('THEODORA_CULTURE_HOLY_SITE_2', 'YieldTypeToGrant', 'YIELD_CULTURE');
+
+
+
+update ModifierArguments
+set Value = Value * 3
+where Name = "Amount"
+and ModifierId in ('THEODORA_HOLY_SITE_ADJACENCY_FARM', 'THEODORA_HIPPODROME_ADJACENCY_FARM');
+
